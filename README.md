@@ -1,2 +1,2 @@
 # jgstew.github.io
-James' personal pages
+jgstew's personal pages
