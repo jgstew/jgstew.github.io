@@ -31,7 +31,12 @@
 <a id="jgstewgithubio" class="anchor" href="#jgstewgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>jgstew.github.io</h1>
 
 <ul>
-<li><a href="http://jgstew.github.io/">http://jgstew.github.io/</a></li>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
 </ul>
 
 <h3>
