@@ -4,7 +4,7 @@ Overall I really like the idea of a dynamically generated static webpage creator
 
 ### References
 
-- [https://help.github.com/articles/using-jekyll-with-pages/]()
+- [https://help.github.com/articles/using-jekyll-with-pages/](https://help.github.com/articles/using-jekyll-with-pages/)
 - https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 - http://jekyllrb.com/docs/structure/
 - https://help.github.com/articles/troubleshooting-github-pages-build-failures/
