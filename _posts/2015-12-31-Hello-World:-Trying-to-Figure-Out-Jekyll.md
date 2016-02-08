@@ -1,6 +1,6 @@
-## Hello World. 
+Hello World. Trying to figure out Jekyll is both easy and hard. As I get the hang of it, I am liking it, but I do wish the learning curve was a bit easier. 
 
-Trying to figure out Jekyll.
+Overall I really like the idea of a dynamically generated static webpage creator. It is a very smart idea, and being able to make use of it directly through [GitHub](https://github.com/jgstew) with [GitHub Pages](https://pages.github.com/) is even better.
 
 ### References
 
