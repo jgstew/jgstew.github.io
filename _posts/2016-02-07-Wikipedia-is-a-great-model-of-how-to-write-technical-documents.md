@@ -1,7 +1,5 @@
 
-# [Wikipedia](https://www.wikipedia.org/) is a great model of how to write technical documents.
-
-The links within a Wikipedia page allow it to contain only the information pertinent to the topic at hand,
+The links within a [Wikipedia](https://www.wikipedia.org/) page allow it to contain only the information pertinent to the topic at hand,
 while allowing the reader to easily find more infomation about a particular part that may not be easily understood. 
 
 This isn't a new concept. This is also what makes HTML so powerful in the first place is that these links don't have to be only to 
