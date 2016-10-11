@@ -54,7 +54,7 @@ Let's break it down individually and see.
 
 - "Open"= state of it (~12ms)
 - name of it as lowercase contains "Firefox" as lowercase (~36ms)
-- source of source fixlet of it contains "RESTAPI: Generate " (~11ms)
+- source of source fixlet of it contains "RESTAPI: Generate " (~12ms)
 - "jgstew" = name of issuer of it (~14ms)
 - baseline flag of source fixlet of it (~8ms)
 - name of it as lowercase contains "Windows" as lowercase (~37ms)
