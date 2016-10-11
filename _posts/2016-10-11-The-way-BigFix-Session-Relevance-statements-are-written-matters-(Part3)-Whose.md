@@ -51,7 +51,7 @@ This turns out to be twice as fast! But why? Let's break it down individually an
 - "Open"= state of it (~??ms)
 - name of it as lowercase contains "Firefox" as lowercase (~??ms)
 - source of source fixlet of it contains "RESTAPI: Generate " (~??ms)
-- "pvt-jgstew-bf" = name of issuer of it (~??ms)
+- "jgstew" = name of issuer of it (~??ms)
 - baseline flag of source fixlet of it (~??ms)
 - name of it as lowercase contains "Windows" as lowercase (~??ms)
 
