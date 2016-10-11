@@ -46,7 +46,11 @@ Lets see if moving the check for state to the front is faster: (~20ms)
 
     number of bes actions whose("Open" = state of it AND name of it as lowercase contains "Firefox" as lowercase AND source of source fixlet of it contains "RESTAPI: Generate " AND baseline flag of source fixlet of it AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Windows" as lowercase)
 
-This turns out to be twice as fast! But why? Let's break it down individually and see.
+This turns out to be twice as fast! But why? 
+
+-----
+
+Let's break it down individually and see.
 
 - "Open"= state of it (~12ms)
 - name of it as lowercase contains "Firefox" as lowercase (~36ms)
@@ -55,16 +59,24 @@ This turns out to be twice as fast! But why? Let's break it down individually an
 - baseline flag of source fixlet of it (~8ms)
 - name of it as lowercase contains "Windows" as lowercase (~37ms)
 
+-----
+
 Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
 
     number of bes actions whose(baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
 
 That is almost twice as fast again!
 
+-----
+
 But can we do better?
 
 - multiple flag of it (~3ms)
 
+-----
+
 Final result: (~4ms)
 
     number of bes actions whose(multiple flag of it AND baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
+    
+So what? 4ms is 10 times faster than 40ms, but 40ms is still pleanty fast. Why bother with all of this optimization in this case? It is a valid point that for this particlar usecase in my particular environment, this optimization will make very little difference overall, BUT it is important to undertand that this optimization could have a much greater impact in a different environment with many more items to filter. 
