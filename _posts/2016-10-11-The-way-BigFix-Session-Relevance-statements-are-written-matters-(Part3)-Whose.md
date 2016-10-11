@@ -36,7 +36,7 @@ This means you generally want the fastest to evaluate items first in the `WHOSE`
 
 Now lets take a real world example using Session Relevance and try to optimize it. 
 
-The use case is to dynamically query for a running Firefox patch baseline.
+The use case is to dynamically query for a running Firefox patch baseline. All of the following statements should return the 1 and only open action that meets all of the criteria. 
 
 This version takes ~40ms:
 
@@ -47,4 +47,17 @@ Lets see if moving the check for state to the front is faster: (~20ms)
     number of bes actions whose("Open" = state of it AND name of it as lowercase contains "Firefox" as lowercase AND source of source fixlet of it contains "RESTAPI: Generate " AND baseline flag of source fixlet of it AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Windows" as lowercase)
 
 This turns out to be twice as fast! But why? Let's break it down individually and see.
+
+- "Open"= state of it (~??ms)
+- name of it as lowercase contains "Firefox" as lowercase (~??ms)
+- source of source fixlet of it contains "RESTAPI: Generate " (~??ms)
+- "pvt-jgstew-bf" = name of issuer of it (~??ms)
+- baseline flag of source fixlet of it (~??ms)
+- name of it as lowercase contains "Windows" as lowercase (~??ms)
+
+Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
+
+    number of bes actions whose(baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
+
+That is almost twice as fast again!
 
