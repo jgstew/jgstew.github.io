@@ -71,7 +71,7 @@ That is almost twice as fast again!
 
 But can we do better?
 
-- multiple flag of it (~3ms)
+- ~3ms `number of bes actions whose(multiple flag of it)`
 
 -----
 
