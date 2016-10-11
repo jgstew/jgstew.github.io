@@ -1,6 +1,6 @@
 The order of operations within a complex WHOSE clause matters in BigFix Relevance but especially in Session Relevance.
 
-A WHOSE clause takes( plural results (similar to arrays) and filters out the unwanted items.
+A WHOSE clause takes plural results (similar to arrays) and filters out the unwanted items.
 
 Here are 2 examples:
 
