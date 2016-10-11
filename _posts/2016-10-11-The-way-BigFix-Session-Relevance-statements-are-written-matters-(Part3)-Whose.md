@@ -52,12 +52,12 @@ This turns out to be twice as fast! But why?
 
 Let's break it down individually and see.
 
-- "Open"= state of it (~12ms)
-- name of it as lowercase contains "Firefox" as lowercase (~36ms)
-- source of source fixlet of it contains "RESTAPI: Generate " (~12ms)
-- "jgstew" = name of issuer of it (~14ms)
-- baseline flag of source fixlet of it (~8ms)
-- name of it as lowercase contains "Windows" as lowercase (~37ms)
+- ~12ms `number of bes actions whose("Open"= state of it)`
+- ~36ms `number of bes actions whose(name of it as lowercase contains "Firefox" as lowercase)`
+- ~12ms `number of bes actions whose(source of source fixlet of it contains "RESTAPI: Generate ")`
+- ~14ms `number of bes actions whose("jgstew" = name of issuer of it)`
+-  ~8ms `number of bes actions whose(baseline flag of source fixlet of it)`
+- ~37ms `number of bes actions whose(name of it as lowercase contains "Windows" as lowercase)`
 
 -----
 
