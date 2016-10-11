@@ -79,4 +79,6 @@ Final result: (~4ms)
 
     number of bes actions whose(multiple flag of it AND baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
     
-So what? 4ms is 10 times faster than 40ms, but 40ms is still pleanty fast. Why bother with all of this optimization in this case? It is a valid point that for this particlar usecase in my particular environment, this optimization will make very little difference overall, BUT it is important to undertand that this optimization could have a much greater impact in a different environment with many more items to filter. 
+So what? 4ms is 10 times faster than 40ms, but 40ms is still pleanty fast. Why bother with all of this optimization in this case? It is a valid point that for this particlar usecase in my particular environment, this optimization will make very little difference overall, BUT it is important to undertand that this optimization could have a much greater impact in a different environment with many more items to filter or more criteria to filter on.
+
+### The bigger difference between the fastest query and the slowest query, the more optimzation like this will make a difference.
