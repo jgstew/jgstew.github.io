@@ -32,7 +32,7 @@ The reason that this works is because when statements are combined with `AND` in
 
 This means you generally want the fastest to evaluate items first in the `WHOSE` clause, except in rare cases in which you also have to care about how many of the results the statement eliminates. If a statement is very fast, but only eliminates a small percentage of the results, then it may be better to use a statement that is a tad slower but eliminates a larger set of the results so that the subsequent clauses have less items to evalute. 
 
------
+----------
 
 Now lets take a real world example using Session Relevance and try to optimize it. 
 
@@ -48,7 +48,7 @@ Lets see if moving the check for state to the front is faster: (~20ms)
 
 This turns out to be twice as fast! But why? 
 
------
+----------
 
 Let's break it down individually and see.
 
@@ -59,7 +59,7 @@ Let's break it down individually and see.
 -  ~8ms `number of bes actions whose(baseline flag of source fixlet of it)`
 - ~37ms `number of bes actions whose(name of it as lowercase contains "Windows" as lowercase)`
 
------
+----------
 
 Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
 
@@ -67,13 +67,13 @@ Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
 
 That is almost twice as fast again!
 
------
+----------
 
 But can we do better?
 
 - ~3ms `number of bes actions whose(multiple flag of it)`
 
------
+----------
 
 Final result: (~4ms)
 
