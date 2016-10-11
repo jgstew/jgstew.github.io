@@ -28,4 +28,4 @@ This means that if you want to know which strings start with `a` and contain `b`
     T: 0.049 ms
     I: singular integer
 
-The reason that this works is because when statements are combined with `AND` inside of a `WHOSE` clause, the first statement to be false stops the evaluation and eliminates the result immediately. This means you want the fastest to evaluate items first in the WHOSE clause.
+The reason that this works is because when statements are combined with `AND` inside of a `WHOSE` clause, the first statement to be false stops the evaluation and eliminates the result immediately. This means you want the fastest to evaluate items first in the `WHOSE` clause.
