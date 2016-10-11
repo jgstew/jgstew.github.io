@@ -42,7 +42,7 @@ This version takes ~40ms:
 
     number of bes actions whose(name of it as lowercase contains "Firefox" as lowercase AND source of source fixlet of it contains "RESTAPI: Generate " AND baseline flag of source fixlet of it AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Windows" as lowercase AND "Open" = state of it)
 
-Lets see if moving the check for state to the front: (~20ms)
+Lets see if moving the check for state to the front is faster: (~20ms)
 
     number of bes actions whose("Open" = state of it AND name of it as lowercase contains "Firefox" as lowercase AND source of source fixlet of it contains "RESTAPI: Generate " AND baseline flag of source fixlet of it AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Windows" as lowercase)
 
