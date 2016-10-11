@@ -61,3 +61,10 @@ Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
 
 That is almost twice as fast again!
 
+But can we do better?
+
+- multiple flag of it (~3ms)
+
+Final result: (~4ms)
+
+    number of bes actions whose(multiple flag of it AND baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
