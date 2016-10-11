@@ -20,9 +20,9 @@ names of items 2 of (item 0 of it, (it as version) of following text of last "-"
 
 Both statements use recursion, but the first uses double recursion, while the second statement uses single recursion twice.
 
-The first statement's speed is estimated by:  ( #Fixlets * time-per-fixlet ) * ( #computers * time-per-computer )
+The first statement's speed is estimated by:  `( #Fixlets * time-per-fixlet ) * ( #computers * time-per-computer )`
 
-The second statement's speed is estimated by: ( #Fixlets * time-per-fixlet ) + ( #computers * time-per-computer )
+The second statement's speed is estimated by: `( #Fixlets * time-per-fixlet ) + ( #computers * time-per-computer )`
 
 Both statements may be relatively fast on a small deployment, but as the deployment grows in size, the time the first statement takes will grow significantly, while the second will not grow nearly as much.
 
