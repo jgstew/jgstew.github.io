@@ -48,12 +48,12 @@ Lets see if moving the check for state to the front is faster: (~20ms)
 
 This turns out to be twice as fast! But why? Let's break it down individually and see.
 
-- "Open"= state of it (~??ms)
-- name of it as lowercase contains "Firefox" as lowercase (~??ms)
-- source of source fixlet of it contains "RESTAPI: Generate " (~??ms)
-- "jgstew" = name of issuer of it (~??ms)
-- baseline flag of source fixlet of it (~??ms)
-- name of it as lowercase contains "Windows" as lowercase (~??ms)
+- "Open"= state of it (~12ms)
+- name of it as lowercase contains "Firefox" as lowercase (~36ms)
+- source of source fixlet of it contains "RESTAPI: Generate " (~11ms)
+- "jgstew" = name of issuer of it (~14ms)
+- baseline flag of source fixlet of it (~8ms)
+- name of it as lowercase contains "Windows" as lowercase (~37ms)
 
 Now, let's reorder the `WHOSE` clause to go from fastest to slowest: (~10ms)
 
