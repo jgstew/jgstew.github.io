@@ -63,3 +63,15 @@ Paste the Download URL into the `URL` tab where it says `Enter URL`
 Click the `Scan it!` button
 
 Go to the Analysis page: https://www.virustotal.com/en/url/ae6c705ae42d49dae10df490fab56d1ccb34835025c7d88f8db40247208f4466/analysis/
+
+Click the `Go to downloaded file analysis` link. (this only works for files under a certain size)
+
+In this case, you should end up here: https://www.virustotal.com/en/file/4f1a406321af2f90d16e5b753529d205e66d4f6eeaa5f925566c43b8f8e70638/analysis/1478216605/
+
+### Step 3: 
+
+_(work in progress)_
+
+### Step 4:
+
+_(work in progress)_
