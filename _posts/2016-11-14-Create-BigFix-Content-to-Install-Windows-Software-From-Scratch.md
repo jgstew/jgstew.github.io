@@ -289,7 +289,7 @@ You can also create relevance just for upgrades with slight modifications, like 
 
     exists keys whose(exists values "DisplayName" whose(it as string starts with "Microsoft Visual Studio Code") of it AND exists values "DisplayVersion" whose(it as string as version < "1.7.1" as version) of it) of keys "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" of (x64 registries; x32 registries)
 
-This relevance will only be applicable (TRUE) on machines that already have Visual Studio Code installed, but it is an older version.
+This relevance will only be applicable (TRUE) on machines that already have Visual Studio Code installed, but only if it is an older version.
 
 ## Step 10: Final touches
 
