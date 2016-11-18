@@ -14,3 +14,5 @@ jgstew's personal pages
 - http://eviltrout.com/2014/01/22/embedding-discourse.html
 - https://meta.discourse.org/t/is-it-possible-to-use-discourse-as-a-commenting-system/12627
 - http://jekyllrb.com/docs/configuration/#front-matter-defaults
+
+Interesting theme for an online CV: http://jekyllthemes.org/themes/online-cv/
