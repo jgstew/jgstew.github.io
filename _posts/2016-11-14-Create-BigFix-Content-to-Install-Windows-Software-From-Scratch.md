@@ -14,7 +14,7 @@ The software will start to download in the browser after a few seconds. In this 
 
 Go to the browser `downloads` section to find the actual download URL.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/6/66a42e0e39f2c903238de5c3aee8660a19e24241.PNG" width="636" height="157">
+<img src="https://jgstew.github.io/images/BFromScratch/Download_VSC.PNG" width="636" height="157">
 
 In this case, the URL is `https://az764295.vo.msecnd.net/stable/02611b40b24c9df2726ad8b33f5ef5f67ac30b44/VSCodeSetup-1.7.1.exe`
 
@@ -28,7 +28,7 @@ Go to the home page, click the `URL` tab
 
 Paste the Download URL into the `URL` tab where it says `Enter URL`
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/e/e4a8d15157496f97a919553cf4ee406ccdcc3131.PNG" width="547" height="197">
+<img src="http://jgstew.github.io/images/BFromScratch/VirusTotal_Download_VSC.PNG" width="547" height="197">
 
 Click the `Scan it!` button
 
@@ -54,11 +54,11 @@ From the [VirusTotal analysis page](https://www.virustotal.com/en/file/4f1a40632
 
 Ensure that the most recent comment is the Download URL from above, otherwise paste the Download URL in the `Leave your comment...` box and click the `post comment` button.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/f/f4c231ad3360d5f7ee8be0f2563a518a03e95933.PNG" width="690" height="165">
+<img src="http://jgstew.github.io/images/BFromScratch/VirusTotal_VSC_Comments.PNG" width="690" height="165">
 
 Once that is completed, click the `VirusTotal to Prefetch` bookmarklet to generate the prefetch statement. The [code for the bookmarklet is on GitHub](https://github.com/jgstew/tools/tree/master/JS/VirusTotal2Prefetch).
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/3/37a9b0c3c0080cd0711505df8dbaca9c4c7fc2f3.PNG" width="687" height="252">
+<img src="http://jgstew.github.io/images/BFromScratch/VirusTotal_VSC_Prefetch.PNG" width="687" height="252">
 
 Copy the generated prefetch statement and save it. Remove the version info from the download file.
 
@@ -78,7 +78,7 @@ Click the `Actions` tab
 
 Paste in the Prefetch statement created in step 4.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/8/817eafef5a6f47dded9e26245c20b7f1f8a94cec.PNG" width="330" height="80">
+<img src="http://jgstew.github.io/images/BFromScratch/VirusTotal_VSC_Prefetch_ActionScript.PNG" width="330" height="80">
 
 Click the `Relevance` tab
 
@@ -90,7 +90,7 @@ More relevance will be added later, but this is all we are going to add for now.
 
 (Optional) Change the `Create in site:` from your opsite or `Master Action Site` to a custom site. Generally it is a good idea to keep as little as possible in the `Master Action Site` and if you create it in your opsite, then only you will be able to see it, which is not helpful for collaborating with other operators. 
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/a/a4eb3251441edde521c2c85b717ec7b209019409.PNG" width="348" height="58">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_CreateInSite.PNG" width="348" height="58">
 
 Click on the `Properties` tab
 
@@ -98,7 +98,7 @@ Paste the size value from the prefetch statement into the `Download Size:` field
 
 Enter your username in the `Source ID:` field. In my case, it is `jgstew`, but not for you.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/5/571e38d59ac0de5b5a1e35478d482425579948c1.PNG" width="310" height="182">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_Properties.PNG" width="310" height="182">
 
 Click `OK` to save the Fixlet. You may need to reauthenticate to the console. 
 
@@ -116,7 +116,7 @@ Click `OK` to deploy it to this test machine. You may need to reauthenticate to 
 
 In the Action `Summary` tab, you should see a section called `Downloads` appear. It should provide some feedback as the root server downloads the file in the prefetch statement, and it should eventually have a status of `Complete`, with the details `Cached on Server`. This means the file has been successfully downloaded by the root server.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/6/63a04cc723d5a064a645e42bc1a97a8c7eb334c8.PNG" width="393" height="131">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_Action_DownloadsComplete.PNG" width="393" height="131">
 
 Once this happens successfully, then the download should happen on the windows test machine you targeted with the action.
 
@@ -126,7 +126,7 @@ Click the `Computers` tab.
 
 Double click on the action result for the windows test machine you targeted the action to, which will open the `View Action Info` window for this computer.
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/9/93c94baa95c7d3db2c53cd77f8ed1d16c175db9e.PNG" width="406" height="329">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_Action_ViewActionInfo.PNG" width="406" height="329">
 
 What you want to see here is `Completed` next to the prefetch line. This lets us know that the download succeeded on the targeted test machine. Remember, `Failed` is the status we want to see at this point in the process!
 
@@ -210,7 +210,7 @@ After the prefetch statement, add the install command line from the previous ste
 
     waithidden __Download\VSCodeSetup.exe /SP- /VERYSILENT /SUPPRESSMSGBOXES /NOCLOSEAPPLICATIONS /NOCANCEL /NORESTART /NORUN /MERGETASKS="!runcode,!desktopicon"
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/1/1571a0868aabf1adb3e35b120cd5ebb7ce9a71ca.PNG" width="403" height="109">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_ActionScript_VSC.PNG" width="403" height="109">
 
 Click `OK` to save your edits. You may need to reauthenticate to the console.
 
@@ -228,7 +228,7 @@ You might want to check the test machine's BigFix client log file, since it ofte
 
 The final status in the console should look similar to this:
 
-<img src="https://forum.bigfix.com/uploads/default/original/2X/0/08409dbbab6b8f7d6200c7f9b61abe239e38cc9a.PNG" width="458" height="387">
+<img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_Action_ViewActionInfo2.PNG" width="458" height="387">
 
 At this point, make sure Visual Studio Code is installed on the test machines and opens successfully, because it should!
 
