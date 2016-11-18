@@ -320,3 +320,16 @@ Choose the test machine, or enter it manually.
 This time, the console should report `Fixed` as the status once the fixlet runs. This should mean that the fixlet was applicable (relevance was true) then the fixlet ran on the system, and then the fixlet was no longer applicable (relevance is false). This means that the relevance is now giving you real feedback on the results of the actionscript. Once the relevance is working properly like this, then a result of `Fixed` has real meaning. The result should be `Fixed` anytime the fixlet is run unless there is a problem from now on.
 
 Now you are ready to deploy this software to other machines to see if it works properly there before putting this into production use.
+
+<div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'http://forum.bigfix.com/',
+                     topicId: 19208 };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
