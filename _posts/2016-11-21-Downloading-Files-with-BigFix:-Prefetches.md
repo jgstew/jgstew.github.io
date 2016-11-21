@@ -27,10 +27,16 @@ A `prefetch` has a few components, the most important being the size of the file
 - Size
 - URL
 
+### Prefetch Statements
+
 The most common form of a `prefetch` is called a Prefetch Statement, and it takes this form:
 
 **prefetch `theFileName` sha1:`theSha1` size:`theSize` `http://theURL` sha256:`theSha256`**
 
-### Examples:
+#### Examples:
 
 - `prefetch VSCodeSetup.exe sha1:0f88ffb5da19828690baceca512c9dc3c3a99888 size:33446608 https://az764295.vo.msecnd.net/stable/02611b40b24c9df2726ad8b33f5ef5f67ac30b44/VSCodeSetup-1.7.1.exe sha256:4f1a406321af2f90d16e5b753529d205e66d4f6eeaa5f925566c43b8f8e70638`
+
+### Prefetch Blocks
+
+Prefetch blocks are a less common form of `prefetch`.
