@@ -51,6 +51,7 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 
 - https://bigfix.me/relevance/details/2999075
 - https://bigfix.me/relevance/details/3018837
+- https://bigfix.me/relevance/details/2998745
 
 
 #### Example:
