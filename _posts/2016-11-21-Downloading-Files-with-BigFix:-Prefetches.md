@@ -70,6 +70,7 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 - https://github.com/bigfix/make-prefetch
 - https://forum.bigfix.com/t/prefetch-statement-powershell-4-0-for-local-files/15145/6
 - https://github.com/peterj04/PowerShell-MakePrefetch
+- BF File Properties: https://bigfix.me/projects/details/7
 
 ## Related Materials
 
