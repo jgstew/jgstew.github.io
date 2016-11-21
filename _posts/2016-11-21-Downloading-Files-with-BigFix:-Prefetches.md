@@ -33,9 +33,9 @@ The most common form of a `prefetch` is called a Prefetch Statement, and it take
 
 **prefetch `theFileName` sha1:`theSha1` size:`theSize` `http://theURL` sha256:`theSha256`**
 
-#### Examples:
+#### Example:
 
-- `prefetch VSCodeSetup.exe sha1:0f88ffb5da19828690baceca512c9dc3c3a99888 size:33446608 https://az764295.vo.msecnd.net/stable/02611b40b24c9df2726ad8b33f5ef5f67ac30b44/VSCodeSetup-1.7.1.exe sha256:4f1a406321af2f90d16e5b753529d205e66d4f6eeaa5f925566c43b8f8e70638`
+- `prefetch unzip.exe sha1:e1652b058195db3f5f754b7ab430652ae04a50b8 size:167936 http://software.bigfix.com/download/redist/unzip-5.52.exe sha256:8d9b5190aace52a1db1ac73a65ee9999c329157c8e88f61a772433323d6b7a4a`
 
 ### Prefetch Blocks
 
@@ -44,5 +44,11 @@ Prefetch blocks are a less common form of `prefetch`. They are really only neede
 Prefetch blocks have all the same general parts as prefetch statements, but in a block structure:
 
     begin prefetch block
-        add prefetch item name=theFileName sha1=theSha1 size=theSize url=http://theURL
+        add prefetch item name=theFileName sha1=theSha1 sha256=theSha256 size=theSize url=http://theURL
     end prefetch block
+
+#### Example:
+
+	begin prefetch block
+		add prefetch item name=unzip.exe sha1=e1652b058195db3f5f754b7ab430652ae04a50b8 sha256=8d9b5190aace52a1db1ac73a65ee9999c329157c8e88f61a772433323d6b7a4a size=167936 url=http://software.bigfix.com/download/redist/unzip-5.52.exe
+	end prefetch block
