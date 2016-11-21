@@ -6,6 +6,8 @@ The downloads could be many different things:
 - Scripts
 - Software Installers
 - Patches (software or OS)
+- Drivers
+- ...etc...
 
 The "Best" way to download files with BigFix is to use something called a `prefetch`.
 
