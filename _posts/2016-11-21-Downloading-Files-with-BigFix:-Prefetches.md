@@ -78,3 +78,4 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 - https://forum.bigfix.com/t/create-content-to-install-windows-software-from-scratch/19208
  - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-11-14-Create-BigFix-Content-to-Install-Windows-Software-From-Scratch.md
 - http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Action/c_introducing_the_prefetch_block.html?cp=SS63NW_9.2.0&lang=en
+- http://marklets.com/BigFixPrefetch%20added%20to%20VirusTotal%20analysis%20table.aspx
