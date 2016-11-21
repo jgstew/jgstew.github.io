@@ -5,6 +5,9 @@ jgstew's personal pages
 - https://github.com/jgstew/jgstew.github.io
 - https://travis-ci.org/jgstew/jgstew.github.io
 
+BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/relevance/details/3018836
+
+
 # References
 
 - https://help.github.com/articles/using-jekyll-with-pages/
