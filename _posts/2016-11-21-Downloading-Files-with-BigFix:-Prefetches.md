@@ -59,3 +59,14 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 	begin prefetch block
 		add prefetch item name=unzip.exe sha1=e1652b058195db3f5f754b7ab430652ae04a50b8 sha256=8d9b5190aace52a1db1ac73a65ee9999c329157c8e88f61a772433323d6b7a4a size=167936 url=http://software.bigfix.com/download/redist/unzip-5.52.exe
 	end prefetch block
+
+## Generating Prefetches
+
+- https://bigfix.me/relevance/details/2998745
+- https://bigfix.me/relevance/details/2998744
+- https://forum.bigfix.com/t/prefetch-statement-powershell-4-0-for-local-files/15145/6
+- https://forum.bigfix.com/t/prefetch-automator-services-for-os-x/13855
+
+## Related Materials
+
+- http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Action/c_introducing_the_prefetch_block.html?cp=SS63NW_9.2.0&lang=en
