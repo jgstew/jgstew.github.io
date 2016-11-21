@@ -11,7 +11,7 @@ The downloads could be many different things:
 
 The "Best" way to download files with BigFix is to use something called a `prefetch`.
 
-## Why Prefetches?: Speed and Security
+## Why Prefetches? Speed and Security
 
 A `prefetch` allows BigFix to securely download files while validating that the downloaded file is not corrupted or maliciously altered.
 
