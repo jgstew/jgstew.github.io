@@ -29,7 +29,7 @@ A `prefetch` has a few components, the most important being the size of the file
 
 The most common form of a `prefetch` is called a Prefetch Statement, and it takes this form:
 
-**prefetch `FileName` sha1:`theSha1` size:`theSize` `http://theURL` sha256:`theSha256`**
+**prefetch `theFileName` sha1:`theSha1` size:`theSize` `http://theURL` sha256:`theSha256`**
 
 ### Examples:
 
