@@ -64,10 +64,12 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 
 - https://bigfix.me/relevance/details/2998745
 - https://bigfix.me/relevance/details/2998744
-- https://forum.bigfix.com/t/prefetch-statement-powershell-4-0-for-local-files/15145/6
 - https://forum.bigfix.com/t/prefetch-automator-services-for-os-x/13855
 - https://github.com/hansen-m/bigfix-automator-services/
 - https://github.com/CLCMacTeam/AutoPkgBESEngine/blob/master/Code/AutoPkgBESEngine.py#L140
+- https://github.com/bigfix/make-prefetch
+- https://forum.bigfix.com/t/prefetch-statement-powershell-4-0-for-local-files/15145/6
+- https://github.com/peterj04/PowerShell-MakePrefetch
 
 ## Related Materials
 
