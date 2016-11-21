@@ -71,6 +71,7 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 - https://forum.bigfix.com/t/prefetch-statement-powershell-4-0-for-local-files/15145/6
 - https://github.com/peterj04/PowerShell-MakePrefetch
 - BF File Properties: https://bigfix.me/projects/details/7
+- https://github.com/jgstew/tools/tree/master/JS/VirusTotal2Prefetch
 
 ## Related Materials
 
