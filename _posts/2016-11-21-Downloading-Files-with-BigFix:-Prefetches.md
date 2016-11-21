@@ -75,4 +75,5 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 
 ## Related Materials
 
+- https://forum.bigfix.com/t/create-content-to-install-windows-software-from-scratch/19208
 - http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Action/c_introducing_the_prefetch_block.html?cp=SS63NW_9.2.0&lang=en
