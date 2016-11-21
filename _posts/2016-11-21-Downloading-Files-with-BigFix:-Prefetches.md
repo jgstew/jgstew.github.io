@@ -47,7 +47,11 @@ Prefetch blocks have all the same general parts as prefetch statements, but in a
         add prefetch item name=theFileName sha1=theSha1 sha256=theSha256 size=theSize url=http://theURL
     end prefetch block
 
-It is possible to convert a prefetch statement into a prefetch block and vis versa: https://bigfix.me/relevance/details/2999075
+It is possible to convert a prefetch statement into a prefetch block and vis versa:
+
+- https://bigfix.me/relevance/details/2999075
+- https://bigfix.me/relevance/details/3018837
+
 
 #### Example:
 
