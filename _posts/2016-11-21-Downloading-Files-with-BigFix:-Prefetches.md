@@ -39,4 +39,10 @@ The most common form of a `prefetch` is called a Prefetch Statement, and it take
 
 ### Prefetch Blocks
 
-Prefetch blocks are a less common form of `prefetch`.
+Prefetch blocks are a less common form of `prefetch`. They are really only needed for rare extra functionality or very complex situations. It is useful to be able to understand a prefetch block if you come across one, but it is not likely that you will need to create one.
+
+Prefetch blocks have all the same general parts as prefetch statements, but in a block structure:
+
+    begin prefetch block
+        add prefetch item name=theFileName sha1=theSha1 size=theSize url=http://theURL
+    end prefetch block
