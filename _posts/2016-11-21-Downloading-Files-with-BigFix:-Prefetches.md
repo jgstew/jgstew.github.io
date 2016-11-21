@@ -62,6 +62,8 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 
 ## Generating Prefetches
 
+Work In Progress - I plan to document many of these options in detail.
+
 - https://bigfix.me/relevance/details/2998745
 - https://bigfix.me/relevance/details/2998744
 - https://forum.bigfix.com/t/prefetch-automator-services-for-os-x/13855
