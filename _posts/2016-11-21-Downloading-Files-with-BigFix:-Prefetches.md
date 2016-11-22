@@ -75,6 +75,7 @@ Work In Progress - I plan to document many of these options in detail.
 - https://github.com/peterj04/PowerShell-MakePrefetch
 - BF File Properties: https://bigfix.me/projects/details/7
 - https://github.com/jgstew/tools/tree/master/JS/VirusTotal2Prefetch
+- https://md5file.com/calculator
 
 ## Related Materials
 
