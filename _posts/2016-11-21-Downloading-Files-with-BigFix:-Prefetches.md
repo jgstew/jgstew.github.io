@@ -26,7 +26,7 @@ A `prefetch` has a few components, the most important being the size of the file
 - Size
 - URL
 - Filename
- - the Filename can be anything
+ - the Filename can be almost anything
  - the Filename is only used as the name of the file that the download is saved to
 
 ### Prefetch Statements
