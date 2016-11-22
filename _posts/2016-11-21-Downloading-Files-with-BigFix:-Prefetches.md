@@ -78,7 +78,9 @@ Once all the parts are determined, you can just combine them by hand into a pref
 
 ----------
 
-Work In Progress - I plan to document many of these options in detail.
+### Work In Progress
+
+#### I plan to document many of these options in detail.
 
 - https://bigfix.me/relevance/details/2998745
 - https://bigfix.me/relevance/details/2998744
