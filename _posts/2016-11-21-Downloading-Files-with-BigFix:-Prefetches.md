@@ -64,6 +64,20 @@ It is possible to convert a prefetch statement into a prefetch block and vis ver
 
 ## Generating Prefetches
 
+You can figure out the needed info for a prefetch many different ways.
+
+- the Filename is whatever you want it to be
+- the size is easily determined if you have a copy of the file handy
+- the URL is wherever the file can be downloaded from
+ - Could be the root server, the public internet, or your own software repo
+ - generally it must be available over HTTP or HTTPS
+- the SHA1 & SHA256 hashes can be calculated using a copy of the file using many different tools
+ - there are thousands of tools that can be used for hashing
+
+Once all the parts are determined, you can just combine them by hand into a prefetch. This isn't ideal and it is much nicer to use BigFix specific tools to more completely automate the process.
+
+----------
+
 Work In Progress - I plan to document many of these options in detail.
 
 - https://bigfix.me/relevance/details/2998745
