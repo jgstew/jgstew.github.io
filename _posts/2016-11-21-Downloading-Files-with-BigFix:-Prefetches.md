@@ -94,6 +94,7 @@ Once all the parts are determined, you can just combine them by hand into a pref
 - BF File Properties: https://bigfix.me/projects/details/7
 - https://github.com/jgstew/tools/tree/master/JS/VirusTotal2Prefetch
 - https://md5file.com/calculator
+- https://github.com/Miserlou/omnihash
 
 ## Related Materials
 
