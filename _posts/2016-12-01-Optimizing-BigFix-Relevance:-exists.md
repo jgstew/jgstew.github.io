@@ -40,6 +40,9 @@ The strange part of this example is the fact that both use `descendants` which i
  - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-06-18-The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).md) - suggest improvements here
  - [Website](http://jgstew.github.io/2015/06/18/The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).html) - generated GitHub Page
 - https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340
+ - [BigFix Forum Post]() - make comments here
+ - [GitHub Source File]() - suggest improvements here
+ - [Website]() - generated GitHub Page
 - https://forum.bigfix.com/t/the-way-relevance-statements-are-written-matters-part3-whose/18785
 - https://forum.bigfix.com/t/optimizing-custom-filters/15022
 
