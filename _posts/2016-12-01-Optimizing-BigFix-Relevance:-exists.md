@@ -36,22 +36,22 @@ The strange part of this example is the fact that both use `descendants` which i
 ### Similar Posts:
 
 [The Way Bigfix Session Relevance Statements Are Written Matters (part1)](https://forum.bigfix.com/t/the-way-session-relevance-statements-webreports-are-written-matters/13663):
-- [BigFix Forum Post](https://forum.bigfix.com/t/the-way-session-relevance-statements-webreports-are-written-matters/13663) - make comments here
-- [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-06-18-The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).md) - suggest improvements here
-- [Website](http://jgstew.github.io/2015/06/18/The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).html) - generated GitHub Page
+ - [BigFix Forum Post](https://forum.bigfix.com/t/the-way-session-relevance-statements-webreports-are-written-matters/13663) - make comments here
+ - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-06-18-The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).md) - suggest improvements here
+ - [Website](http://jgstew.github.io/2015/06/18/The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).html) - generated GitHub Page
 
 [The Way Bigfix Session Relevance Statements Are Written Matters (part2) Computer Names](https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340):
-- [BigFix Forum Post](https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340) - make comments here
-- [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-09-14-The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part2)-Computer-Names.md) - suggest improvements here
-- [Website](http://jgstew.github.io/2015/09/14/The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part2)-Computer-Names.html) - generated GitHub Page
+ - [BigFix Forum Post](https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340) - make comments here
+ - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-09-14-The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part2)-Computer-Names.md) - suggest improvements here
+ - [Website](http://jgstew.github.io/2015/09/14/The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part2)-Computer-Names.html) - generated GitHub Page
 
 [The Way Bigfix Session Relevance Statements Are Written Matters (part3) Whose](https://forum.bigfix.com/t/the-way-relevance-statements-are-written-matters-part3-whose/18785):
-- [BigFix Forum Post](https://forum.bigfix.com/t/the-way-relevance-statements-are-written-matters-part3-whose/18785) - make comments here
-- [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-10-11-The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.md) - suggest improvements here
-- [Website](http://jgstew.github.io/2016/10/11/The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.html) - generated GitHub Page
+ - [BigFix Forum Post](https://forum.bigfix.com/t/the-way-relevance-statements-are-written-matters-part3-whose/18785) - make comments here
+ - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-10-11-The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.md) - suggest improvements here
+ - [Website](http://jgstew.github.io/2016/10/11/The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.html) - generated GitHub Page
 
 Optimizing Custom Filters:
-- https://forum.bigfix.com/t/optimizing-custom-filters/15022
+ - https://forum.bigfix.com/t/optimizing-custom-filters/15022
 
 ### Related:
 
