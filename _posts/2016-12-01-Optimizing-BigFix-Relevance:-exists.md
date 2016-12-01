@@ -4,7 +4,7 @@ One particularly important example is using `exists`. Using `exists` actually pr
 
 ### Example:
 
-The following 2 statements are equivalent. They will always return the same value in all cases.
+The following 2 statements are equivalent. They will always return the same result in all cases.
 
 #### Slower:
 
