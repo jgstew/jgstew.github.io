@@ -24,5 +24,5 @@ The first example, which does not use `exists`, actually needs to count up every
 
 The second example, which does use `exists`, does not actually get every file within the folder. Instead, as soon as `descendants` returns a single result, `exists` is satisfied and evaluation stops.
 
-The strange part of this example is the fact that both use `descendants` which is an inspector that would typically return all of the file objects within the given folder. Putting `exists` in front of `descendants` like this actually changes the behavior of the `descendants` inspector, somehow letting it know that it only cares if there is at least one result. 
+The strange part of this example is the fact that both use `descendants` which is an inspector that would typically return all of the file objects within the given folder. Putting `exists` in front of `descendants` like this actually changes the behavior of the `descendants` inspector, somehow letting it know that it only cares if there is at least one result and not all results.
 
