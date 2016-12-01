@@ -47,3 +47,6 @@ The strange part of this example is the fact that both use `descendants` which i
 
 - https://developer.bigfix.com/relevance/reference/filesystem-object.html
 - https://forum.bigfix.com/t/speeding-up-api-and-session-relevance-queries/15366/4
+- https://forum.bigfix.com/t/relevance-to-retrieve-a-set-of-computer-objects-with-duplicate-names/14306/14
+- https://forum.bigfix.com/t/solved-session-relevance-extracting-action-results-from-multiple-computers-in-an-efficient-way/18464
+- https://forum.bigfix.com/t/sqlite-inspector-read-only-databases/13606/23
