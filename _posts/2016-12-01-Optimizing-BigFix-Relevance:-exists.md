@@ -1,4 +1,4 @@
-The way BigFix relevance is written matters. Generally the faster the relevance can execute, the better. The more often a relevance statement is used or evaluated, the more speed matters.
+The way BigFix relevance is written matters. There are usually many ways to get the same result with relevance, but generally the faster the relevance can execute, the better. The more often a relevance statement is used or evaluated, the more speed matters.
 
 One particularly important example is using `exists`. Using `exists` actually prevents the relevance statement that follows it from fully evaluating all possible items, because as soon as there is at least 1 result, then `exists` is satisfied and no further evaluation is required.
 
