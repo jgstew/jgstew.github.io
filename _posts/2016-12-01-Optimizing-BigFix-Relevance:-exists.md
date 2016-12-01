@@ -53,9 +53,11 @@ The strange part of this example is the fact that both use `descendants` which i
 - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-10-11-The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.md) - suggest improvements here
 - [Website](http://jgstew.github.io/2016/10/11/The-way-BigFix-Session-Relevance-statements-are-written-matters-(Part3)-Whose.html) - generated GitHub Page
 
-Optimizing Custom Filters:
+[Optimizing Custom Filters](https://forum.bigfix.com/t/optimizing-custom-filters/15022):
 
-- https://forum.bigfix.com/t/optimizing-custom-filters/15022
+- [BigFix Forum Post](https://forum.bigfix.com/t/optimizing-custom-filters/15022) - make comments here
+- [GitHub Source File]() - suggest improvements here
+- [Website]() - generated GitHub Page
 
 ### Related:
 
