@@ -56,8 +56,8 @@ The strange part of this example is the fact that both use `descendants` which i
 [Optimizing Custom Filters in the BigFix Console](https://forum.bigfix.com/t/optimizing-custom-filters-in-the-bigfix-console/15022):
 
 - [BigFix Forum Post](https://forum.bigfix.com/t/optimizing-custom-filters-in-the-bigfix-console/15022) - make comments here
-- [GitHub Source File]() - suggest improvements here
-- [Website]() - generated GitHub Page
+- [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-11-15-Optimizing-Custom-Filters-in-the-BigFix-Console.md) - suggest improvements here
+- [Website](http://jgstew.github.io/2016/11/15/Optimizing-Custom-Filters-in-the-BigFix-Console.html) - generated GitHub Page
 
 
 ### Related:
