@@ -31,3 +31,5 @@ The strange part of this example is the fact that both use `descendants` which i
 ### Notes:
 
 ### Related:
+
+- https://developer.bigfix.com/relevance/reference/filesystem-object.html
