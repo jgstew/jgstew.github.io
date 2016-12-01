@@ -33,6 +33,17 @@ The strange part of this example is the fact that both use `descendants` which i
 - I am using `(folders "C:\Windows\Temp";folders "/tmp")` above because it is cross platform.
  - My preferred windows relevance of `folders "Temp" of windows folders` does not work cross platform.
 
+### Similar Posts:
+
+- The Way Bigfix Session Relevance Statements Are Written Matters (part1) 
+ - [BigFix Forum Post](https://forum.bigfix.com/t/the-way-session-relevance-statements-webreports-are-written-matters/13663) - make comments here
+ - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-06-18-The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).md) - suggest improvements here
+ - [Website](http://jgstew.github.io/2015/06/18/The-way-BigFix-Session-Relevance-statements-are-written-matters-(part1).html) - generated GitHub Page
+- https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340
+- https://forum.bigfix.com/t/the-way-relevance-statements-are-written-matters-part3-whose/18785
+- https://forum.bigfix.com/t/optimizing-custom-filters/15022
+
 ### Related:
 
 - https://developer.bigfix.com/relevance/reference/filesystem-object.html
+- https://forum.bigfix.com/t/speeding-up-api-and-session-relevance-queries/15366/4
