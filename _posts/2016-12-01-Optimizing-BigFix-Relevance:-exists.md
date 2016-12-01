@@ -30,6 +30,8 @@ The strange part of this example is the fact that both use `descendants` which i
 
 ### Notes:
 
+- I am using `(folders "C:\Windows\Temp";folders "/tmp")` above because it is cross platform. 
+
 ### Related:
 
 - https://developer.bigfix.com/relevance/reference/filesystem-object.html
