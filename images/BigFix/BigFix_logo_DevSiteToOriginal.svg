@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="-8 -8 272 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+  <defs>
+    <mask id="b">
+      <circle fill="#fff" cx="128" cy="128" r="128"/>
+    </mask>
+    <mask id="outer">
+      <circle fill="#fff" cx="128" cy="128" r="128"/>
+      <circle fill="#000" cx="128" cy="128" r="70"/>
+      <rect fill="#000" x="58" y="0" width="38" height="128"/>
+    </mask>
+    <mask id="inner">
+      <circle fill="#fff" cx="128" cy="128" r="32"/>
+      <rect fill="#000" x="56" y="0" width="40" height="128"/>
+    </mask>
+  </defs>
+  <rect fill="#fff" x="-32" y="-32" width="320" height="320" mask="url(#b)"/>
+  <rect fill="#7599BE" x="-32" y="-32" width="320" height="320" mask="url(#outer)"/>
+  <rect fill="#ADC447" x="-32" y="-32" width="320" height="320" mask="url(#inner)"/>
+</svg>
