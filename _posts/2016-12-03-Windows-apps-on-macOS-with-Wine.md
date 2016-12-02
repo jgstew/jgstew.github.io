@@ -7,3 +7,4 @@ Work in progress
 - https://www.playonmac.com/en/
 - http://wineskin.urgesoftware.com/tiki-index.php
 - http://winebottler.kronenberg.org/
+- https://www.codeweavers.com/support/wiki/64bit_Support
