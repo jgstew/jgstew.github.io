@@ -6,6 +6,7 @@ The order of the filter criteria you set matters for Custom Filters. In general 
 
 **This example is not optimal:**
 
+![Unoptimized Console Filter](http://jgstew.github.io/images/BFilterOptimizing/ConsoleFilter.PNG)
 
 One of the most significant issues is that the filter `Visibility equals Visible` filters out 0 items most of the time. This criteria should go last, and not second. 
 
@@ -13,6 +14,7 @@ One of the most significant issues is that the filter `Visibility equals Visible
 
 **This example is more optimal:**
 
+![Optimized Console Filter](http://jgstew.github.io/images/BFilterOptimizing/OptimizedConsoleFilter.PNG)
 
 Typically in session relevance it is best to filter down to a specific site before filtering based upon the names of all fixlets in all sites. The reason is there is a much smaller set of sites in total to compare and getting just a specific site will filter out the most items with the least effort. 
 
