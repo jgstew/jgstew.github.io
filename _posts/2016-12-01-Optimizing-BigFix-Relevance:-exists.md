@@ -35,9 +35,9 @@ The strange part of this example is the fact that both use `descendants` which i
 
 ### This Post:
 
-[Optimizing Bigfix Relevance: Exists](http://jgstew.github.io/2016/12/01/Optimizing-BigFix-Relevance-exists.html)
+[Optimizing Bigfix Relevance: Exists](https://forum.bigfix.com/t/optimizing-bigfix-relevance-exists/19378)
 
-- [BigFix Forum Post]() - make comments here
+- [BigFix Forum Post](https://forum.bigfix.com/t/optimizing-bigfix-relevance-exists/19378) - make comments here
 - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-01-Optimizing-BigFix-Relevance:-exists.md) - suggest improvements here
 - [Website](http://jgstew.github.io/2016/12/01/Optimizing-BigFix-Relevance-exists.html) - generated GitHub Page
 
