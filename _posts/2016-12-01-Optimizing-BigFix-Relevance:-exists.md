@@ -31,7 +31,7 @@ The strange part of this example is the fact that both use `descendants` which i
 ### Notes:
 
 - I am using `(folders "C:\Windows\Temp";folders "/tmp")` above because it is cross platform.
- - My preferred windows relevance of `folders "Temp" of windows folders` does not work cross platform.
+ - My preferred windows relevance of `(folders "Temp" of windows folders)` does not work cross platform.
 
 ### This Post:
 
