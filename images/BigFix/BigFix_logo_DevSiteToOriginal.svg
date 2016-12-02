@@ -15,6 +15,6 @@
     </mask>
   </defs>
   <rect fill="#fff" x="-32" y="-32" width="320" height="320" mask="url(#b)"/>
-  <rect fill="#7599BE" x="-32" y="-32" width="320" height="320" mask="url(#outer)"/>
-  <rect fill="#ADC447" x="-32" y="-32" width="320" height="320" mask="url(#inner)"/>
+  <rect fill="#5387B4" x="-32" y="-32" width="320" height="320" mask="url(#outer)"/>
+  <rect fill="#8297A7" x="-32" y="-32" width="320" height="320" mask="url(#inner)"/>
 </svg>
