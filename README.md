@@ -10,9 +10,6 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 ----------
 
 # TODO - Work In Progress Posts:
-- https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-01-Optimizing-BigFix-Relevance:-exists.md
- - Needs posted to forum
- - Needs link to the forum post added internally
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-11-21-Downloading-Files-with-BigFix:-Prefetches.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
 
