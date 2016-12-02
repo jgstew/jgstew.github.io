@@ -12,6 +12,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 # TODO - Work In Progress Posts:
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-11-21-Downloading-Files-with-BigFix:-Prefetches.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
+- https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 
 ----------
 
