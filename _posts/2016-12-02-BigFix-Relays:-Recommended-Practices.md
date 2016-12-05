@@ -10,3 +10,4 @@
 - https://github.com/jgstew/bigfix-content/blob/master/dashboards/RelayCacheSizing.ojo
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Relay%20Health
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Configuration%20Settings
+- https://developer.ibm.com/answers/questions/303488/what-does-iphttprelaydomaincom52311bfmirrordownloa.html#answer-325276
