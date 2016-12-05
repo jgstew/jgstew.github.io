@@ -95,7 +95,7 @@ Once all the parts are determined, you can just combine them by hand into a pref
 - https://github.com/jgstew/tools/tree/master/JS/VirusTotal2Prefetch
 - https://md5file.com/calculator
 - https://github.com/Miserlou/omnihash
- - `omnihash -f SHA256 -f SHA1 -f MD5 -f LENGTH omnihash.exe`
+ - `omnihash -f SHA256 -f SHA1 -f LENGTH omnihash.exe`
 
 ## Related Materials
 
