@@ -11,3 +11,4 @@ Work in progress
 - http://wineskin.urgesoftware.com/tiki-index.php
 - http://winebottler.kronenberg.org/
 - https://www.codeweavers.com/support/wiki/64bit_Support
+- https://mike.kronenberg.org/winebottler-1-5-30-now-with-codesigning-support/
