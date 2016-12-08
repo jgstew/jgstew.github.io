@@ -1,3 +1,6 @@
+
+https://forum.bigfix.com/t/fixletdebugger-on-osx/12778/1
+
 Work in progress
 
 - https://www.winehq.org/wwn/384#Wine64%20on%20OS%20X
