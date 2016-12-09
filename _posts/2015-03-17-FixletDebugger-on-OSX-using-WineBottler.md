@@ -1,6 +1,6 @@
 I have the Windows [Fixlet Debugger](http://software.bigfix.com/download/bes/92/util/QNA9.2.0.363.zip) working on OS X bundled into a .app using [WineBottler](http://winebottler.kronenberg.org/).
 
-**Download here:** https://dl.dropboxusercontent.com/u/640753/FixletDebugger_9.2.0.363_OSX_WINE_BETA.zip
+**Download here:** https://dl.dropboxusercontent.com/u/640753/FixletDebugger_9.2.9.36_OSX_WINE_SIGNED.zip
 
 **Note:** This will be running under the WINE context, which thinks it is Windows XP. This will not work with OS X only relevance, and it may not work with all Windows based relevance either. I have not tested this enough to know what works and what doesn't, but I still think this could be useful.
   
