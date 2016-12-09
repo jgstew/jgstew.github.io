@@ -19,3 +19,4 @@
 
 Trying to run http://software.bigfix.com/download/bes/95/util/CLI9.5.4.38.zip in wine gave the error:
 - unimplemented function KERNEL32.dll.GetCurrentConsoleFontEx
+- seems to be fixed in 1.8.3 : https://www.winehq.org/announce/1.8.3
