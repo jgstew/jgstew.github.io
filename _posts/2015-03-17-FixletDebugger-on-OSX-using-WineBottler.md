@@ -23,3 +23,4 @@ This may be an option for many Windows Only utilities on OS X. The Session Relev
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli+Endpoint+Manager/page/Fixlet+Debugger+(QnA)+Tool
 - https://forum.bigfix.com/t/fixletdebugger-on-osx-using-winebottler/12778
 - http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg
+- https://bugs.winehq.org/show_bug.cgi?id=37757
