@@ -1,4 +1,4 @@
-I have the Windows [Fixlet Debugger][1] working on OS X bundled into a .app using [WineBottler][2].
+I have the Windows [Fixlet Debugger](http://software.bigfix.com/download/bes/92/util/QNA9.2.0.363.zip) working on OS X bundled into a .app using [WineBottler][2].
 
 # TODO: replace link:
 **Download here:**  NeedNewLink/FixletDebugger_9.2.0.363_OSX_WINE_BETA.zip
@@ -25,8 +25,6 @@ This may be an option for many Windows Only utilities on OS X. The Session Relev
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli+Endpoint+Manager/page/Fixlet+Debugger+(QnA)+Tool
 - https://forum.bigfix.com/t/fixletdebugger-on-osx-using-winebottler/12778
 
-
-  [1]: http://support.bigfix.com/bes/install/utilities/9.2/
   [2]: http://winebottler.kronenberg.org/
   [3]: http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg
   
