@@ -11,7 +11,8 @@ I have the Windows [Fixlet Debugger][1] working on OS X bundled into a .app usin
 
 You can recreate what I did by downloading [WineBottler][3] and use the following settings:
 
-# TODO: Add Image back in, alt text, caption
+![](https://jgstew.github.io/images/Winebottler_FixletDebugger_9.2.png)
+# TODO: Add alt text, caption
 
 ----------
   
