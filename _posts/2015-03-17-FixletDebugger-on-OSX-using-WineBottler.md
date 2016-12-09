@@ -10,8 +10,7 @@ I have the Windows [Fixlet Debugger](http://software.bigfix.com/download/bes/92/
 
 You can recreate what I did by downloading [WineBottler](http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg) and use the following settings:
 
-![](https://jgstew.github.io/images/Winebottler_FixletDebugger_9.2.png)
-# TODO: Add alt text, caption
+![All files in folder, Set DirectDraw to GDI](https://jgstew.github.io/images/Winebottler_FixletDebugger_9.2.png "Screenshot of Winebottler")
 
 ----------
   
