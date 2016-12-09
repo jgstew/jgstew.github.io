@@ -8,7 +8,7 @@ I have the Windows [Fixlet Debugger](http://software.bigfix.com/download/bes/92/
 ----------
 
 
-You can recreate what I did by downloading [WineBottler](http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg) and use the following settings:
+You can recreate what I did by downloading [WineBottler](http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg) and use the following settings: 
 
 ![All files in folder, Set DirectDraw to GDI](https://jgstew.github.io/images/Winebottler_FixletDebugger_9.2.png "Screenshot of Winebottler")
 
@@ -22,3 +22,4 @@ This may be an option for many Windows Only utilities on OS X. The Session Relev
 - https://mike.kronenberg.org/winebottler-1-5-30-now-with-codesigning-support/
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli+Endpoint+Manager/page/Fixlet+Debugger+(QnA)+Tool
 - https://forum.bigfix.com/t/fixletdebugger-on-osx-using-winebottler/12778
+- http://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.6.1.dmg
