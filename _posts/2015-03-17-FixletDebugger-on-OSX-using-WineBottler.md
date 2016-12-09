@@ -22,6 +22,7 @@ This may be an option for many Windows Only utilities on OS X. The Session Relev
 - https://github.com/activescott/lessmsi/issues/3
 - https://mike.kronenberg.org/winebottler-1-5-30-now-with-codesigning-support/
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli+Endpoint+Manager/page/Fixlet+Debugger+(QnA)+Tool
+- https://forum.bigfix.com/t/fixletdebugger-on-osx-using-winebottler/12778
 
 
   [1]: http://support.bigfix.com/bes/install/utilities/9.2/
