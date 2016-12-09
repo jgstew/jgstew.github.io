@@ -14,3 +14,8 @@
 - https://www.codeweavers.com/support/wiki/64bit_Support
 - https://mike.kronenberg.org/winebottler-1-5-30-now-with-codesigning-support/
 - https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Utilities
+
+--------------
+
+Trying to run http://software.bigfix.com/download/bes/95/util/CLI9.5.4.38.zip in wine gave the error:
+- unimplemented function KERNEL32.dll.GetCurrentConsoleFontEx
