@@ -1,6 +1,6 @@
 
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2015-03-17-FixletDebugger-on-OSX-using-WineBottler.md
-- https://forum.bigfix.com/t/fixletdebugger-on-osx/12778/1
+- https://forum.bigfix.com/t/fixletdebugger-on-osx-using-winebottler/12778
 
 Work in progress
 
