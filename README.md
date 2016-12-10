@@ -49,6 +49,7 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/error-cannot-perform-relevance-query-evaluation/13870
 - https://forum.bigfix.com/t/offer-action-to-open-current-bes-client-log/13583
 - https://forum.bigfix.com/t/best-practices-for-custom-logging-from-bigfix-actions/12548
+- https://forum.bigfix.com/t/ideas-for-fixlets-tasks-etc/13457
 
 
 Other's posts:
@@ -61,7 +62,16 @@ Other's posts:
 - https://forum.bigfix.com/t/automatically-creating-patches-using-bigfix-fixlets/14216
 - https://forum.bigfix.com/t/prefetch-automator-services-for-os-x/13855
 - https://forum.bigfix.com/t/qna-in-web-reports/13643
+- https://forum.bigfix.com/t/trying-to-run-a-linux-sh-script-in-a-bigfix-action/17748/6
+- https://forum.bigfix.com/t/parsing-registry-pol-local-group-policy-get-numeric-ascii-values-of-characters-in-a-string/16465/2
+- https://forum.bigfix.com/t/getting-data-from-both-native-and-wow6432-registry-branches/18308/8
+- https://forum.bigfix.com/t/reversing-order-of-substrings/5967/2
 
+
+Relays:
+
+- https://forum.bigfix.com/t/increase-relay-capacity/12022/6
+- https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
 
 ----------
 
