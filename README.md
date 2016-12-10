@@ -22,6 +22,8 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/enable-device-user-to-see-action-history-in-clientui/16972
 - https://forum.bigfix.com/t/i-accidentally-targeted-all-computers-when-testing/16560
 - https://forum.bigfix.com/t/custom-site-automatic-group-best-practices/16700
+- https://forum.bigfix.com/t/how-to-escape-a-comma-in-a-tuple-string/15891
+- https://forum.bigfix.com/t/open-something-with-cmd-but-not-have-the-cmd-window-remain/15786
 
 
 These posts need some work and turned into post.
@@ -37,6 +39,7 @@ Other's posts:
 - https://forum.bigfix.com/t/relevance-speeding-up-event-log-queries/18677
 - https://forum.bigfix.com/t/common-relevance-error-messages/12985
 - https://forum.bigfix.com/t/csv-regular-expression-and-tuple-string-items/16259
+- https://forum.bigfix.com/t/fixletdebugger-exe-command-line/15338
 
 ----------
 
