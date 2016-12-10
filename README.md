@@ -66,6 +66,7 @@ Other's posts:
 - https://forum.bigfix.com/t/parsing-registry-pol-local-group-policy-get-numeric-ascii-values-of-characters-in-a-string/16465/2
 - https://forum.bigfix.com/t/getting-data-from-both-native-and-wow6432-registry-branches/18308/8
 - https://forum.bigfix.com/t/reversing-order-of-substrings/5967/2
+- https://forum.bigfix.com/t/action-parameter-to-define-ip-address/16739/11
 
 
 Relays:
