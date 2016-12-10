@@ -62,6 +62,8 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/automate-bigfix-evaluation-setup-on-aws-free-tier/13438
 - https://forum.bigfix.com/t/what-tools-do-you-use-to-help-create-bigfix-content/3238
 - https://forum.bigfix.com/t/paramerterized-fixlets-interactive-scripting-in-bigfix-console-descriptions/14669/10
+- https://forum.bigfix.com/t/file-exists-in-path/15090/3
+- https://forum.bigfix.com/t/triggering-command-polling/19434/20
 
 - https://forum.bigfix.com/t/idea-automatically-create-config-tasks-based-upon-admx-templates/13066
  - Also Strawgate's actual solution
@@ -96,6 +98,7 @@ Other's posts:
 - https://forum.bigfix.com/t/analysis-to-collect-ip-mac-address-and-dhcp-status-for-mac-computers/13009/27
 - https://forum.bigfix.com/t/besadmin-advanced-options/13904
 - https://forum.bigfix.com/t/what-were-they-thinking-or-what-am-i-missing/14389/2
+- https://forum.bigfix.com/t/securely-creating-fixlets-to-update-os-user-passwords/11848
 - https://forum.bigfix.com/t/dedicated-section-on-forensic-activities-with-bigfix-created-on-bigfix-me/14461
  - I have other posts and relevance that related to this. Could turn it all into a post. IOCs, etc...
 
@@ -105,6 +108,7 @@ Relays:
 - https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
 - https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
 - https://forum.bigfix.com/t/top-level-relays/13496/26
+- https://forum.bigfix.com/t/relay-affiliation-question/14964/3
 
 
 ----------
