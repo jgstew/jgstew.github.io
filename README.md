@@ -30,6 +30,12 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/i-get-better-at-writing-relevance-over-time/14170
 - https://forum.bigfix.com/t/bigfix-documentation-resources/12540
 - https://forum.bigfix.com/t/get-the-list-of-files-within-a-zip-file-on-command-line/12328
+- https://forum.bigfix.com/t/get-msi-properties-on-the-command-line/12301
+- https://forum.bigfix.com/t/how-to-ask-for-ibm-product-help-pmrs-rfes-and-more/12292
+- https://forum.bigfix.com/t/firewall-fix-when-setting-up-centos-rhel-fedora-relay/13697
+- https://forum.bigfix.com/t/automatic-baseline-creation-and-eventually-autopatching/13882
+- https://forum.bigfix.com/t/auto-generate-tasks-to-delete-desktop-shortcuts-rest-api/17899
+
 
 These posts need some work and turned into post.
 
