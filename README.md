@@ -29,7 +29,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/relevance-tip-plural-vs-singular/14491
 - https://forum.bigfix.com/t/i-get-better-at-writing-relevance-over-time/14170
 - https://forum.bigfix.com/t/bigfix-documentation-resources/12540
-
+- https://forum.bigfix.com/t/get-the-list-of-files-within-a-zip-file-on-command-line/12328
 
 These posts need some work and turned into post.
 
