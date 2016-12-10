@@ -39,6 +39,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 
 These posts need some work and turned into post.
 
+- https://forum.bigfix.com/t/installing-the-bigfix-client-with-autodmg/15427/2
 - https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
 - https://forum.bigfix.com/t/rest-api-examples/12291
 - https://forum.bigfix.com/t/read-my-answer-about-bigfix-and-x64-files-windows-redirection/17339
@@ -50,6 +51,9 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/offer-action-to-open-current-bes-client-log/13583
 - https://forum.bigfix.com/t/best-practices-for-custom-logging-from-bigfix-actions/12548
 - https://forum.bigfix.com/t/ideas-for-fixlets-tasks-etc/13457
+- https://forum.bigfix.com/t/undocumented-client-settings/14619/18
+- https://forum.bigfix.com/t/how-to-get-the-difference-between-two-date-times-and-convert-it-to-action-xml-scheduling-format/15271/17
+- https://forum.bigfix.com/t/odd-besclient-behavior-on-laptops/13294/2
 
 
 Other's posts:
@@ -67,12 +71,19 @@ Other's posts:
 - https://forum.bigfix.com/t/getting-data-from-both-native-and-wow6432-registry-branches/18308/8
 - https://forum.bigfix.com/t/reversing-order-of-substrings/5967/2
 - https://forum.bigfix.com/t/action-parameter-to-define-ip-address/16739/11
+- https://forum.bigfix.com/t/detecting-workstation-trust-relationship-failures/12687/7
+- https://forum.bigfix.com/t/event-id-from-bigfix-doesnt-match-event-viewer/16516/2
+- https://forum.bigfix.com/t/anyone-using-actionhistory-db/2160/5
+- https://forum.bigfix.com/t/runascurrentuser-exe-equivelent-for-mac/4166/2
+- https://forum.bigfix.com/t/how-to-export-reports-in-web-reports-properly/11879/5
 
 
 Relays:
 
 - https://forum.bigfix.com/t/increase-relay-capacity/12022/6
 - https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
+- https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
+
 
 ----------
 
