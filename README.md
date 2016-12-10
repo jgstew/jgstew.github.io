@@ -24,7 +24,9 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/custom-site-automatic-group-best-practices/16700
 - https://forum.bigfix.com/t/how-to-escape-a-comma-in-a-tuple-string/15891
 - https://forum.bigfix.com/t/open-something-with-cmd-but-not-have-the-cmd-window-remain/15786
-
+- https://forum.bigfix.com/t/relevance-tip-plural-vs-singular/14491
+- https://forum.bigfix.com/t/i-get-better-at-writing-relevance-over-time/14170
+- https://forum.bigfix.com/t/bigfix-documentation-resources/12540
 
 These posts need some work and turned into post.
 
@@ -33,6 +35,10 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/read-my-answer-about-bigfix-and-x64-files-windows-redirection/17339
 - https://forum.bigfix.com/t/script-to-kickstart-the-installation-of-bigfix-on-os-x-debian-family-rhel-family/17023
 - https://forum.bigfix.com/t/relevance-to-detect-keranger-ransomware-on-macs-from-transmission-2-90/16248
+- https://forum.bigfix.com/t/challenge-1-what-does-this-relevance-do-answer-provided/14758
+- https://forum.bigfix.com/t/determine-action-header-info-using-relevance-substitution/14662
+- https://forum.bigfix.com/t/error-cannot-perform-relevance-query-evaluation/13870
+- https://forum.bigfix.com/t/offer-action-to-open-current-bes-client-log/13583
 
 Other's posts:
 
@@ -40,6 +46,11 @@ Other's posts:
 - https://forum.bigfix.com/t/common-relevance-error-messages/12985
 - https://forum.bigfix.com/t/csv-regular-expression-and-tuple-string-items/16259
 - https://forum.bigfix.com/t/fixletdebugger-exe-command-line/15338
+- https://forum.bigfix.com/t/updated-converting-group-policy-settings-admx-templates-into-fixlets/14287
+- https://forum.bigfix.com/t/automatically-creating-patches-using-bigfix-fixlets/14216
+- https://forum.bigfix.com/t/prefetch-automator-services-for-os-x/13855
+- https://forum.bigfix.com/t/qna-in-web-reports/13643
+
 
 ----------
 
