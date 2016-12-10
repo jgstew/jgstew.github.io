@@ -24,10 +24,14 @@ These posts need some work and turned into post.
 
 - https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
 - https://forum.bigfix.com/t/rest-api-examples/12291
+- https://forum.bigfix.com/t/read-my-answer-about-bigfix-and-x64-files-windows-redirection/17339
+- https://forum.bigfix.com/t/script-to-kickstart-the-installation-of-bigfix-on-os-x-debian-family-rhel-family/17023
 
 Other's posts:
 
 - https://forum.bigfix.com/t/relevance-speeding-up-event-log-queries/18677
+- https://forum.bigfix.com/t/common-relevance-error-messages/12985
+
 
 ----------
 
