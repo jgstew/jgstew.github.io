@@ -39,6 +39,10 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 
 These posts need some work and turned into post.
 
+- https://forum.bigfix.com/t/automatically-adjust-besclient-settings-when-on-battery-power/12962
+- https://forum.bigfix.com/t/making-a-bigfix-msi/8224/19
+- https://forum.bigfix.com/t/wait-waithidden-run-exe-bat-parameters/13718/4
+ - Related to other posts / existing posts
 - https://forum.bigfix.com/t/installing-the-bigfix-client-with-autodmg/15427/2
 - https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
 - https://forum.bigfix.com/t/rest-api-examples/12291
@@ -56,6 +60,8 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/odd-besclient-behavior-on-laptops/13294/2
 - https://forum.bigfix.com/t/automatically-adjust-besclient-settings-when-on-battery-power/12962
 - https://forum.bigfix.com/t/automate-bigfix-evaluation-setup-on-aws-free-tier/13438
+- https://forum.bigfix.com/t/what-tools-do-you-use-to-help-create-bigfix-content/3238
+- https://forum.bigfix.com/t/paramerterized-fixlets-interactive-scripting-in-bigfix-console-descriptions/14669/10
 
 - https://forum.bigfix.com/t/idea-automatically-create-config-tasks-based-upon-admx-templates/13066
  - Also Strawgate's actual solution
@@ -85,13 +91,20 @@ Other's posts:
 - https://forum.bigfix.com/t/rfe-better-ini-inspectors-parsing-with-regular-expressions-as-workaround/13228/11
 - https://forum.bigfix.com/t/sync-content-from-bigfix-me-to-your-iem-environment/12449
 - https://forum.bigfix.com/t/impact-of-application-usage-information/13614
-
+- https://forum.bigfix.com/t/newer-actionscript-commands/11677
+- https://forum.bigfix.com/t/check-to-see-if-a-server-can-connect-to-a-port-on-a-remote-host-windows/13836/3
+- https://forum.bigfix.com/t/analysis-to-collect-ip-mac-address-and-dhcp-status-for-mac-computers/13009/27
+- https://forum.bigfix.com/t/besadmin-advanced-options/13904
+- https://forum.bigfix.com/t/what-were-they-thinking-or-what-am-i-missing/14389/2
+- https://forum.bigfix.com/t/dedicated-section-on-forensic-activities-with-bigfix-created-on-bigfix-me/14461
+ - I have other posts and relevance that related to this. Could turn it all into a post. IOCs, etc...
 
 Relays:
 
 - https://forum.bigfix.com/t/increase-relay-capacity/12022/6
 - https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
 - https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
+- https://forum.bigfix.com/t/top-level-relays/13496/26
 
 
 ----------
