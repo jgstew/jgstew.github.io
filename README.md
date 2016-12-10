@@ -14,6 +14,16 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 
+### Forum posts to migrate to GitHub:
+- https://forum.bigfix.com/t/delay-site-subscription-to-speed-up-client-provisioning/18909
+- https://forum.bigfix.com/t/example-custom-web-report-with-pie-chart/16017
+- https://forum.bigfix.com/t/webreport-and-dashboard-that-recommends-relay-cache-sizing/19023
+
+These posts need some work and turned into post.
+
+- https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
+- https://forum.bigfix.com/t/rest-api-examples/12291
+
 ----------
 
 ## References
