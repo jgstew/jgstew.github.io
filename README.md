@@ -19,6 +19,10 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/delay-site-subscription-to-speed-up-client-provisioning/18909
 - https://forum.bigfix.com/t/example-custom-web-report-with-pie-chart/16017
 - https://forum.bigfix.com/t/webreport-and-dashboard-that-recommends-relay-cache-sizing/19023
+- https://forum.bigfix.com/t/enable-device-user-to-see-action-history-in-clientui/16972
+- https://forum.bigfix.com/t/i-accidentally-targeted-all-computers-when-testing/16560
+- https://forum.bigfix.com/t/custom-site-automatic-group-best-practices/16700
+
 
 These posts need some work and turned into post.
 
@@ -26,12 +30,13 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/rest-api-examples/12291
 - https://forum.bigfix.com/t/read-my-answer-about-bigfix-and-x64-files-windows-redirection/17339
 - https://forum.bigfix.com/t/script-to-kickstart-the-installation-of-bigfix-on-os-x-debian-family-rhel-family/17023
+- https://forum.bigfix.com/t/relevance-to-detect-keranger-ransomware-on-macs-from-transmission-2-90/16248
 
 Other's posts:
 
 - https://forum.bigfix.com/t/relevance-speeding-up-event-log-queries/18677
 - https://forum.bigfix.com/t/common-relevance-error-messages/12985
-
+- https://forum.bigfix.com/t/csv-regular-expression-and-tuple-string-items/16259
 
 ----------
 
