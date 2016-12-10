@@ -24,6 +24,10 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
 - https://forum.bigfix.com/t/rest-api-examples/12291
 
+Other's posts:
+
+- https://forum.bigfix.com/t/relevance-speeding-up-event-log-queries/18677
+
 ----------
 
 ## References
