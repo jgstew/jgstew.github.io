@@ -54,7 +54,11 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/undocumented-client-settings/14619/18
 - https://forum.bigfix.com/t/how-to-get-the-difference-between-two-date-times-and-convert-it-to-action-xml-scheduling-format/15271/17
 - https://forum.bigfix.com/t/odd-besclient-behavior-on-laptops/13294/2
+- https://forum.bigfix.com/t/automatically-adjust-besclient-settings-when-on-battery-power/12962
+- https://forum.bigfix.com/t/automate-bigfix-evaluation-setup-on-aws-free-tier/13438
 
+- https://forum.bigfix.com/t/idea-automatically-create-config-tasks-based-upon-admx-templates/13066
+ - Also Strawgate's actual solution
 
 Other's posts:
 
@@ -76,6 +80,11 @@ Other's posts:
 - https://forum.bigfix.com/t/anyone-using-actionhistory-db/2160/5
 - https://forum.bigfix.com/t/runascurrentuser-exe-equivelent-for-mac/4166/2
 - https://forum.bigfix.com/t/how-to-export-reports-in-web-reports-properly/11879/5
+- https://forum.bigfix.com/t/autopkg-integration-for-mac-os-x/11590
+- https://forum.bigfix.com/t/measuring-evaluationcycle/12947/2
+- https://forum.bigfix.com/t/rfe-better-ini-inspectors-parsing-with-regular-expressions-as-workaround/13228/11
+- https://forum.bigfix.com/t/sync-content-from-bigfix-me-to-your-iem-environment/12449
+- https://forum.bigfix.com/t/impact-of-application-usage-information/13614
 
 
 Relays:
