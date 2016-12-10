@@ -14,6 +14,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 
+
 ### Forum posts to migrate to GitHub:
 - https://forum.bigfix.com/t/make-helpdesk-easier-with-bigfix/12883
 - https://forum.bigfix.com/t/use-unique-values-to-collapse-duplicate-results-to-make-expensive-queries-more-efficient/18575
@@ -29,6 +30,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://forum.bigfix.com/t/i-get-better-at-writing-relevance-over-time/14170
 - https://forum.bigfix.com/t/bigfix-documentation-resources/12540
 
+
 These posts need some work and turned into post.
 
 - https://forum.bigfix.com/t/how-to-use-parameterized-fixlets/18927
@@ -40,6 +42,8 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/determine-action-header-info-using-relevance-substitution/14662
 - https://forum.bigfix.com/t/error-cannot-perform-relevance-query-evaluation/13870
 - https://forum.bigfix.com/t/offer-action-to-open-current-bes-client-log/13583
+- https://forum.bigfix.com/t/best-practices-for-custom-logging-from-bigfix-actions/12548
+
 
 Other's posts:
 
