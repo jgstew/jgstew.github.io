@@ -11,6 +11,17 @@ title: JGStew's Posts
   {% endfor %}
 </ul>
 <br/>
+<h2>BigFix:</h2>
+<ul>
+  {% for post in site.posts %}
+    {% unless post.category != "BigFix"%}
+    <li>
+      {{ post.date | date:"%Y-%m-%d" }} - <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+<br/>
 <br/>
 <h2>Find Me Elsewhere:</h2>
 <ul>
