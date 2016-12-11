@@ -30,27 +30,13 @@
       <section>
       	<h1>{{ page.title }}</h1>
         {{ content }}
-        {% if page.topicId %}
-          <div id='discourse-comments'></div>
-          
-          <script type="text/javascript">
-            DiscourseEmbed = { discourseUrl: 'https://forum.bigfix.com/',
-              topicId: {{ page.topicId }} };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
-        {% endif %}
       </section>
       <footer>
         <p><small>  </small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+          <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -60,6 +46,5 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
   </body>
 </html>
