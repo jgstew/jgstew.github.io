@@ -1,3 +1,7 @@
+---
+category: Jekyll
+---
+
 Hello World.
 
 Trying to figure out Jekyll is both easy and hard. As I get the hang of it, I am liking it, but I do wish the learning curve was a bit easier. 
