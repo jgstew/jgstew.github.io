@@ -5,8 +5,10 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+      author: "JGStew"
   -
     scope:
       path: ""
+      type: "posts"
     values:
-      author: "JGStew"
+      category: BigFix
