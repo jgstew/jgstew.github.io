@@ -3,7 +3,7 @@ title: JGStew's Posts
 ---
 <ul>
   {% for post in site.posts %}
-    {% unless post.category != "BigFix"%}
+    {% unless post.category == "BigFix"%}
     <li>
       {{ post.date | date:"%Y-%m-%d" }} - <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
