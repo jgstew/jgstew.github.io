@@ -208,7 +208,7 @@ td {
 
 /* Wrapper */
 .wrapper {
-  width:960px;
+  width:990px;
 }
 
 
@@ -319,7 +319,7 @@ a.buttons:hover {
 /* Section - for main page content */
 
 section {
-  width:650px;
+  width:750px;
   float:right;
   padding-bottom:50px;
 }
