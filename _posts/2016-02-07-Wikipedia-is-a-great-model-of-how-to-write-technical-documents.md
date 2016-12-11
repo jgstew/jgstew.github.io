@@ -1,3 +1,6 @@
+---
+category: Web
+---
 
 The links within a [Wikipedia](https://www.wikipedia.org/) page allow it to contain only the information pertinent to the topic at hand,
 while allowing the reader to easily find more infomation about a particular part that may not be easily understood. 
