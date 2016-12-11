@@ -1,5 +1,6 @@
 ---
 published: false
+category: WINE
 ---
 
 ### Example: FixletDebugger on OSX using WineBottler
