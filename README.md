@@ -64,7 +64,6 @@ These posts need some work and turned into post.
 - https://forum.bigfix.com/t/paramerterized-fixlets-interactive-scripting-in-bigfix-console-descriptions/14669/10
 - https://forum.bigfix.com/t/file-exists-in-path/15090/3
 - https://forum.bigfix.com/t/triggering-command-polling/19434/20
-
 - https://forum.bigfix.com/t/idea-automatically-create-config-tasks-based-upon-admx-templates/13066
  - Also Strawgate's actual solution
 
