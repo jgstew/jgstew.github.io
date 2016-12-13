@@ -39,6 +39,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 
 These posts need some work and turned into post.
 
+- https://github.com/rustymyers/QnAGUI
 - https://forum.bigfix.com/t/automatically-adjust-besclient-settings-when-on-battery-power/12962
 - https://forum.bigfix.com/t/making-a-bigfix-msi/8224/19
 - https://forum.bigfix.com/t/wait-waithidden-run-exe-bat-parameters/13718/4
