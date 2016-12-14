@@ -70,6 +70,7 @@ These posts need some work and turned into post.
 
 Other's posts:
 
+- https://forum.bigfix.com/t/flow-of-data-creating-task-and-deploying-task/18415/2
 - https://forum.bigfix.com/t/relevance-speeding-up-event-log-queries/18677
 - https://forum.bigfix.com/t/common-relevance-error-messages/12985
 - https://forum.bigfix.com/t/csv-regular-expression-and-tuple-string-items/16259
