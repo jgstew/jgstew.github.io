@@ -4,6 +4,7 @@ category: Other
 ---
 
 ### References:
+- http://dpanswers.com/content/equip_batteries.php
 - http://thewirecutter.com/reviews/best-rechargeable-batteries/
 - https://twitter.com/jgstew/status/808702227468709889
 - [EBL 16 Pack AA 2800mAh Rechargeable Batteries](https://www.amazon.com/dp/B00DNPT1AO)
