@@ -18,6 +18,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 Not BigFix related:
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-13-Rechargeable-Batteries.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-14-Home-Automation:-Amazon-Echo.md
+- https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-20-Using-a-Nest-Thermostat-to-control-a-space-heater.md
 
 ### Forum posts to migrate to GitHub:
 - https://forum.bigfix.com/t/make-helpdesk-easier-with-bigfix/12883
