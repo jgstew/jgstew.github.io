@@ -7,6 +7,10 @@ Idea: Use a smart thermostat like the Nest to control a space heater.
 
 Power for the Nest:
 - https://www.amazon.com/gp/product/B002P5S9RE
+- http://electronics.stackexchange.com/questions/39450/what-do-solid-striped-lines-on-a-wire-indicate
+- https://nest.com/support/article/Power-Specifications-for-the-Nest-Learning-Thermostat#!
+ - Rc - Positive - black with white stripe
+ - C - Negative - black with writing
 
 Relay to control space heater with Nest:
 - https://www.amazon.com/Iot-Relay-Enclosed-High-power-Raspberry/dp/B00WV7GMA2
