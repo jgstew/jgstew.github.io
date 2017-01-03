@@ -14,6 +14,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-23-Auditing-Microsoft-Antimalware:-Windows-Defender%2C-SCEP%2C-MSE.md
+- https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2017-01-03-Auditing-Microsoft-Antimalware-for-Mac:-SCEP-ESET.md
 
 Not BigFix related:
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-13-Rechargeable-Batteries.md
