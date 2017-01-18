@@ -16,9 +16,9 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-23-Auditing-Microsoft-Antimalware:-Windows-Defender%2C-SCEP%2C-MSE.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2017-01-03-Auditing-Microsoft-Antimalware-for-Mac:-SCEP-ESET.md
-- Fake Root / Top Level Relays:
+- **Fake Root / Top Level Relays:**
  - https://forum.bigfix.com/t/if-you-had-only-80-clients-would-you-deploy-a-relay/19858/5
-- Relays:
+- **Relays:**
  - https://forum.bigfix.com/t/increase-relay-capacity/12022/6
  - https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
  - https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
