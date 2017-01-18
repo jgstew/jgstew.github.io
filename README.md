@@ -16,6 +16,15 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-03-Windows-apps-on-macOS-with-Wine.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-23-Auditing-Microsoft-Antimalware:-Windows-Defender%2C-SCEP%2C-MSE.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2017-01-03-Auditing-Microsoft-Antimalware-for-Mac:-SCEP-ESET.md
+- Fake Root / Top Level Relays:
+ - https://forum.bigfix.com/t/if-you-had-only-80-clients-would-you-deploy-a-relay/19858/5
+- Relays:
+ - https://forum.bigfix.com/t/increase-relay-capacity/12022/6
+ - https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
+ - https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
+ - https://forum.bigfix.com/t/top-level-relays/13496/26
+ - https://forum.bigfix.com/t/relay-affiliation-question/14964/3
+
 
 Not BigFix related:
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-13-Rechargeable-Batteries.md
@@ -110,13 +119,7 @@ Other's posts:
 - https://forum.bigfix.com/t/dedicated-section-on-forensic-activities-with-bigfix-created-on-bigfix-me/14461
  - I have other posts and relevance that related to this. Could turn it all into a post. IOCs, etc...
 
-Relays:
 
-- https://forum.bigfix.com/t/increase-relay-capacity/12022/6
-- https://forum.bigfix.com/t/what-security-measures-are-used-in-bes-relay-to-bes-client-communications/17022/2
-- https://forum.bigfix.com/t/of-relays-in-relays-dat-limitation-solved/15470
-- https://forum.bigfix.com/t/top-level-relays/13496/26
-- https://forum.bigfix.com/t/relay-affiliation-question/14964/3
 
 
 ----------
