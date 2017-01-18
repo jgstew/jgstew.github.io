@@ -10,6 +10,9 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 ----------
 
 # TODO - Work In Progress Posts:
+
+- BigFix Relevance/ActionScript Style Guide
+ - use plural relevance when possible, use comments, preserve relevance left to right flow
 - http://serverfault.com/questions/765976/confused-on-bigfix-relevance-x64-files
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-11-21-Downloading-Files-with-BigFix:-Prefetches.md
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-02-BigFix-Relays:-Recommended-Practices.md
