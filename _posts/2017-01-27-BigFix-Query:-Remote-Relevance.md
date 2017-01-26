@@ -22,6 +22,17 @@ Get all Query IDs:
           ,[CreationTime]
       FROM [BFEnterprise].[dbo].[QUERIES]
 
+Get (user, queryID, creationtime, mastheadusername) for all BFQueries
+
+    SELECT TOP (1000) 
+          [BFEnterprise].[dbo].[USERINFO].[Username]
+    	  ,[BFEnterprise].[dbo].[QUERIES].[QueryID]
+          ,[BFEnterprise].[dbo].[QUERIES].[CreationTime]
+    	  ,[BFEnterprise].[dbo].[USERINFO].[MastheadUsername]
+      FROM [BFEnterprise].[dbo].[QUERIES]
+      INNER JOIN [BFEnterprise].[dbo].[USERINFO]
+      ON [BFEnterprise].[dbo].[QUERIES].[Operator]=[BFEnterprise].[dbo].[USERINFO].[MastheadUsername];
+
 
 ### Related:
 
