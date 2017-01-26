@@ -8,6 +8,12 @@ BigFix query allows you to do dynamic remote relevance queries.
 
 ## SQL
 
+Get all Query IDs with results:
+
+    SELECT DISTINCT TOP (1000) 
+          [QueryID]
+      FROM [BFEnterprise].[dbo].[QUERYRESULTTEXT]
+
 Get all Query IDs:
 
     SELECT TOP (1000) 
