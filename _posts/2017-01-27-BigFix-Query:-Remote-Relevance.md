@@ -6,6 +6,8 @@ published: false
 
 BigFix query allows you to do dynamic remote relevance queries.
 
+For some reason, there is no session relevane or rest api to get the list of BFQueries that already exist. This means that the only way to get this info is with SQL.
+
 ## SQL
 
 Get all Query IDs with results:
