@@ -33,6 +33,15 @@ Get (user, queryID, creationtime, mastheadusername) for all BFQueries
       INNER JOIN [BFEnterprise].[dbo].[USERINFO]
       ON [BFEnterprise].[dbo].[QUERIES].[Operator]=[BFEnterprise].[dbo].[USERINFO].[MastheadUsername];
 
+Get (QueryID, Operator, Creationtime) for all BFQueries with results:
+
+    SELECT DISTINCT TOP (1000) 
+          [BFEnterprise].[dbo].[QUERYRESULTTEXT].[QueryID]
+    	  ,[BFEnterprise].[dbo].[QUERIES].[Operator]
+    	  ,[BFEnterprise].[dbo].[QUERIES].[CreationTime]
+      FROM [BFEnterprise].[dbo].[QUERYRESULTTEXT]
+      INNER JOIN [BFEnterprise].[dbo].[QUERIES]
+      ON [BFEnterprise].[dbo].[QUERIES].[QueryID]=[BFEnterprise].[dbo].[QUERYRESULTTEXT].[QueryID]
 
 ### Related:
 
