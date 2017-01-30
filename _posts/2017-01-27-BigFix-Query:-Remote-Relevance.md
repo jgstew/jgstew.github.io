@@ -10,6 +10,8 @@ For some reason, there is no session relevane or rest api to get the list of BFQ
 
 ## SQL
 
+- https://www.codeproject.com/articles/33052/visual-representation-of-sql-joins
+
 Get all Query IDs with results:
 
     SELECT DISTINCT TOP (1000) 
