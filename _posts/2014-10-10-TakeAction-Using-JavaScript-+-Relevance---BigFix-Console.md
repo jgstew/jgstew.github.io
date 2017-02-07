@@ -1,8 +1,7 @@
-
-<div><p dir="ltr">
-	&nbsp;</p>
+#### Note: this post has some formatting issues due to it being pulled from existing HTML.
+<div>
 <p dir="ltr">
-	It is possible to use JavaScript + Relevance within the console to customize behavior of Fixlets / Tasks and other content.</p>
+	It is possible to use JavaScript + Relevance within the BigFix Windows Console to customize behavior of Fixlets / Tasks and other content.</p>
 <p dir="ltr">
 	&nbsp;</p>
 <p dir="ltr">
