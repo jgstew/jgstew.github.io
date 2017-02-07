@@ -53,16 +53,15 @@
 	Full JavaScript + Relevance Example:</h2>
 <pre dir="ltr">
 document.body.ontakeaction = function() { 
-if (  "NormalUser1" == Relevance('name of current console user')  ||  Relevance('(master flag of current console user) OR ( /* Make sure the user has at least one of the roles */ &nbsp;1 is less than or equal to the number of elements of intersections of (set of bes roles whose(name of it = "ROLE1" OR name of it = "ROLE2"); role set of current console user))') &nbsp;) 
-{ 
-TakeFixletAction( Relevance('id of current fixlet'), Relevance('id of current bes site'), "Action1", {}, {} ); 
-} 
-else 
-{ 
-alert( "Only for authorized users, please contact support for assistance." ); 
-} 
-return false; 
-} </pre>
+	if ( "NormalUser1" == Relevance('name of current console user') || Relevance('(master flag of current console user) OR ( /* Make sure the user has at least one of the roles */ 1 is less than or equal to the number of elements of intersections of (set of bes roles whose(name of it = "ROLE1" OR name of it = "ROLE2"); role set of current console user))') ) 
+	{ 
+		TakeFixletAction( Relevance('id of current fixlet'), Relevance('id of current bes site'), "Action1", {}, {} ); 
+	} else {
+		alert( "Only for authorized users, please contact support for assistance." ); 
+	}
+	return false; 
+}
+</pre>
 <p dir="ltr">
 	&nbsp;</p>
 <h2 dir="ltr">
@@ -133,5 +132,3 @@ return false;
 	<a wiki="Tivoli Endpoint Manager" href="https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Console%20JavaScript%20Events" id="wikiLink1412951356465" page="Console JavaScript Events">https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Console%20JavaScript%20Events</a></p>
 <p dir="ltr">
 	Example:&nbsp;<a href="http://bigfix.me/fixlet/details/3876">http://bigfix.me/fixlet/details/3876</a></p></div>
-
-<STYLE type="text/css">TABLE { border-collapse: collapse; border-top: 1px; border-left: 1px; border-style: solid; margin: 4px; }TD, TH { border-bottom: 1px; border-right: 1px; border-style: solid; padding: 4px; }TH { background-color: #D8D8D8; }</STYLE>
