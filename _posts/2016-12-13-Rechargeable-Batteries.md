@@ -13,3 +13,4 @@ category: Other
  - Great for smoke detectors, Don't have to wait until they beep to swap them out
 - [Roost Smart Battery for Smoke Detectors](https://www.amazon.com/Smart-Battery-Carbon-Monoxide-Alarms/dp/B00ZWQHVP4/ref=as_li_ss_tl?th=1&linkCode=ll1&tag=jg09-20&linkId=d015d737ae2f289b52bd1ba8b30c7d21)
  - Not technically rechargeable, but lasts much longer than normal
+- http://www.buchmann.ca/buchmann/chapter-4-proper-charge-methods
