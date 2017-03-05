@@ -11,7 +11,7 @@ category: Other
 
 ## Automation Ideas
 
-- Smart Thermostat Controlled Space Heater
+- [Smart Thermostat Controlled Space Heater](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-20-Using-a-Nest-Thermostat-to-control-a-space-heater.md)
 
 
 
