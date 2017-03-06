@@ -25,6 +25,5 @@ Ideally there would be an option for Gigabit Ethernet connectivity to reduce the
 ## Automation Ideas
 
 - [Smart Thermostat Controlled Space Heater](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-20-Using-a-Nest-Thermostat-to-control-a-space-heater.md)
-
-
+- If door is open, then turn off thermostat (or set to fan on, heat/cool off)
 
