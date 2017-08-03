@@ -1,8 +1,4 @@
----
-published: false
----
-
-# Work In Progress
+# BigFix Query Info
 
 BigFix query allows you to do dynamic remote relevance queries.
 
