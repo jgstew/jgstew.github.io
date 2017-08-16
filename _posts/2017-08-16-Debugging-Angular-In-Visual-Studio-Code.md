@@ -1,3 +1,6 @@
+---
+category: Other
+---
 
 It is possible to setup Visual Studio Code to use Google Chrome's remote debugging API using a plugin/module.
 
