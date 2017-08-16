@@ -18,7 +18,7 @@
     <div class="wrapper">
       <header>
         <h1 class="header"><a href="/">@JGStew</a></h1>
-        <p class="header"><a href="{% if page.url contains 'index.html' %}https://github.com/jgstew/jgstew.github.io{% else %}/{% endif %}">My random thoughts.</a></p>
+        <p class="header">{ page.url } <a href="{% if page.url contains 'index.html' %}https://github.com/jgstew/jgstew.github.io{% else %}/{% endif %}">My random thoughts.</a></p>
 
         <ul>
           <li><a class="buttons github" href="https://github.com/jgstew/jgstew.github.io/blob/master/{{ page.path }}">Edit This Page</a></li>
