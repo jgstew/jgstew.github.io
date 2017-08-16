@@ -4,6 +4,8 @@ category: Other
 
 It is possible to setup Visual Studio Code to use Google Chrome's remote debugging API using a plugin/module.
 
+This really isn't specific to Angular, but that was my use case.
+
 The main advantage to doing this is that it allows you to do the debugging directly in Visual Studio Code, while also capturing the Console output from the very start. It also allows setting breakpoints directly from source files if a sourcemap is used. 
 
 ### Steps:
