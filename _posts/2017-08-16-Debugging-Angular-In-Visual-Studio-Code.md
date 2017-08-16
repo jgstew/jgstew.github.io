@@ -1,12 +1,14 @@
 
-It is possible to setup Visual Studio Code to use Google Chrome's remote debugging API using a plugin/module. The main advantage to doing this is that it allows you to do the debugging directly in Visual Studio Code, while also capturing the Console output from the very start.
+It is possible to setup Visual Studio Code to use Google Chrome's remote debugging API using a plugin/module.
+
+The main advantage to doing this is that it allows you to do the debugging directly in Visual Studio Code, while also capturing the Console output from the very start. It also allows setting breakpoints directly from source files if a sourcemap is used. 
 
 ### Steps:
 
-- Install the vscode-chrome-debug module in Visual Studio Code
+- Install the [`vscode-chrome-debug`](https://github.com/Microsoft/vscode-chrome-debug) module in Visual Studio Code
 - Launch Chrome with Remote Debugging enabled
   - `chrome --remote-debugging-port=9222`
-  - https://github.com/jgstew/bigfix-content/blob/master/fixlet/Run%20Google%20Chrome%20with%20remote%20debugging%20enabled%20-%20Windows.bes
+  - BigFix Task: [Run Google Chrome with remote debugging enabled - Windows](https://github.com/jgstew/bigfix-content/blob/master/fixlet/Run%20Google%20Chrome%20with%20remote%20debugging%20enabled%20-%20Windows.bes)
 - Configure `.vscode\launch.json` in project
   - This will not be exactly the same for every project
 
