@@ -10,14 +10,14 @@ I have run into issues where I use the move actionscript command to put a file o
 
 ----------
 
-## Related:
+#### Related:
 
 - https://developer.bigfix.com/action-script/reference/file/
 - https://bigfix.me/cdb/fixlet/6250
 
 ----------
 
-## This Post:
+#### This Post:
 
 [Always Use Copy, Never Use Move](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075)
 
