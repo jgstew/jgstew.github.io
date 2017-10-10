@@ -19,7 +19,7 @@ I have run into issues where I use the move actionscript command to put a file o
 
 ### This Post:
 
-[Optimizing Bigfix Relevance: Exists](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075)
+[Always Use Copy, Never Use Move](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075)
 
 - [BigFix Forum Post](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075) - make comments here
 - [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2017-10-09-always-use-copy%2C-never-use-move.md) - suggest improvements here
