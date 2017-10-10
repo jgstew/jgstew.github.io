@@ -7,10 +7,20 @@ I believe the difference is that a file copied will inherit permissions from the
 I have run into issues where I use the move actionscript command to put a file on the system that all users should be able to read, including non-admins, but because I used the move command, they could not. Generally in my experience this is not the desired behavior unless the file being moved is a log file or something similar that you don't want most users to be able to read.
 
 
+
 ----------
 
 ### Related:
 
-- https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075
 - https://developer.bigfix.com/action-script/reference/file/
 - https://bigfix.me/cdb/fixlet/6250
+
+----------
+
+### This Post:
+
+[Optimizing Bigfix Relevance: Exists](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075)
+
+- [BigFix Forum Post](https://forum.bigfix.com/t/always-use-copy-never-use-move-in-actionscript/23075) - make comments here
+- [GitHub Source File](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2017-10-09-always-use-copy%2C-never-use-move.md) - suggest improvements here
+- [Website](http://jgstew.github.io/bigfix/2017/10/09/always-use-copy,-never-use-move.html) - Generated Blog Page
