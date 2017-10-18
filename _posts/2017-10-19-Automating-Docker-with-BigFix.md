@@ -20,7 +20,7 @@ published: false
 
 Most info for Docker Containers is stored as JSON on the Docker Host, which BigFix can read.
 
-- Analysis
+- Analyses
 - Automatic Groups
 
 
