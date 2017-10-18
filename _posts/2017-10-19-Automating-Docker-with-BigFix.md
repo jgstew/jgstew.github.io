@@ -18,7 +18,7 @@ published: false
 
 ## Analize Docker Host & Containers
 
-Most info for Docker Containers is stored as JSON on the Docker Host.
+Most info for Docker Containers is stored as JSON on the Docker Host, which BigFix can read.
 
 - Analysis
 - Automatic Groups
