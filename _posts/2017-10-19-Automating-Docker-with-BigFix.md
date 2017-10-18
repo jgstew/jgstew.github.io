@@ -18,6 +18,8 @@ published: false
 
 ## Analize Docker Host & Containers
 
+Most info for Docker Containers is stored as JSON on the Docker Host.
+
 - Analysis
 - Automatic Groups
 
