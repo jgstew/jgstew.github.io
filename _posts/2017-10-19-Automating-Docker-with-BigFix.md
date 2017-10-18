@@ -2,6 +2,9 @@
 published: false
 ---
 
+- Install Ubuntu a machine
+- Install BigFix
+- Install Docker
 
 
 ### Related:
