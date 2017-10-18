@@ -2,9 +2,9 @@
 published: false
 ---
 
-- Install Ubuntu a machine
+- Install Ubuntu
 - [Install BigFix](https://github.com/jgstew/tools/blob/master/bash/install_bigfix.sh)
-- Install Docker
+- [Install Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
 
 ### Related:
