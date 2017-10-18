@@ -15,6 +15,8 @@ There are tons of options for Docker Hosts, but in this case, a Linux OS that su
   
 ## Use Docker Host
 
+This particular use case refers to OS containers only, which can run the BigFix client. Any container could work, but if it can't run BigFix, then it would require a proxy agent to appear in the console.
+
 - Create Docker [Containers](https://github.com/jgstew/tools/blob/master/bash/docker_bigfix_client.sh)
 - Create Docker [Images](https://github.com/jgstew/tools/blob/master/docker/Dockerfiles/bigfix_ubuntu/Dockerfile) -> Containers
 
