@@ -2,14 +2,24 @@
 published: false
 ---
 
+## Setup Docker Host
+
 - [Install Ubuntu](https://forum.bigfix.com/t/thin-imaging-and-installing-the-bigfix-agent/15750)
   - Kickstart file
 - [Install BigFix](https://github.com/jgstew/tools/blob/master/bash/install_bigfix.sh)
 - [Install Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
   - Fixlets
   - Baseline
+  
+## Use Docker Host
+
 - Create Docker Containers
 - Create Docker Images -> Containers
+
+## Analize Docker Host & Containers
+
+- Analysis
+- Automatic Groups
 
 
 ### Related:
