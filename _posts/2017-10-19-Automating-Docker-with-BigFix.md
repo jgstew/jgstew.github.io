@@ -3,8 +3,13 @@ published: false
 ---
 
 - [Install Ubuntu](https://forum.bigfix.com/t/thin-imaging-and-installing-the-bigfix-agent/15750)
+ - Kickstart file
 - [Install BigFix](https://github.com/jgstew/tools/blob/master/bash/install_bigfix.sh)
 - [Install Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+ - Fixlets
+ - Baseline
+- Create Docker Containers
+- Create Docker Images -> Containers
 
 
 ### Related:
