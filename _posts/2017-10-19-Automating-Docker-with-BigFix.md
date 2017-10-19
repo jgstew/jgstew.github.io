@@ -2,6 +2,11 @@
 published: false
 ---
 
+## Docker
+
+- A lightweight alternative to VMs
+- Each Docker Container has access to all resources
+
 ## Setup Docker Host
 
 There are tons of options for Docker Hosts, but in this case, a Linux OS that supports BigFix specifically is best if BigFix is going to manage it, though privileged containers may provide another option for BigFix Management of a Docker Host.
