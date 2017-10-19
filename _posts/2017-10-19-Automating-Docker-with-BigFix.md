@@ -31,7 +31,7 @@ This particular use case refers to OS containers only, and specifically those wh
 
 Most info for Docker Containers is stored as JSON on the Docker Host, which BigFix can read.
 
-- Analyses
+- [Analyses](https://github.com/jgstew/bigfix-content/blob/master/analyses/Docker%20Host%20Info%20-%20Linux.bes)
 - Automatic Groups
 
 
