@@ -26,6 +26,7 @@ This particular use case refers to OS containers only, and specifically those wh
 
 - Create Docker [Containers](https://github.com/jgstew/tools/blob/master/bash/docker_bigfix_client.sh)
 - Create Docker [Images](https://github.com/jgstew/tools/blob/master/docker/Dockerfiles/bigfix_ubuntu/Dockerfile) -> Containers
+- Create Many Containers with Docker Compose
 
 ## Analize Docker Host & Containers
 
