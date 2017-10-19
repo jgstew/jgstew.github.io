@@ -11,8 +11,10 @@ There are tons of options for Docker Hosts, but in this case, a Linux OS that su
 - [Install BigFix](https://github.com/jgstew/tools/blob/master/bash/install_bigfix.sh)
 - [Install Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
   - Fixlets
-  - Baseline
-  
+  - [Baseline](https://github.com/jgstew/bigfix-content/blob/master/baselines/Docker%20Setup%20-%20Ubuntu.bes)
+
+![Baseline: Docker Setup](http://jgstew.github.io/images/BFAutomatingDocker/DockerSetupBaseline.png)
+
 ## Use Docker Host
 
 This particular use case refers to OS containers only, and specifically those which can run the BigFix client. Any container could work, but if it can't run BigFix, then it would require a proxy agent to appear in the console.
