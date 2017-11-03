@@ -1,5 +1,6 @@
 ---
 published: false
+category: Apple
 ---
 
 ## Work in Progress
