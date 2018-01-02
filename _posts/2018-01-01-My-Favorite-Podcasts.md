@@ -9,3 +9,9 @@ I love Podcasts and I listen to them quite a lot. Here is a list of some of my f
 - The Incomparable
 - The Web Series Podcast
 - Sophomore Lit
+- Judge John Hodgman
+- A Piece of Work
+- Accidental Tech Podcast
+- The Bechdel Cast
+- Dear Hank and John (also My Brother My Brother and Me)
+
