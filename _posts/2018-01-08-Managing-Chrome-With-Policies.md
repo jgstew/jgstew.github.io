@@ -8,11 +8,13 @@ Google Chrome settings can be managed by Local GPO on Windows or similar mechani
 
 ### JSON:
 
+Registry(LocalGPO): `Software\Policies\Google\Chrome\ManagedBookmarks`
+
     [{"toplevel_name": "BigFix!"}, {"url": "https://github.com/bigfix", "name": "BigFix GitHub"}, {"url": "https://bigfix.me", "name": "BigFix Me"}, {"url": "https://forum.bigfix.com", "name": "BigFix Forums"}, {"url": "https://developer.bigfix.com/", "name": "BigFix Developer"}, {"url": "https://macadmins.psu.edu/", "name": "PSU MacAdmins Conference"}, {"url": "macadmins.org", "name": "MacAdmins Slack"}]
     
 ### Plist:
 
-`/Library/Managed Preferences/com.google.chrome.plist`
+File: `/Library/Managed Preferences/com.google.chrome.plist`
 
 
     <?xml version="1.0" encoding="UTF-8"?>
