@@ -12,6 +12,7 @@ Google Chrome settings can be managed by Local GPO on Windows or similar mechani
     
 ### Related:
 
+- chrome://policy/
 - https://www.chromium.org/administrators/policy-templates
 - https://www.chromium.org/administrators/policy-list-3#ManagedBookmarks
 - https://www.jamf.com/jamf-nation/discussions/13947/configuring-google-chrome
