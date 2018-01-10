@@ -14,9 +14,7 @@ Registry(LocalGPO): `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ManagedB
     
 ### Plist:
 
-File: `/Library/Preferences/com.google.chrome.plist` maybe?
-
-or File: `/Library/Managed Preferences/com.google.chrome.plist` definitely
+File: `/Library/Preferences/com.google.chrome.plist` or `/Library/Managed Preferences/com.google.chrome.plist`
 
 
     <?xml version="1.0" encoding="UTF-8"?>
