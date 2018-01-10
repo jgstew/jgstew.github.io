@@ -16,6 +16,7 @@ Registry(LocalGPO): `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ManagedB
 
 File: `/Library/Preferences/com.google.chrome.plist` or `/Library/Managed Preferences/com.google.chrome.plist`
 
+BigFix Example: https://github.com/jgstew/bigfix-content/blob/master/fixlet/Chrome%20Policy%20-%20Enable%20Strict%20Site%20Isolation%20-%20Apple%20MacOS.bes
 
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
