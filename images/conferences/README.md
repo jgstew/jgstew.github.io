@@ -1,7 +1,7 @@
 ## Images
 
 {% for file in site.static_files %}
-  {% if file.extname == ".PNG" %}
+  {% if file.extname | downcase == ".png" %}
 * [{{ file.path }}]({{ site.baseurl }}{{ file.path }})
   {% endif %}
 {% endfor %}
