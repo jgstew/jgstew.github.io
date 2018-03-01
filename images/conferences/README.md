@@ -1,5 +1,5 @@
 
-## Images
+<H2>Images</H2>
 
 {% for file in site.static_files %}
   {% if file.path contains "/images/" %}
