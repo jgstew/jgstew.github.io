@@ -1,6 +1,6 @@
 ---
-category: Jekyll
 page.title: Images
+category: Jekyll
 ---
 
 {% for file in site.static_files %}
