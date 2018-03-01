@@ -1,5 +1,5 @@
 ---
-page.title: Images
+title: Images
 category: Jekyll
 ---
 
