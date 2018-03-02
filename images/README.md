@@ -8,3 +8,10 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+
+
+<style>
+ul > li > p {
+  margin: 0 0 0px;
+}
+</style>
