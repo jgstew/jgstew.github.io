@@ -1,7 +1,7 @@
 
 <H2>Images</H2>
 
-<span style="margin: 0 0 0px">
+<div id="imagelist">
 {% for file in site.static_files %}
   {% if file.path contains "/images/" %}
     {% if file.extname == ".png" or file.extname == ".PNG" or file.extname == ".ico" or file.extname == ".svg" %}
@@ -9,4 +9,8 @@
     {% endif %}
   {% endif %}
 {% endfor %}
-</span>
+</div>
+
+<style>
+#imagelist p    {margin: 0 0 0px;}
+</style>
