@@ -19,3 +19,5 @@ Overall I really like the idea of a [dynamically generated static site creator](
 - http://jekyllrb.com/docs/configuration/#front-matter-defaults
 - http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 - https://dev.twitter.com/web/embedded-timelines#customization
+- https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
+- https://help.github.com/articles/using-syntax-highlighting-on-github-pages/
