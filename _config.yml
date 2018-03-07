@@ -16,4 +16,4 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-mentions
-  
+  - jemoji
