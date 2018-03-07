@@ -14,4 +14,4 @@ defaults:
       category: BigFix
 plugins:
   - jekyll-feed
-  
+  - jekyll-redirect-from
