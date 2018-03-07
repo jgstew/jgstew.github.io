@@ -17,3 +17,5 @@ plugins:
   - jekyll-redirect-from
   - jekyll-mentions
   - jemoji
+  - jekyll-seo-tag
+  
