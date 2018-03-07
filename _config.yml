@@ -12,3 +12,6 @@ defaults:
       type: "posts"
     values:
       category: BigFix
+plugins:
+  - jekyll-feed
+  
