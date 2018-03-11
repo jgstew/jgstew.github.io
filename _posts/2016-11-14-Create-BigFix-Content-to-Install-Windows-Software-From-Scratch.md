@@ -22,7 +22,7 @@ Copy the URL into the clipboard
 
 ## Step 2: VirusTotal
 
-Sign in to VirusTotal
+Sign in to [VirusTotal](https://www.virustotal.com/en/)
 
 Go to the home page, click the `URL` tab
 
