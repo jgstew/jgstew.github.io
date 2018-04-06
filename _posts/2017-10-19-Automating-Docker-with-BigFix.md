@@ -1,6 +1,4 @@
----
-published: false
----
+**Note:** this is an overview for presentation I gave at a BigFix User Group. 
 
 ![Docker Logo](https://camo.githubusercontent.com/3482fc32e1f4cad0c44039c8f01e1e270e6894ee/687474703a2f2f692e696d6775722e636f6d2f4b6764574c64682e706e67)
 
