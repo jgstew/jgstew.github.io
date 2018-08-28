@@ -1,5 +1,5 @@
 
-Default: 0
+Default: Disabled (0)
 
 By default, command polling is disabled.
 
