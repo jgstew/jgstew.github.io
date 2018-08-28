@@ -9,6 +9,8 @@ In order for things to be stored in the client utility cache, they have to be ex
 
 This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime. 
 
+- https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Download_UtilitiesCacheLimitMB_%20to%20_500_%20-%20Universal.bes
+
 ### Actionscript:
 
 `utility __Download\common.exe`
