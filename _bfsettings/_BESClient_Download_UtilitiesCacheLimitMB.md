@@ -15,6 +15,7 @@ This cache is designed for small files that are used across many different actio
 
 ### Examples:
 
+- https://github.com/jgstew/bigfix-content/blob/master/fixlet/Install_Update_%20Fixlet%20Debugger%209.2.10.25%20-%20Windows.bes
 - https://github.com/jgstew/bigfix-content/blob/master/fixlet/add%20NirCmd%202.8.1%20to%20bigfix%20client%20utility%20cache%20-%20Windows.bes
 
 ### References:
