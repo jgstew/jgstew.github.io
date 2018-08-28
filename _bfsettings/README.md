@@ -1,5 +1,6 @@
 
 **TODO:** Define a collection & layout for these items.
+
 **TODO:** Define yaml frontmatter for things like defaults, applicability
 
 a place for posts about my recommendations on bigfix client settings
