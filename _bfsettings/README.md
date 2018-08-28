@@ -1,4 +1,6 @@
 
+TODO: Define a collection & layout for these items.
+
 a place for posts about my recommendations on bigfix client settings
 
 - https://github.com/jgstew/bigfix-content/tree/master/fixlet/clientsettings
