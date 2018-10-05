@@ -1,3 +1,6 @@
+---
+category: Apple
+---
 
 Apple has been doing some of the most interesting work on CPUs in recent history, making significant leaps year over year. One of the secrets of Apple's recent success on iOS is that it's in completely control of both the OS and CPU which is the reason why it is the only platform to make the transition to 64bit only. I really think that if Apple can keep up this pace, then it makes an Apple ARM CPU based "laptop" inevitable. I think it is unlikely that Apple would switch away from Intel entirely for quite some time, but I would not be surprised to see at least one "laptop" like device that is ARM only as early as next year. The thing that I'm most unsure of is will it run iOS or MacOS, especially considering MacOS can [run "iOS" apps](https://twitter.com/stroughtonsmith/status/1047465790784585728) already, and I only expect that to [get better over time](https://twitter.com/stroughtonsmith/status/1044577455938437120). The main hold up is Apple hasn't transitioned MacOS to 64bit only, but that should happen with the next MacOS release. Regardless of the future of MacOS on ARM, I think Apple would be smart to consider an iOS based "laptop" with a touchscreen aimed at the premium chromebook market, and there is no reason they couldn't deliver that today.  
 
