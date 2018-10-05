@@ -22,4 +22,4 @@ I really love anandtech's analysis of the new Apple CPUs, which really set the s
 
 It really seems like Apple has the best CPU in terms of performance efficiency (performance per watt) of any CPU (not limited to mobile). This means Apple could definitely get even better single threaded performance with less thermal and power constraints, and could get better multi-core performance just by adding more cores. If iPad Pros come with a higher core count A12X CPU, then they could be monsters, and this is why I think Apple selling an Apple ARM CPU based "laptop" as soon as next year is very likely.
 
-Read the full review here: https://www.anandtech.com/show/13392/the-iphone-xs-xs-max-review-unveiling-the-silicon-secrets
+Read the full review here: [https://www.anandtech.com/show/13392/the-iphone-xs-xs-max-review-unveiling-the-silicon-secrets](https://www.anandtech.com/show/13392/the-iphone-xs-xs-max-review-unveiling-the-silicon-secrets)
