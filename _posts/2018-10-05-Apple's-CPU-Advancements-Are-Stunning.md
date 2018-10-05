@@ -1,7 +1,7 @@
 
 Apple has been doing some of the most interesting work on CPUs in recent history, making significant leaps year over year. I really think that if Apple can keep up this pace, then it makes an Apple ARM CPU based "laptop" inevitable. I think it is unlikely that Apple would switch away from Intel entirely for quite some time, but I would not be surprised to see at least one "laptop" like device that is ARM only as early as next year. The thing that I'm most unsure of is will it run iOS or MacOS, especially considering MacOS can [run "iOS" apps](https://twitter.com/stroughtonsmith/status/1047465790784585728) already, and I only expect that to [get better over time](https://twitter.com/stroughtonsmith/status/1044577455938437120).
 
-I also think we might see a more traditional MacOS laptop that runs both an ARM CPU and an Intel CPU as early as next year. This is in some ways just taking what Apple is already doing with the T2 further.
+I also think we might see a more traditional MacOS laptop that runs both an ARM CPU and an Intel CPU as early as next year. This is in some ways just taking what Apple is already doing with the T2 further. In a similar hybrid CPU twist, the new iPhones actually contain an x86 CPU: https://twitter.com/cynicalsecurity/status/1040611124784312321
 
 I really love anandtech's analysis of the new Apple CPUs:
 
