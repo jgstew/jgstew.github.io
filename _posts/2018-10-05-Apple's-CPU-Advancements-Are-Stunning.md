@@ -6,7 +6,7 @@ Apple has been doing some of the most interesting work on CPUs in recent history
 
 I also think we might see a more traditional MacOS laptop that runs both an ARM CPU and an Intel CPU as early as next year. This is in some ways just taking what Apple is already doing with the T2 further, but with the actual OS able to do compute or run apps on both.
 
-In a similar hybrid CPU twist, the new iPhones actually contain an Intel x86 CPU: https://twitter.com/cynicalsecurity/status/1040611124784312321
+In a similar hybrid CPU twist, the new iPhones actually contain an Intel x86 CPU: [https://twitter.com/cynicalsecurity/status/1040611124784312321](https://twitter.com/cynicalsecurity/status/1040611124784312321)
 
 -------
 
