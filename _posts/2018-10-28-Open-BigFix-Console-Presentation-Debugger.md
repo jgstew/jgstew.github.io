@@ -4,10 +4,13 @@
     * Press Ctrl+Shift+Alt+D 
     * ![Debug Dialog](/images/BigFix/Console/DebugDialog.png)
 1. Check the "Show Debug Menu" Checkbox
-    * ![Debug Dialog](/images/BigFix/Console/ShowDebugMenuCheckbox.png)
+    * ![Show Debug Menu](/images/BigFix/Console/ShowDebugMenuCheckbox.png)
 1. Close Debug Menu
-    * ![Debug Dialog](/images/BigFix/Console/ShowDebugMenuCheckedClose.png)
+    * ![Close Debug Menu](/images/BigFix/Console/ShowDebugMenuCheckedClose.png)
 1. Open the Presentation Debugger
+    * ![Open Presentation Debugger](/images/BigFix/Console/OpenPresentationDebugger.png)
+1. Evaulate a Session Relevance Query
+    * ![Open Presentation Debugger](/images/BigFix/Console/PresentationDebuggerEvaluate.png)
 
 ### Related:
 
