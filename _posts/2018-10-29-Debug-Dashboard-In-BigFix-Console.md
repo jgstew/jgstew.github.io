@@ -11,7 +11,7 @@
 1. Open the Debug Menu
     * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
 1. Select "Load Wizard..."
-    * Note: Wizards and Dashboards are basically the same
+    * Note: Wizards and Dashboards are [basically the same](https://github.com/jgstew/bigfix-content/blob/master/dashboards/README.md)
     * ![Select Load Wizard](/images/BigFix/Dashboards/SelectLoadWizard.png)
 1. Load Dashboard into Console
     * Navigate into temp folder ( `_tmp_Dashboard` )
