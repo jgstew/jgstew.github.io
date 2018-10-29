@@ -14,6 +14,8 @@
 1. Open the Presentation Debugger
     * ![Open Presentation Debugger](/images/BigFix/Console/OpenPresentationDebugger.png)
 1. Evaulate a Session Relevance Query
+    * `number of bes tasks`
+    * `ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers`
     * ![Open Presentation Debugger](/images/BigFix/Console/PresentationDebuggerEvaluate.png)
 
 ### Related:
