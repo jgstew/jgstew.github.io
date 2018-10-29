@@ -22,7 +22,7 @@
     * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
 1. Reload the Dashboard
     * Right Click
-    * Select Reload
+    * Select "Reload"
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboard.png)
     * Notice the time displayed updates
     * Reload again as needed (like when editing the OJO file)
@@ -32,3 +32,6 @@
         * Change [line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) to `<h2>Hello World!!!</h2>`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
+1. View Source from Console
+    * Right Click
+    * Select "View Source"
