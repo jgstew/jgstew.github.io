@@ -1,5 +1,5 @@
 
-### Objective: Learn how to Edit and Debug a BigFix Console Dashboard
+### Objective: Edit and Debug a BigFix Console Dashboard
 
 1. Create Empty Temp Folder 
     * Example: `_tmp_Dashboard`
