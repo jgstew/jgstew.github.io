@@ -27,7 +27,7 @@
     * Notice the time displayed updates
     * Reload again as needed (like when editing the OJO file)
 1. Edit the OJO file
-    * Open `_tmp_Dashboard\HelloWorld_template.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
+    * Open `\_tmp_Dashboard\HelloWorld_template.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
     * Make a minor change to the OJO file
         * Change [line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) to `<h2>Hello World!!!</h2>`
     * Save the file ( Ctrl + S )
