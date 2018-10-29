@@ -26,3 +26,6 @@
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboard.png)
     * Notice the time displayed updates
     * Reload again as needed (like when editing the OJO file)
+1. Edit the OJO file
+    * Make a minor change to the OJO file
+    * Reload the Dashboard to see the changes
