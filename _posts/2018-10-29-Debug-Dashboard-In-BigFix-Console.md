@@ -9,5 +9,7 @@
 1. Open the Debug Menu
     * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
 1. Select "Load Wizard..."
+    * Note: Wizards and Dashboards are basically the same
+    * ![Load Dashboard](/images/BigFix/Dashboards/SelectLoadWizard.png)
 1. Load Dashboard into Console
     * ![Load Dashboard](/images/BigFix/Dashboards/LoadDashboardInConsole.png)
