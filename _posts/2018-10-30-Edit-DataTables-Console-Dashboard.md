@@ -15,3 +15,7 @@
     * Select the OJO file
     * Click Open
     * ![Load Dashboard](/images/BigFix/Dashboards/LoadDashboardInConsoleDT.png)
+1. View the Dashboard:
+    * ![View Dashboard](/images/BigFix/Dashboards/ViewDashboardDT.png)
+    * Should load automatically
+    * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
