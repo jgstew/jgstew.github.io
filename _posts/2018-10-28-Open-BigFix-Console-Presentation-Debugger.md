@@ -6,8 +6,9 @@
 1. Check the "Show Debug Menu" Checkbox
     * ![Show Debug Menu](/images/BigFix/Console/ShowDebugMenuCheckbox.png)
 1. Close Debug Dialog
-    * ![Close Debug Menu](/images/BigFix/Console/ShowDebugMenuCheckedClose.png)
+    * ![Close Debug Dialog](/images/BigFix/Console/ShowDebugMenuCheckedClose.png)
 1. Open the Debug Menu
+    * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
 1. Open the Presentation Debugger
     * ![Open Presentation Debugger](/images/BigFix/Console/OpenPresentationDebugger.png)
 1. Evaulate a Session Relevance Query
