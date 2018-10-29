@@ -10,12 +10,13 @@
     * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
 1. Select "Load Wizard..."
     * Note: Wizards and Dashboards are basically the same
-    * ![Load Dashboard](/images/BigFix/Dashboards/SelectLoadWizard.png)
+    * ![Select Load Wizard](/images/BigFix/Dashboards/SelectLoadWizard.png)
 1. Load Dashboard into Console
     * Navigate into Folder
     * Select the OJO file
     * Click Open
     * ![Load Dashboard](/images/BigFix/Dashboards/LoadDashboardInConsole.png)
-1. View the Dashboard
+1. View the Dashboard:
+    * ![View Dashboard](/images/BigFix/Dashboards/ViewDashboardHW.png)
     * Should load automatically
     * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
