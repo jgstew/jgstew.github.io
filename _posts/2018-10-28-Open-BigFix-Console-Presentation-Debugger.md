@@ -18,6 +18,8 @@
     * `ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers`
     * ![Open Presentation Debugger](/images/BigFix/Console/PresentationDebuggerEvaluate.png)
 
+Next: [Debug A Dashboard In The BigFix Console](2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
+
 ### Related:
 
 - https://developer.bigfix.com/tools/presentation_debugger.html
