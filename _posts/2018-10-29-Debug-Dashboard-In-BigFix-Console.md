@@ -25,6 +25,7 @@
 1. Reload the Dashboard
     * Right Click
     * Select "Reload"
+        * Alternatively press Ctrl+F5 keys
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboard.png)
     * Notice the time displayed updates
     * Reload again as needed (like when editing the OJO file)
