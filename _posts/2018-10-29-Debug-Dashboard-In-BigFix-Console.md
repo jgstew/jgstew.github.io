@@ -46,6 +46,6 @@
         * Rendered HTML: `<p>There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]</p>`
         * Dashboard Text: `There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]`
     * ![Compare Rendered Source](/images/BigFix/Dashboards/CompareRenderedSourceNotepad.png)
-1. Edit the OJO file further
+1. Edit the `HelloWorld_template.ojo` file further
     * Edit [Line 19](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L19) to [change the session relevance](https://gist.github.com/jgstew/89e024871105b60b225f53a4c3cb6a09/revisions#diff-b4bb108e538d0d33c410c803c12a7349)
         * `ps of concatenations of ("There are ";it as string;" tasks right now [ "; now as string; " ]") of number of bes tasks`
