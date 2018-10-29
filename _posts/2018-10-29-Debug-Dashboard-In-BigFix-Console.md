@@ -30,4 +30,5 @@
     * Open `_tmp_Dashboard\HelloWorld_template.ojo` in Visual Studio Code or similar editor
     * Make a minor change to the OJO file
         * Change [line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) to `<h2>Hello World!!!</h2>`
+    * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
