@@ -31,7 +31,7 @@
 1. Edit the OJO file
     * Open `\_tmp_Dashboard\HelloWorld_template.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
     * Make a minor change to the OJO file
-        * Change [line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) to `<h2>Hello World!!!</h2>`
+        * Change [Line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) to `<h2>Hello World!!!</h2>`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
 1. View Source from Console
@@ -39,7 +39,7 @@
     * Select "View Source"
     * ![Select View Source](/images/BigFix/Dashboards/DashboardViewSource.png)
 1. Compare the "Rendered" Source in Notepad to the OJO file
-    * Notice that `<h2>Hello World!!!</h2>` is the same in both ( [Line 8](https://github.com/jgstew/bigfix-content/blob/master/dashboards/about_blank%5B1%5D.html#L8) vs [line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) )
+    * Notice that `<h2>Hello World!!!</h2>` is the same in both ( [Line 8](https://github.com/jgstew/bigfix-content/blob/master/dashboards/about_blank%5B1%5D.html#L8) vs [Line 17](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L17) )
     * Compare Line 10 in Notepad to [Line 19](https://github.com/jgstew/bigfix-content/blob/master/dashboards/HelloWorld_template.ojo#L19) in the OJO file
         * OJO file: `<?Relevance ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers ?>`
         * Rendered HTML: `<p>There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]</p>`
