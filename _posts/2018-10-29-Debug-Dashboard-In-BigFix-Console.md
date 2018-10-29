@@ -18,4 +18,4 @@
     * ![Load Dashboard](/images/BigFix/Dashboards/LoadDashboardInConsole.png)
 1. View the Dashboard
     * Should load automatically
-    * If not, check under ["Dashboards -> All Dashboards"](/images/BigFix/Dashboards/DashboardLocationCustom.png)
+    * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
