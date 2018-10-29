@@ -1,4 +1,6 @@
 
+#### Objective: Evaulate a Session Relevance Query in the BigFix Console Presentation Debugger
+
 1. Open the BigFix Console
 1. Open the Debug Dialog 
     * Press Ctrl+Shift+Alt+D 
