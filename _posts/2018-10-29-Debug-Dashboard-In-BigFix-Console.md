@@ -12,7 +12,7 @@
     * Note: Wizards and Dashboards are basically the same
     * ![Select Load Wizard](/images/BigFix/Dashboards/SelectLoadWizard.png)
 1. Load Dashboard into Console
-    * Navigate into Folder
+    * Navigate into temp folder ( `_tmp_Dashboard` )
     * Select the OJO file
     * Click Open
     * ![Load Dashboard](/images/BigFix/Dashboards/LoadDashboardInConsole.png)
