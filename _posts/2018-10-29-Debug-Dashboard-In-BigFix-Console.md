@@ -35,3 +35,5 @@
 1. View Source from Console
     * Right Click
     * Select "View Source"
+    * ![Select View Source](/images/BigFix/Dashboards/DashboardViewSource.png)
+    
