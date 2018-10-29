@@ -1,7 +1,7 @@
 
 1. Create Empty Temp Folder 
     * Example: `_tmp_Dashboard`
-    * The console will copy all of the files in the folder!
+    * NOTE: The console will copy all of the files in the folder!
     * ![Create Empty Temp Folder](/images/BigFix/Dashboards/CreateEmptyFolder.png)
 1. Put Dashboard Files in Folder
     * ![Put Dashboard Files in Folder](/images/BigFix/Dashboards/PutDashboardFilesInFolder.png)
