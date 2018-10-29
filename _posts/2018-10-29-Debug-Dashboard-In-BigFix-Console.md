@@ -2,6 +2,7 @@
 1. Create Empty Temp Folder 
     * Example: `_tmp_Dashboard`
     * **NOTE:** The console will copy all of the files in the folder!
+         * `C:\Users\UserName\AppData\Local\BigFix\Enterprise Console\ROOTFQDN\UserName\Temp\tem8713.tmp`
     * ![Create Empty Temp Folder](/images/BigFix/Dashboards/CreateEmptyFolder.png)
 1. Put Dashboard Files in Folder
     * Example: [HelloWorld_template.ojo](https://raw.githubusercontent.com/jgstew/bigfix-content/master/dashboards/HelloWorld_template.ojo)
