@@ -17,3 +17,6 @@
 ### Related:
 
 - https://developer.bigfix.com/tools/presentation_debugger.html
+- https://github.com/jgstew/jgstew.github.io/edit/master/_posts/2018-10-28-Open-BigFix-Console-Presentation-Debugger.md
+- http://www.jgstew.com/bigfix/2018/10/28/Open-BigFix-Console-Presentation-Debugger.html
+- https://forum.bigfix.com/t/open-the-bigfix-console-presentation-debugger/27768
