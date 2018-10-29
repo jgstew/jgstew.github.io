@@ -4,7 +4,7 @@
 1. Open the BigFix Console
 1. Open the Debug Dialog 
     * Press Ctrl+Shift+Alt+D 
-    * ![Debug Dialog](../images/BigFix/Console/DebugDialog.png)
+    * ![Debug Dialog](/images/BigFix/Console/DebugDialog.png)
 1. Check the "Show Debug Menu" Checkbox
     * ![Show Debug Menu](/images/BigFix/Console/ShowDebugMenuCheckbox.png)
 1. Close Debug Dialog
