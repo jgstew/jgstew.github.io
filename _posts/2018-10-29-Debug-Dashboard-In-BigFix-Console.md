@@ -41,6 +41,7 @@
 1. Compare the "Rendered" Source in Notepad to the OJO file
     * Notice that `<h2>Hello World!!!</h2>` is the same in both ( Line 8 vs Line 17 )
     * Compare Line 10 in Notepad to Line 19 in the OJO file
-        * `<?Relevance ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers ?>`
-        * `<p>There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]</p>`
-        * `There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]`
+        * Session Relevance: `<?Relevance ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers ?>`
+        * HTML: `<p>There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]</p>`
+        * Dashboard Text: `There are 1 registered computers right now [ Sun, 28 Oct 2018 21:16:09 -0700 ]`
+    * ![Compare Rendered Source](/images/BigFix/Dashboards/CompareRenderedSourceNotepad.png)
