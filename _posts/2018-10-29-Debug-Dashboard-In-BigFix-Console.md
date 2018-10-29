@@ -20,3 +20,7 @@
     * ![View Dashboard](/images/BigFix/Dashboards/ViewDashboardHW.png)
     * Should load automatically
     * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
+1. Reload the Dashboard
+    * Right Click
+    * Select Reload
+    * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboard.png)
