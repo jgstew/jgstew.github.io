@@ -22,4 +22,9 @@
 1. Try Searches in the Dashboard
     * Example: `block ie x64 2008 r2 sp1`
     * ![Search Dashboard](/images/BigFix/Dashboards/DashboardSearchDT.png)
-    
+1. Edit the `GenericDataTables.ojo` file
+    * Open `GenericDataTables.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
+    * Edit Line 30 changing `bes tasks` to `bes computers`
+        * `'( html concatenations of tds of (name of it; id of it as string) ) of bes tasks'`
+    * Save the file ( Ctrl + S )
+    * Reload the Dashboard to see the changes
