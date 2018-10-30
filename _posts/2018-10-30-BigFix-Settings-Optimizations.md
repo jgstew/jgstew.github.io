@@ -110,10 +110,10 @@ Applicability: root server only (exists main gather service)
 
 ### 4 Actions Designed to Target ALL COMPUTERS:
 
-- ***Run Once:*** Set initial client settings if unset
-- ***Run Always:*** Force command polling to be enabled
-- ***Run Always:*** Set command polling to at least once every 6 hours
-- ***Run Once:*** Set `_BESClient_Resource_PowerSaveEnable` after 2 days in BigFix
+- [***Run Once:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Recommended%20Client%20Settings%20-%20Initial%20Provisioning%20Speed%20up%20-%20Long%20term%20settings.bes) Set initial client settings if unset
+- [***Run Always:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Comm_CommandPollEnable_%20to%20_1_%20-%20Universal.bes) Force command polling to be enabled
+- [***Run Always:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Force%20CommandPollInterval%20to%20be%20less%20than%206%20hours%20-%20Universal%20-%20Policy.bes) Set command polling to at least once every 6 hours
+- [***Run Once:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Resource_PowerSaveEnable_%20to%20_1_%20after%202%20days%20-%20Universal.bes) Set `_BESClient_Resource_PowerSaveEnable` after 2 days in BigFix
 
 
 ## Questions?
