@@ -1,8 +1,8 @@
 ---
-Title: BigFix Settings Optimizations
-Author:  @JGStew
-Date:    October 30, 2018
+title: BigFix Settings Optimizations
+author: "@JGStew"
 ---
+
 <!-- git pull;pandoc 2018-10-30-BigFix-Settings-Optimizations.md -o BigFix_tmp.pptx;open BigFix_tmp.pptx -->
 
 ## BigFix is Extremely Flexible
