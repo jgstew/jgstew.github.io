@@ -48,3 +48,4 @@
     * Scroll Down and Click the `Preview` button on the far right
     * Scroll Up and Click the `Hide Source` link on the top left
     * View the Web Report
+        * Experiment and Compare the Functionality to the Dashboard
