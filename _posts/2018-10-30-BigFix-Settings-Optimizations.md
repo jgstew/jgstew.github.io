@@ -31,8 +31,8 @@ date: November 8, 2018
   - VMs
   - Docker Containers
   - & probably everything else
+- This setting tells the client to stop evaluating relevance if things are not changing.
 
-- This setting tells the client to sleep (stop evaluating relevance) if things are not changing.
 
 ## Questions?
 
