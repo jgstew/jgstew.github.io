@@ -6,7 +6,7 @@
 
 ### Prerequisites:
 
-1. [Open BigFix Console Presentation Debugger](2018-10-28-Open-BigFix-Console-Presentation-Debugger.md)
+1. [Open BigFix Console Presentation Debugger](2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 
 ### Steps:
 
@@ -19,7 +19,7 @@
     * ![Put Dashboard Files in Folder](/images/BigFix/Dashboards/PutDashboardFilesInFolder.png)
 1. Open the Debug Menu
     * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
-    * If missing, See here on how to enable the Debug Menu: [Open The BigFix Console Presentation Debugger](2018-10-28-Open-BigFix-Console-Presentation-Debugger.md)
+    * If missing, See here on how to enable the Debug Menu: [Open The BigFix Console Presentation Debugger](2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 1. Select "Load Wizard..."
     * Note: Wizards and Dashboards are [basically the same](https://github.com/jgstew/bigfix-content/blob/master/dashboards/README.md)
     * ![Select Load Wizard](/images/BigFix/Dashboards/SelectLoadWizard.png)
