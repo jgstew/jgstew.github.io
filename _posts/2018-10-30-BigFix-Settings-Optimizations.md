@@ -35,6 +35,18 @@ date: November 8, 2018
   - & probably everything else
 - This setting tells the client to stop evaluating relevance if things are not changing.
 
+## _BESRelay_HealthCheck_EnableAtStartup
+
+### Default: Disabled (0)
+
+### Recommendation: Enabled (1)
+
+- Applies to Relays
+- HealthCheck process validates site data integrity, and ​
+re-requests any site data that is corrupt so it can be properly​
+served to clients.
+
+
 
 ## Questions?
 
