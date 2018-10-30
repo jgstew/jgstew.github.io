@@ -60,6 +60,9 @@
         * Experiment and Compare the Functionality to the Dashboard
     * ![View Web Report](/images/BigFix/Dashboards/WebReportsCustomView.png)
 
+
+--------- 
+
 ### Related:
 
 * https://github.com/jgstew/bigfix-content/blob/master/dashboards/Computer_Filter_Search.ojo
