@@ -108,3 +108,9 @@ Applicability: root server only (exists main gather service)
 
 ### forum.bigfix.com
 ### bigfix.slack.com
+
+## References:
+
+- https://github.com/jgstew/jgstew.github.io/tree/master/_bfsettings
+- https://github.com/jgstew/bigfix-content/issues/2
+- https://github.com/jgstew/bigfix-content/blob/master/dashboards/ClientSettingsManager.ojo
