@@ -19,3 +19,7 @@
     * ![View Dashboard](/images/BigFix/Dashboards/ViewDashboardDT.png)
     * Should load automatically
     * If not, check under [Dashboards -> All Dashboards](/images/BigFix/Dashboards/DashboardLocationCustom.png)
+1. Try Searches in the Dashboard
+    * Example: `block ie x64 2008 r2 sp1`
+    * ![Search Dashboard](/images/BigFix/Dashboards/DashboardSearchDT.png)
+    
