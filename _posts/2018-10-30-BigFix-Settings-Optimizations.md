@@ -20,6 +20,16 @@ date: November 8, 2018
 - There are many default BigFix Settings that are sub-optimal for almost all use cases!
 - BigFix is very conservative about Defaults, and especially changing them once they have been established.
 
+## _BESClient_Resource_PowerSaveEnable
+
+### Default: Disabled (0)
+
+### Recommendation: Enabled (1)
+
+This setting should be enabled on all Laptops, VMs, Docker Containers, but probably also everything else.
+
+This setting tells the client to sleep (stop evaluating relevance) if things are not changing.
+
 ## Questions?
 
 ### forum.bigfix.com
