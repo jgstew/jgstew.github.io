@@ -28,4 +28,4 @@
         * `'( html concatenations of tds of (name of it; id of it as string) ) of bes tasks'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
-    * * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
+    * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
