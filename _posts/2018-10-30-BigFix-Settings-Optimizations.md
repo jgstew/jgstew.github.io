@@ -94,6 +94,16 @@ Applicability: root server only (exists main gather service)
 - Those not getting UDP should have a more aggressive value.
 
 
+## _BESClient_Download_UtilitiesCacheLimitMB
+
+### Default: 10MB (10)
+
+### Recommendation: 200MB (200) or more
+
+- This setting controls the maximum size of the pool of storage to hold utilities in a separate cache that does not get cleared out in the same way as the Client's Download Cache.
+- This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
+
+
 ## Questions?
 
 ### forum.bigfix.com
