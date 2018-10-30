@@ -34,7 +34,7 @@ Most info for Docker Containers is stored as JSON on the Docker Host, which BigF
 - Automatic Groups
 
 
-### Related:
+## Related:
 
 - https://forum.bigfix.com/t/bay-area-bigfix-user-group-october-19th-2017-emeryville-ca/22323
 - https://forum.bigfix.com/t/thin-imaging-and-installing-the-bigfix-agent/15750
