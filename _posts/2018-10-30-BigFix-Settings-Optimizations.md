@@ -42,9 +42,8 @@ date: November 8, 2018
 ### Recommendation: Enabled (1)
 
 - Applies to Relays
-- HealthCheck process validates site data integrity, and ​
-re-requests any site data that is corrupt so it can be properly​
-served to clients.
+- HealthCheck process validates site data integrity, and re-requests any site data that is corrupt so it can be properly served to clients.
+- Can Fix `FAILED to Synchronize` errors in client logs
 
 
 
