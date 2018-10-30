@@ -6,7 +6,7 @@
 1. View the Dashboard as a Custom Web Report
     * Step 10
 
-### Prerequisites
+### Prerequisites:
 
 1. [Open BigFix Console Presentation Debugger](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 1. [Debug a Dashboard In the BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
