@@ -45,3 +45,6 @@
             * `localhost` will need to be set to the FQDN or IP of your web reports server
             * `8083` will need to be set to the port of your web reports server
     * Paste [Lines 18 through 67](https://github.com/jgstew/bigfix-content/blob/master/webreports/GenericDataTables.besrpt#L18) into the Custom Web Report
+    * Scroll Down and Click the `Preview` button on the far right
+    * Scroll Up and Click the `Hide Source` link on the top left
+    * View the Web Report
