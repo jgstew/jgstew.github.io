@@ -9,9 +9,9 @@ date: November 8, 2018
 ## BigFix is Extremely Flexible
 
 - There are tons of setting that can be tweaked for almost every part of the BigFix platform.
-  - Root Server
-  - Relays
-  - Clients
+  - Root Server: `_BESRelay_` & `_BESGather_`
+  - Relays: `_BESRelay_` & `_BESGather_`
+  - Clients: `_BESClient_`
   - and more!
 - No matter what your use case is, there is a setting that can help!
 
