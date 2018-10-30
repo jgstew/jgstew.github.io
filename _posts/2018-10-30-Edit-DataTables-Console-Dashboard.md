@@ -30,9 +30,11 @@
     * Reload the Dashboard to see the changes
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
 1. Edit the `GenericDataTables.ojo` file further
-    * Edit [Line 30](https://github.com/jgstew/bigfix-content/blob/master/dashboards/GenericDataTables.ojo#L30) to add `operating system`
-         * `'( html concatenations of tds of (name of it; id of it as string; operating system of it) ) of bes computers'`
+    * Edit [Line 30](https://github.com/jgstew/bigfix-content/blob/master/dashboards/GenericDataTables.ojo#L30) to add `operating systems`
+         * `'( html concatenations of tds of (name of it; id of it as string; operating systems of it) ) of bes computers'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
 1. Experiment with other changes
-    * [cpu of bes computer](https://developer.bigfix.com/relevance/reference/bes-computer.html#cpu-of-bes-computer-string)
+    * [cpus of bes computers](https://developer.bigfix.com/relevance/reference/bes-computer.html#cpu-of-bes-computer-string)
+    * [device types of bes computers](https://developer.bigfix.com/relevance/reference/bes-computer.html#device-type-of-bes-computer-string)
+    * ![Experiment Dashboard](/images/BigFix/Dashboards/ViewExperimentDashboardDT.png)
