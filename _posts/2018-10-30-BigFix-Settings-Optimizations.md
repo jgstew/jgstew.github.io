@@ -18,7 +18,9 @@ date: November 8, 2018
 ## Many Defaults Should Be Changed!
 
 - There are many default BigFix Settings that are sub-optimal for almost all use cases!
+  - This will cover the ones with the biggest impact, that are also safest to deploy.
 - BigFix is very conservative about Defaults, and especially changing them once they have been established.
+
 
 ## _BESClient_Resource_PowerSaveEnable
 
