@@ -38,7 +38,10 @@
     * [cpus of bes computers](https://developer.bigfix.com/relevance/reference/bes-computer.html#cpu-of-bes-computer-string)
     * [device types of bes computers](https://developer.bigfix.com/relevance/reference/bes-computer.html#device-type-of-bes-computer-string)
     * ![Experiment Dashboard](/images/BigFix/Dashboards/ViewExperimentDashboardDT.png)
-1. Copy Dashboard `<HTML>` into Web Report
+1. Copy the Dashboard `<HTML>` into a Web Report
     * Copy [Lines 18 through 67](https://github.com/jgstew/bigfix-content/blob/master/webreports/GenericDataTables.besrpt#L18) from the `GenericDataTables.ojo`
     * Open Web Reports
         * [https://localhost:8083/webreports?page=CustomReport](https://localhost:8083/webreports?page=CustomReport)
+            * `localhost` will need to be set to the FQDN or IP of your web reports server
+            * `8083` will need to be set to the port of your web reports server
+    * Paste [Lines 18 through 67](https://github.com/jgstew/bigfix-content/blob/master/webreports/GenericDataTables.besrpt#L18) into the Custom Web Report
