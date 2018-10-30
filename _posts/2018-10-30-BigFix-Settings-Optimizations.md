@@ -8,7 +8,7 @@
 - There are many default BigFix Settings that are sub-optimal for almost all use cases!
 - BigFix is very conservative about Defaults, and especially changing them once they have been established.
 
-# Questions?
+## Questions?
 
 - forum.bigfix.com
 - bigfix.slack.com
