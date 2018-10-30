@@ -1,5 +1,13 @@
 
-### Objective: Edit and Debug a BigFix Console Dashboard
+### Objective:
+
+* Edit and Debug a BigFix Console Dashboard
+
+### Prerequisites:
+
+1. [Open BigFix Console Presentation Debugger](2018-10-28-Open-BigFix-Console-Presentation-Debugger.md)
+
+### Steps:
 
 1. Create Empty Temp Folder 
     * Example: `_tmp_Dashboard`
