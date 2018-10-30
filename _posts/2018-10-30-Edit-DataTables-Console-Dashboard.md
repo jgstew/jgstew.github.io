@@ -24,13 +24,13 @@
     * ![Search Dashboard](/images/BigFix/Dashboards/DashboardSearchDT.png)
 1. Edit the `GenericDataTables.ojo` file
     * Open `GenericDataTables.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
-    * Edit Line 30 changing `bes tasks` to `bes computers`
+    * Edit [Line 30](https://github.com/jgstew/bigfix-content/blob/master/dashboards/GenericDataTables.ojo#L30) changing `bes tasks` to `bes computers`
         * `'( html concatenations of tds of (name of it; id of it as string) ) of bes computers'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
 1. Edit the `GenericDataTables.ojo` file further
-    * Edit Line 30 to add `operating system`
+    * Edit [Line 30](https://github.com/jgstew/bigfix-content/blob/master/dashboards/GenericDataTables.ojo#L30) to add `operating system`
          * `'( html concatenations of tds of (name of it; id of it as string; operating system of it) ) of bes computers'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
