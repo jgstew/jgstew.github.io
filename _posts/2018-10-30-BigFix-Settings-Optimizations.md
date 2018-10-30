@@ -54,7 +54,8 @@ date: November 8, 2018
 
 ### Recommendation: 31 days (31)
 
-This setting controls how many log files the client will keep before deleting the oldest. I think the default of 10 days is too short. 
+- This setting controls how many log files the client will keep before deleting the oldest. 
+- The default of 10 days is often too short to catch issues before logs are rotated.
 
 
 ## _BESRelay_RelaysFileUpdater_RefreshSeconds
@@ -63,10 +64,9 @@ This setting controls how many log files the client will keep before deleting th
 
 ### Recommendation: 1 hour (3600) or more
 
-### Applicability: root server only (exists main gather service)
-
+Applicability: root server only (exists main gather service)
 - This setting controls how often the Relays.dat file is propagated through the master action site when new Relays are created.
-- This setting matters most if new Relays are created frequently, so it may not need to be changed for most environments, but the default setting is extremely aggressive, which can cause issues.
+- This setting matters most if new Relays are created frequently, so it may not need to be changed for most environments, but the default setting is extremely aggressive.
 
 
 ## Questions?
