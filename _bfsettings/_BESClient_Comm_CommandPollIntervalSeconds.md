@@ -3,7 +3,7 @@
 
 ### Recommendation: 3 hours (10800) or less
 
-This setting controls how often a client polls for commands, if enabled by: `_BESClient_Comm_CommandPollEnable`
+This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): `_BESClient_Comm_CommandPollEnable`
 
 I would recommend all systems have command polling enabled, but the interval is less obvious.
 
