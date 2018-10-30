@@ -29,3 +29,8 @@
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
+1. Edit the `GenericDataTables.ojo` file further
+    * Edit Line 30 to add `operating system`
+         * `'( html concatenations of tds of (name of it; id of it as string; operating system of it) ) of bes computers'`
+    * Save the file ( Ctrl + S )
+    * Reload the Dashboard to see the changes
