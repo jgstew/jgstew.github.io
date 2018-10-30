@@ -26,9 +26,13 @@ date: November 8, 2018
 
 ### Recommendation: Enabled (1)
 
-This setting should be enabled on all Laptops, VMs, Docker Containers, but probably also everything else.
+- This setting should be enabled on:
+  - Laptops
+  - VMs
+  - Docker Containers
+  - & probably everything else
 
-This setting tells the client to sleep (stop evaluating relevance) if things are not changing.
+- This setting tells the client to sleep (stop evaluating relevance) if things are not changing.
 
 ## Questions?
 
