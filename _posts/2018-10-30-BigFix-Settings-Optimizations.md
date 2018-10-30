@@ -35,6 +35,7 @@ date: November 8, 2018
   - Docker Containers
   - & probably everything else
 - This setting tells the client to stop evaluating relevance if things are not changing.
+  - The client will "wake" automatically if notified of new content.
 
 
 ## _BESRelay_HealthCheck_EnableAtStartup
@@ -78,7 +79,7 @@ Applicability: root server only (exists main gather service)
 
 - It should be enabled on 100% of endpoints, it is just a matter of how frequent the command polling should be done.
 - The frequency of command polling is controlled by [the setting](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollIntervalSeconds.md): 
-  - `_BESClient_Comm_CommandPollIntervalSeconds` (default: 12 hours)
+  - `_BESClient_Comm_CommandPollIntervalSeconds`
 
 
 ## _BESClient_Comm_CommandPollIntervalSeconds
@@ -90,8 +91,9 @@ Applicability: root server only (exists main gather service)
 - This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): 
   - `_BESClient_Comm_CommandPollEnable`
 - Recommend all systems have command polling enabled, but the interval is less obvious.
-- all systems should have it set to at least once every 6 hours.
+- All systems should have it set to at least once every 6 hours.
 - Those not getting UDP should have a more aggressive value.
+  - Generally not more often than once every 30 minutes
 
 
 ## _BESClient_Download_UtilitiesCacheLimitMB
