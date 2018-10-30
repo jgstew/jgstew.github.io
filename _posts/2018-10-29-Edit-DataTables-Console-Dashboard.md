@@ -8,8 +8,8 @@
 
 ### Prerequisites
 
-1. [Open BigFix Console Presentation Debugger](../2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
-1. [Debug a Dashboard In the BigFix Console](../2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
+1. [Open BigFix Console Presentation Debugger](2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
+1. [Debug a Dashboard In the BigFix Console](2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
 
 ### Steps:
 1. Put Dashboard Files in Folder
