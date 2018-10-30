@@ -77,7 +77,8 @@ Applicability: root server only (exists main gather service)
 ### Recommendation: Enabled (1)
 
 - It should be enabled on 100% of endpoints, it is just a matter of how frequent the command polling should be done.
-- The frequency of command polling is controlled by [the setting](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollIntervalSeconds.md): `_BESClient_Comm_CommandPollIntervalSeconds` (default: 12 hours)
+- The frequency of command polling is controlled by [the setting](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollIntervalSeconds.md): 
+  - `_BESClient_Comm_CommandPollIntervalSeconds` (default: 12 hours)
 
 
 ## _BESClient_Comm_CommandPollIntervalSeconds
@@ -86,9 +87,11 @@ Applicability: root server only (exists main gather service)
 
 ### Recommendation: 3 hours (10800) or less
 
-- This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): `_BESClient_Comm_CommandPollEnable`
+- This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): 
+  - `_BESClient_Comm_CommandPollEnable`
 - Recommend all systems have command polling enabled, but the interval is less obvious.
-- all systems should have it set to at least once every 3 to 6 hours, but those that are behind a NAT and can't otherwise get notifications about new content from their parent relay should have more aggressive settings. (generally not more frequent than once every 30 minutes)
+- all systems should have it set to at least once every 6 hours.
+- Those not getting UDP should have a more aggressive value.
 
 
 ## Questions?
