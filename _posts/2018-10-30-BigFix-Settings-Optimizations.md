@@ -3,6 +3,10 @@
 ## BigFix is Extremely Flexible
 
 - There are tons of setting that can be tweaked for almost every part of the BigFix platform.
+  - Root Server
+  - Relays
+  - Clients
+  - and more!
 - No matter what your use case is, there is a setting that can help!
 
 ## Many Defaults Should Be Changed!
