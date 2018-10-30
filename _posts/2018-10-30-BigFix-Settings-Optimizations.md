@@ -1,6 +1,7 @@
 ---
 title: BigFix Settings Optimizations
 author: "@JGStew"
+date: November 8, 2018
 ---
 
 <!-- git pull;pandoc 2018-10-30-BigFix-Settings-Optimizations.md -o BigFix_tmp.pptx;open BigFix_tmp.pptx -->
