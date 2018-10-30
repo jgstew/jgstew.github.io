@@ -1,7 +1,7 @@
 
-Default: 10 days (10)
+### Default: 10 days (10)
 
-Recommendation: 31 days (31)
+### Recommendation: 31 days (31)
 
 This setting controls how many log files the client will keep before deleting the oldest. I think the default of 10 days is too short. 
 
