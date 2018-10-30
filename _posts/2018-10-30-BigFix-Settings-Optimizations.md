@@ -116,6 +116,10 @@ Applicability: root server only (exists main gather service)
 - [***Run Once:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Resource_PowerSaveEnable_%20to%20_1_%20after%202%20days%20-%20Universal.bes) Set `_BESClient_Resource_PowerSaveEnable` after 2 days in BigFix
 
 
+## What about other settings? Client Settings Manager
+
+
+
 ## Questions?
 
 ### forum.bigfix.com
