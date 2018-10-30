@@ -24,7 +24,7 @@
 
 ### Next: 
 
-* [Debug A Dashboard In The BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
+* [Debug A Dashboard In The BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
 
 ### Related:
 
