@@ -1,6 +1,9 @@
 
-### Objective: Edit and Use a JQuery DataTables Dashboard
+### Objectives: 
+1. Edit and Use a JQuery DataTables Dashboard
+1. View the Dashboard as a Custom Web Report
 
+### Steps:
 1. Put Dashboard Files in Folder
     * Example: [GenericDataTables.ojo](https://raw.githubusercontent.com/jgstew/bigfix-content/master/dashboards/GenericDataTables.ojo)
     * ![Put Dashboard Files in Folder](/images/BigFix/Dashboards/PutDashboardFilesInFolderDT.png)
