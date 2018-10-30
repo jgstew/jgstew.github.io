@@ -6,6 +6,11 @@
 1. View the Dashboard as a Custom Web Report
     * Step 10
 
+### Prerequisites
+
+1. [Open BigFix Console Presentation Debugger](2018-10-28-Open-BigFix-Console-Presentation-Debugger.md)
+1. [Debug a Dashboard In the BigFix Console](2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
+
 ### Steps:
 1. Put Dashboard Files in Folder
     * Example: [GenericDataTables.ojo](https://raw.githubusercontent.com/jgstew/bigfix-content/master/dashboards/GenericDataTables.ojo)
