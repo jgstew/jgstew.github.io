@@ -45,7 +45,11 @@
             * `localhost` will need to be set to the FQDN or IP of your web reports server
             * `8083` will need to be set to the port of your web reports server
     * Paste [Lines 18 through 67](https://github.com/jgstew/bigfix-content/blob/master/webreports/GenericDataTables.besrpt#L18) into the Custom Web Report
+    * ![Paste Source](/images/BigFix/Dashboards/PasteDashboardIntoWebReport.png)
     * Scroll Down and Click the `Preview` button on the far right
+    * ![Web Reports Preview Button](/images/BigFix/Dashboards/WebReportsCustomPreviewButton.png)
     * Scroll Up and Click the `Hide Source` link on the top left
+        * This will show what the Custom Web Report will look like normally
     * View the Web Report
         * Experiment and Compare the Functionality to the Dashboard
+    * ![View Web Report](/images/BigFix/Dashboards/WebReportsCustomView.png)
