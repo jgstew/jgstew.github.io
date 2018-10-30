@@ -25,7 +25,7 @@
 1. Edit the `GenericDataTables.ojo` file
     * Open `GenericDataTables.ojo` in [Visual Studio Code](https://code.visualstudio.com/) or similar editor
     * Edit Line 30 changing `bes tasks` to `bes computers`
-        * `'( html concatenations of tds of (name of it; id of it as string) ) of bes tasks'`
+        * `'( html concatenations of tds of (name of it; id of it as string) ) of bes computers'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
     * ![Reload Dashboard](/images/BigFix/Dashboards/ReloadDashboardDT.png)
