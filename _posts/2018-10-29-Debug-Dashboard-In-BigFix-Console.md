@@ -2,6 +2,7 @@
 ### Objective:
 
 * Edit and Debug a BigFix Console Dashboard
+    * Steps 5 through 8
 
 ### Prerequisites:
 
