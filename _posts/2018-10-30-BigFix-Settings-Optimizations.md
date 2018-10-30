@@ -108,10 +108,10 @@ Applicability: root server only (exists main gather service)
 
 ### 4 Actions Designed to Target ALL COMPUTERS:
 
-- Run Once: Set initial client settings if unset
-- Run Always: Force command polling to be enabled
-- Run Always: Set command polling to at least once every 6 hours
-- Run Once: Set "_BESClient_Resource_PowerSaveEnable" after 2 days in BigFix
+- ***Run Once:*** Set initial client settings if unset
+- ***Run Always:*** Force command polling to be enabled
+- ***Run Always:*** Set command polling to at least once every 6 hours
+- ***Run Once:*** Set "_BESClient_Resource_PowerSaveEnable" after 2 days in BigFix
 
 
 ## Questions?
