@@ -34,3 +34,5 @@
          * `'( html concatenations of tds of (name of it; id of it as string; operating system of it) ) of bes computers'`
     * Save the file ( Ctrl + S )
     * Reload the Dashboard to see the changes
+1. Experiment with other changes
+    * [cpu of bes computer](https://developer.bigfix.com/relevance/reference/bes-computer.html#cpu-of-bes-computer-string)
