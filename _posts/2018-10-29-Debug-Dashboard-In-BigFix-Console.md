@@ -6,7 +6,7 @@
 
 ### Prerequisites:
 
-1. [Open BigFix Console Presentation Debugger](2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
+1. [Open BigFix Console Presentation Debugger](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 
 ### Steps:
 
