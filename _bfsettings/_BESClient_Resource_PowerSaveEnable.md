@@ -1,7 +1,7 @@
 
-Default: Disabled (0)
+### Default: Disabled (0)
 
-Recommendation: Enabled (1)
+### Recommendation: Enabled (1)
 
 I recommend enabling this setting, especially for Laptops, VMs, Docker containers, etc...
 
