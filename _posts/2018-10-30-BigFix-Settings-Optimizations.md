@@ -1,3 +1,5 @@
+<!-- git pull;pandoc 2018-10-30-BigFix-Settings-Optimizations.md -o BigFix_tmp.pptx;open BigFix_tmp.pptx -->
+
 ## BigFix is Extremely Flexible
 
 - There are tons of setting that can be tweaked for almost every part of the BigFix platform.
@@ -10,5 +12,5 @@
 
 ## Questions?
 
-- forum.bigfix.com
-- bigfix.slack.com
+### forum.bigfix.com
+### bigfix.slack.com
