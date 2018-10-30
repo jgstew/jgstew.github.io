@@ -104,6 +104,16 @@ Applicability: root server only (exists main gather service)
 - This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
 
 
+## I'm Convinced, Now What?
+
+### 4 Actions Designed to Target ALL COMPUTERS:
+
+- Run Once: Set initial client settings if unset
+- Run Always: Force command polling to be enabled
+- Run Always: Set command polling to at least once every 6 hours
+- Run Once: Set "_BESClient_Resource_PowerSaveEnable" after 2 days in BigFix
+
+
 ## Questions?
 
 ### forum.bigfix.com
