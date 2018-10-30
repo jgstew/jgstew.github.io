@@ -1,3 +1,6 @@
+---
+title: BigFix Settings Optimizations
+---
 <!-- git pull;pandoc 2018-10-30-BigFix-Settings-Optimizations.md -o BigFix_tmp.pptx;open BigFix_tmp.pptx -->
 
 ## BigFix is Extremely Flexible
