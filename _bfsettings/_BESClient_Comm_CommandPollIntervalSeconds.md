@@ -1,7 +1,9 @@
 
-Default: 12 hours (in seconds)
+### Default: 12 hours (43200)
 
-This setting controls how often a client polls for commands, if enabled by: `_BESClient_Comm_CommandPollIntervalSeconds`
+### Recommendation: 3 hours (10800) or less
+
+This setting controls how often a client polls for commands, if enabled by: `_BESClient_Comm_CommandPollEnable`
 
 I would recommend all systems have command polling enabled, but the interval is less obvious.
 
