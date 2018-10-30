@@ -35,7 +35,7 @@ date: November 8, 2018
   - Docker Containers
   - & probably everything else
 - This setting tells the client to stop evaluating relevance if things are not changing.
-  - The client will "wake" automatically if notified of new content.
+  - The client will wake if notified of new content.
 
 
 ## _BESRelay_HealthCheck_EnableAtStartup
@@ -90,7 +90,6 @@ Applicability: root server only (exists main gather service)
 
 - This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): 
   - `_BESClient_Comm_CommandPollEnable`
-- Recommend all systems have command polling enabled, but the interval is less obvious.
 - All systems should have it set to at least once every 6 hours.
 - Those not getting UDP should have a more aggressive value.
   - Generally not more often than once every 30 minutes
@@ -102,7 +101,7 @@ Applicability: root server only (exists main gather service)
 
 ### Recommendation: 200MB (200) or more
 
-- This setting controls the maximum size of the pool of storage to hold utilities in a separate cache that does not get cleared out in the same way as the Client's Download Cache.
+- This setting controls the maximum size of the storage for utilities in a cache that does not get cleared out in the same way as the Client's Download Cache.
 - This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
 
 
@@ -116,7 +115,7 @@ Applicability: root server only (exists main gather service)
 - [***Run Once:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Resource_PowerSaveEnable_%20to%20_1_%20after%202%20days%20-%20Universal.bes) Set `_BESClient_Resource_PowerSaveEnable` after 2 days in BigFix
 
 
-## What about other settings? Client Settings Manager
+## What about other settings? <br/> Client Settings Manager Dashboard
 
 
 
