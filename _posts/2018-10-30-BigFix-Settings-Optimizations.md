@@ -86,7 +86,7 @@ Applicability: root server only (exists main gather service)
 
 ### Default: 12 hours (43200)
 
-### Recommendation: 3 hours (10800) or less
+### Recommendation: 3 hours (10800)
 
 - This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): 
   - `_BESClient_Comm_CommandPollEnable`
