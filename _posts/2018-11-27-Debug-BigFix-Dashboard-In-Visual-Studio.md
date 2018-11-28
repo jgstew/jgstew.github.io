@@ -2,7 +2,8 @@
 
 ### Objectives: 
 1. View JavaScript Console Output in Visual Studio
-2. View HTML currently rendered in Dashboard
+2. View HTML currently rendered in Dashboard (from RAM)
+3. Edit live HTML and see changes immediately
 
 ### Prerequisites:
 
