@@ -20,6 +20,7 @@
     * ![JavaScript Components for Visual Studio](http://jgstew.github.io/images/VisualStudio_JavaScript_2017.png)
 1. Follow Steps here:
     * [https://weblog.west-wind.com/posts/2017/Jul/06/JavaScript-Debugging-in-a-Web-Browser-Control-with-Visual-Studio](https://weblog.west-wind.com/posts/2017/Jul/06/JavaScript-Debugging-in-a-Web-Browser-Control-with-Visual-Studio)
+    * Attach to Process "BESConsole.exe"
 
 ### Related:
 
