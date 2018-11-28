@@ -66,7 +66,10 @@
     * ![View Web Report](/images/BigFix/Dashboards/WebReportsCustomView.png)
 
 
---------- 
+### Next:
+
+* [Debug BigFix Dashboard In Visual Studio](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-11-27-Debug-BigFix-Dashboard-In-Visual-Studio.md)
+
 
 ### Related:
 
