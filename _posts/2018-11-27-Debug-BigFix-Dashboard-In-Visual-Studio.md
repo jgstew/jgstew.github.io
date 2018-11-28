@@ -23,6 +23,7 @@
     * Attach to Process `BESConsole.exe`
       * NOTE: Must be `Attach to: Script code`
     * ![Attach to Process](http://jgstew.github.io/images/VisualStudio_AttachToProcess_BESConsole.png)
+1. Add JavaScript Console Window if missing (Debug -> Windows -> JavaScript Console)
 
 ### Related:
 
