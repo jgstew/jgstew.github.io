@@ -5,10 +5,12 @@
 2. View HTML currently rendered in Dashboard (from RAM)
 3. Edit live HTML and see changes immediately
 
+
 ### Prerequisites:
 
 1. [Open BigFix Console Presentation Debugger](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 1. [Debug a Dashboard In the BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
+
 
 ### Background: 
 
@@ -31,6 +33,12 @@ The solution is to use Visual Studio in Script code debugging mode to access the
       * NOTE: Must be `Attach to: Script code`
     * ![Attach to Process](http://jgstew.github.io/images/VisualStudio_AttachToProcess_BESConsole.png)
 1. Add JavaScript Console Window if missing (Debug -> Windows -> JavaScript Console)
+
+
+### Next:
+
+* [Edit DataTables Console Dashboard](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Edit-DataTables-Console-Dashboard.md)
+
 
 ### Related:
 
