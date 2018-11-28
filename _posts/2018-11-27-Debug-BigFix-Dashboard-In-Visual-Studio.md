@@ -17,8 +17,7 @@
     * Otherwise, use a Visual Studio Subscription or similar licensed version.
     * [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 2. Install Visual Studio with Javascript components
-
-
+    * ![JavaScript Components for Visual Studio](http://jgstew.github.io/images/VisualStudio_JavaScript_2017.png)
 
 ### Related:
 
