@@ -64,4 +64,5 @@
 
 ### Next:
 
+* [Debug BigFix Dashboard In Visual Studio](https://github.com/jgstew/jgstew.github.io/edit/master/_posts/2018-11-27-Debug-BigFix-Dashboard-In-Visual-Studio.md)
 * [Edit DataTables Console Dashboard](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Edit-DataTables-Console-Dashboard.md)
