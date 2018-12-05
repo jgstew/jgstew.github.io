@@ -46,3 +46,45 @@ If "Tuple String Items" is used without specifying an "index" then it will just 
     A: False
     T: 0.112 ms
     I: plural string
+    
+
+----------
+
+### Other Examples:
+
+    Q: ("zero";"one";"2";"three")
+    A: zero
+    A: one
+    A: 2
+    A: three
+    T: 0.029 ms
+    I: plural string
+
+    Q: number of ("zero";"one";"2";"three")
+    A: 4
+    T: 0.039 ms
+    I: singular integer
+
+    Q: concatenations ", " of ("zero";"one";"2";"three, ?")
+    A: zero, one, 2, three, ?
+    T: 0.105 ms
+    I: plural string
+
+    Q: tuple string items 1 of concatenations ", " of  ("0";"one";"2";"three")
+    A: one
+    T: 0.110 ms
+    I: plural string
+
+    Q: tuple string items of concatenations ", " of  ("zero";"one";"2";"three, ?")
+    A: zero
+    A: one
+    A: 2
+    A: three
+    A: ?
+    T: 0.115 ms
+    I: plural string
+
+    Q: number of tuple string items of concatenations ", " of  ("zero";"one";"2";"three, ?")
+    A: 5
+    T: 0.160 ms
+    I: singular integer
