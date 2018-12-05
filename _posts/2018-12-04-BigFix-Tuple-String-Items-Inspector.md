@@ -1,5 +1,7 @@
 
 
+This will explore the use and usefulness of the BigFix Tuple String Items Inspector.
+
 Consider this string with 4 elements within it:
 
     "0, one, 2, three"
