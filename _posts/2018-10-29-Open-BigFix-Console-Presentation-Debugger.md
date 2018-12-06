@@ -1,6 +1,7 @@
 
 ### Objective: 
 
+* Open the Presentation Debugger from the BigFix Console Debug Menu
 * Evaulate a Session Relevance Query in the BigFix Console Presentation Debugger
 
 ### Steps:
