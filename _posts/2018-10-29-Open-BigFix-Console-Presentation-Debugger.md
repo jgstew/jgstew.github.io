@@ -7,6 +7,7 @@
 ### Steps:
 
 1. Open the BigFix Console
+1. Login to the BigFix Console
 1. Open the Debug Dialog 
     * Press Ctrl+Shift+Alt+D 
     * ![Debug Dialog](/images/BigFix/Console/DebugDialog.png)
