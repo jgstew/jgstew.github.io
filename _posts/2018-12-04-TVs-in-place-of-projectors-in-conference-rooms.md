@@ -23,4 +23,4 @@ When considering what LCD TV to use in a conference room, the most imporant fact
 ### References:
 
 - TVs getting Airplay 2 (by end of 2019?) :  https://www.apple.com/ios/home/accessories/#section-tv
-
+- http://osxdaily.com/2014/08/31/how-to-get-current-screen-resolution-from-command-line-in-mac-os-x/
