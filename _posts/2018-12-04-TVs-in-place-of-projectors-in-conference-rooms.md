@@ -15,6 +15,7 @@ When considering what LCD TV to use in a conference room, the most imporant fact
 - screen size
 - maximum brightness
 - wireless screen mirroring features
+  - if these are built in, then it is simpler and cheaper
 - cost
 - thinness
 
