@@ -19,3 +19,7 @@ When considering what LCD TV to use in a conference room, the most imporant fact
 - thinness
 
 
+### References:
+
+- TVs getting Airplay 2 (by end of 2019?) :  https://www.apple.com/ios/home/accessories/#section-tv
+
