@@ -24,3 +24,4 @@ When considering what LCD TV to use in a conference room, the most imporant fact
 
 - TVs getting Airplay 2 (by end of 2019?) :  https://www.apple.com/ios/home/accessories/#section-tv
 - http://osxdaily.com/2014/08/31/how-to-get-current-screen-resolution-from-command-line-in-mac-os-x/
+- https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.8-15-iris-only-mid-2015-retina-display-specs.html
