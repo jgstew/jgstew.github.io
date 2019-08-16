@@ -8,6 +8,8 @@ When you want to make sure that you are deploying patches to fix a particular vu
 
 Right now, (this will change over time) there are 7883 distinct patches with CVEs in the BigFix Patches for Windows site as given by the following BigFix Session Relevance: `number of fixlets whose(exists cve id list whose(it != "Unspecified" AND it != "N/A") of it) of bes sites whose("Patches for Windows" = display name of it)`
 
+These 7883 distinct patches in BigFix help resolve 2825 distinct CVEs as given by: `number of unique values of (it as trimmed string) whose(it != "") of substrings separated by ";" of cve id lists whose(it != "Unspecified" AND it != "N/A") of fixlets of bes sites whose("Patches for Windows" = display name of it)`
+
 ### Example Session Relevance
 
 `number of fixlets whose(source release date of it > current date - 45*day) of bes sites whose("Patches for Windows" = display name of it)`
