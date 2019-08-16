@@ -10,7 +10,7 @@ Right now, (this will change over time) there are 7883 distinct patches with CVE
 
 These 7883 distinct patches in BigFix help resolve 2825 distinct CVEs as given by: `number of unique values of (it as trimmed string) whose(it != "") of substrings separated by ";" of cve id lists whose(it != "Unspecified" AND it != "N/A") of fixlets of bes sites whose("Patches for Windows" = display name of it)`
 
-I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on developer.bigfix.com for CVE like the following photo: 
+I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on [developer.bigfix.com](https://developer.bigfix.com/relevance/search/) for CVE like the following photo: 
 
 
 
