@@ -12,6 +12,7 @@ These 7883 distinct patches in BigFix help resolve 2825 distinct CVEs as given b
 
 I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on [developer.bigfix.com](https://developer.bigfix.com/relevance/search/) for CVE like the following photo: 
 
+![Search Results for CVE](http://jgstew.github.io/images/posts/BigFix-Mapping-CVEs-to-Patches-01.png)
 
 
 Which lead me to: https://developer.bigfix.com/relevance/reference/bes-fixlet.html#cve-id-list-of-bes-fixlet-string
