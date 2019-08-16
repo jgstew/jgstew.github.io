@@ -12,6 +12,8 @@ These 7883 distinct patches in BigFix help resolve 2825 distinct CVEs as given b
 
 These 7883 distinct patches are for 2279 distinct Microsoft KB Articles as given by: `number of unique values of source ids whose(it does not contain "Unspecified") of fixlets whose(exists cve id list whose(it != "Unspecified" AND it != "N/A") of it) of bes sites whose("Patches for Windows" = display name of it)`
 
+See here to test the above BigFix Session Relevance yourself in the BigFix Windows Console Presentation Debugger: https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md
+
 ### Search for which windows patches in BigFix resolve a particular CVE or Microsoft KBs:
 
 The following BigFix Session Relevance will find all patches which resolve **CVE-2019-1162**:
