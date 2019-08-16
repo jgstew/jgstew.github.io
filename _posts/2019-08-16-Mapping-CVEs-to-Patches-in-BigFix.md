@@ -12,6 +12,16 @@ These 7883 distinct patches in BigFix help resolve 2825 distinct CVEs as given b
 
 These 7883 distinct patches are for 2279 distinct Microsoft KB Articles as given by: `number of unique values of source ids whose(it does not contain "Unspecified") of fixlets whose(exists cve id list whose(it != "Unspecified" AND it != "N/A") of it) of bes sites whose("Patches for Windows" = display name of it)`
 
+### Search for which windows patches in BigFix resolve a particular CVE or Microsoft KBs:
+
+The following BigFix Session Relevance will find all patches which resolve **CVE-2019-1162**:
+
+`names of fixlets whose(exists (cve id list of it | ""; source id of it | "") whose(it as lowercase contains "CVE-2019-1162" as trimmed string as lowercase) ) of bes sites whose("Patches for Windows" = display name of it)`
+
+The following BigFix Session Relevance will find all patches which resolve Microsoft **KB4511553**:
+
+`names of fixlets whose(exists (cve id list of it | ""; source id of it | "") whose(it as lowercase contains "KB4511553" as trimmed string as lowercase) ) of bes sites whose("Patches for Windows" = display name of it)`
+
 ### How to find the related Session Relevance Inspectors:
 
 I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on [developer.bigfix.com](https://developer.bigfix.com/relevance/search/) for CVE like the following photo: 
