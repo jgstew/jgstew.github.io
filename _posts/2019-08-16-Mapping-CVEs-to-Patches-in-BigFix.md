@@ -1,6 +1,3 @@
----
-published: false
----
 
 For this example I'm going to use Windows Patches specifically, but the concept of mapping CVEs to specific patches apply to all operating systems.
 
