@@ -1,3 +1,6 @@
+---
+category: Web
+---
 
 I personally recommend large TVs in conference rooms instead of projectors, especially given how cheap 4k LCD TVs have become.
 
