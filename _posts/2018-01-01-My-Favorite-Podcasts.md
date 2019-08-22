@@ -18,8 +18,8 @@ My favorites in this genre are 1 part comedy and 1 part collaborative storytelli
 - The Dragon Friends
   - Start with Episode 1
   - Recorded live in a theater with an audience with Australian comedians. Very high production value from the start, including live music. Very funny, with some surprises in storytelling along the way. 
-- The Adventure Zone
-  - Start with Episode 1
+- [The Adventure Zone](https://www.maximumfun.org/shows/adventure-zone)
+  - Start with [Episode 1](https://overcast.fm/+D4cxjjHXk)
   - The first campaign is weak, but the main characters continue from there, and it really picks up from there.
   - "The Balanace Arc" of this podcast is some of the best storytelling I've ever experienced.
 - The Film Reroll
