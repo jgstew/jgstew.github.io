@@ -51,7 +51,7 @@ This genre of podcast is often described as "Wikipedia as a podcast" but I perso
 
 3 of the above podcasts have episodes that cover the same event:
 - Ungeniused [Ep#84: Balloonfest ‘86](https://overcast.fm/+GuVWfhMcc)
-- Do Go On - starting at time 45:45 of [Ep#200: Wild World Records](https://overcast.fm/+K4eUavvyQ/45:45)
+- Do Go On [Ep#200: Wild World Records](https://overcast.fm/+K4eUavvyQ/45:45) (starting at time 45:45)
 - The Dollop [Ep#38: Balloonfest](https://overcast.fm/+CdtP5ezQ)
 
 ### Movies
