@@ -20,7 +20,7 @@ My favorites in this genre are 1 part comedy and 1 part collaborative storytelli
   - Recorded live in a theater with an audience with Australian comedians. Very high production value from the start, including live music. Very funny, with some surprises in storytelling along the way. 
 - [The Adventure Zone](https://www.maximumfun.org/shows/adventure-zone)
   - Start with [Episode 1](https://overcast.fm/+D4cxjjHXk)
-  - The first campaign is weak, but the main characters continue from there, and it really picks up from there.
+  - The first campaign is weak, but the main characters continue from there, and it really picks up after that.
   - "The Balanace Arc" of this podcast is some of the best storytelling I've ever experienced.
 - The Film Reroll
   - Jump in on the first part of any movie, but especially Bill and Ted's Excellent Adventure, Aladin, or Wizard of Oz
@@ -44,6 +44,7 @@ This genre of podcast is often described as "Wikipedia as a podcast" but I perso
 - Do Go On
 - My Favorite Murder
 - The Dollop
+  - start with [Episode 15 - Ten Cent Beer Night](https://overcast.fm/+CduY1rTY)
 - [Ungeniused](https://www.relay.fm/ungeniused)
 
 #### Balloonfest ‘86
