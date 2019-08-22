@@ -44,7 +44,7 @@ This genre of podcast is often described as "Wikipedia as a podcast" but I perso
 - Do Go On
 - My Favorite Murder
 - The Dollop
-  - start with [Episode 15 - Ten Cent Beer Night](https://overcast.fm/+CduY1rTY)
+  - start with [Ep#15: Ten Cent Beer Night](https://overcast.fm/+CduY1rTY)
 - [Ungeniused](https://www.relay.fm/ungeniused)
 
 #### Balloonfest ‘86
