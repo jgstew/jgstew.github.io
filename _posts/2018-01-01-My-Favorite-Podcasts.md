@@ -13,7 +13,7 @@ I love Podcasts and I listen to them quite a lot. Below, I've made a list of pod
 
 ### D&D or Collaborative Storytelling
 
-My favorites in this genre are 1 part comedy and 1 part collaborative storytelling. Don't let the idea of a "Dungeons and Dragons" podcast be offputting, because it is so much more than that in ways that are hard to explain. 
+My favorites in this genre are 1 part comedy and 1 part collaborative storytelling. Don't let the idea of a "Dungeons and Dragons" podcast be offputting, because it is so much more than that in ways that are hard to explain. Despite the fact that I have never played a single game of Dungeons and Dragons, this has become one of my favorite genres of podcast. 
 
 - The Dragon Friends
   - Start with Episode 1
