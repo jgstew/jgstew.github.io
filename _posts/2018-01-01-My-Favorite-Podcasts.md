@@ -37,6 +37,8 @@ All of the podcasts I listen to in this genre are hosted by white men, with the 
 
 ### Encyclopedic Comedy
 
+Start with any episode for these podcasts. 
+
 - Do Go On
 - My Favorite Murder
 - The Dollop
