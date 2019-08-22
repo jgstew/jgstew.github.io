@@ -15,8 +15,8 @@ I love Podcasts and I listen to them quite a lot. Below, I've made a list of pod
 
 My favorites in this genre are 1 part comedy and 1 part collaborative storytelling. Don't let the idea of a "Dungeons and Dragons" podcast be offputting, because it is so much more than that in ways that are hard to explain. Despite the fact that I have never played a single game of Dungeons and Dragons, this has become one of my favorite genres of podcast. 
 
-- The Dragon Friends
-  - Start with Episode 1
+- [The Dragon Friends](https://www.thedragonfriends.com/)
+  - Start with [Episode 1](https://overcast.fm/+E5nCBqL4M)
   - Recorded live in a theater with an audience with Australian comedians. Very high production value from the start, including live music. Very funny, with some surprises in storytelling along the way. 
 - [The Adventure Zone](https://www.maximumfun.org/shows/adventure-zone)
   - Start with [Episode 1](https://overcast.fm/+D4cxjjHXk)
