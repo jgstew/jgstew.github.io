@@ -37,7 +37,9 @@ All of the podcasts I listen to in this genre are hosted by white men, with the 
 
 ### Encyclopedic Comedy
 
-Start with any episode for these podcasts. 
+Start with any episode for these podcasts.
+
+This genre of podcast is often described as "Wikipedia as a podcast" but I personally think they are more than that, and definitely more fun. 
 
 - Do Go On
 - My Favorite Murder
@@ -46,7 +48,11 @@ Start with any episode for these podcasts.
 
 ### Movies
 
-- The Bechdel Cast
+For these podcasts, just pick any episode about a movie you want to hear discussed. In the case of "The Flophouse" in particular, seeing the movie beforehand is not a benefit. 
+
+- [The Bechdel Cast](https://www.bechdelcast.com/)
+  - Notable episode: [The Matrix with Matt Donaher](https://overcast.fm/+HqRtygijo)
+  - "The Bechdel Cast is a podcast about the representation of women in movies. Each week, hosts Jamie Loftus and Caitlin Durante plus a special guest examine a different movie through an intersectional feminist lens to determine how well or (usually) poorly the movie treats women, and of course, whether or not the movie passes the Bechdel Test."
 - The Flophouse
   - "We watch a bad movie, then we talk about it"
 - Defocused
