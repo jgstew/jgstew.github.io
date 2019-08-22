@@ -22,8 +22,8 @@ My favorites in this genre are 1 part comedy and 1 part collaborative storytelli
   - Start with [Episode 1](https://overcast.fm/+D4cxjjHXk)
   - The first campaign is weak, but the main characters continue from there, and it really picks up after that.
   - "The Balanace Arc" of this podcast is some of the best storytelling I've ever experienced.
-- The Film Reroll
-  - Jump in on the first part of any movie, but especially Bill and Ted's Excellent Adventure, Aladin, or Wizard of Oz
+- [The Film Reroll](https://www.filmreroll.com/)
+  - Jump in on the first part of any movie, but especially [Bill and Ted’s Excellent Adventure](https://overcast.fm/+FsguoTfwo), [Aladdin](https://overcast.fm/+FsgtsV-Ms), or [The Wizard of Oz](https://overcast.fm/+Fsgv5K_Oc)
 
 ### Advice
 
