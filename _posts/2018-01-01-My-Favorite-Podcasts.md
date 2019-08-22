@@ -29,6 +29,8 @@ My favorites in this genre are 1 part comedy and 1 part collaborative storytelli
 
 These podcasts are fairly timeless, so you can really jump in at any point, or even go back to episode 1. I would generally recommend starting with the newer episodes and go back to the beginning if you really love them. 
 
+All of the podcasts I listen to in this genre are hosted by white men, with the exception of guests, which is not great. I need to find a more diverse set of podcasts in this genre especially. 
+
 - Dear Hank and John
 - Judge John Hodgman
 - My Brother My Brother and Me
@@ -38,6 +40,7 @@ These podcasts are fairly timeless, so you can really jump in at any point, or e
 - Do Go On
 - My Favorite Murder
 - The Dollop
+- [Ungeniused](https://www.relay.fm/ungeniused)
 
 ### Movies
 
