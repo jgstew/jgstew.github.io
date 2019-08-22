@@ -5,6 +5,8 @@ category: Web
 I love Podcasts and I listen to them quite a lot. Below, I've made a list of podcasts I recommend by "genre" but listed in the order I prefer them where possible. 
 
 
+### Genre Defying
+
 - Till Death Do Us Blart
   - Start with Episode 1
   - This podcast defies the movie review and comedy genres. The premise is that the hosts watch Paul Bart Mall Cop 2 every American Thanksgiving until they die. The hosts have NOT seen the first movie. Very easy to catch up on since there is only 1 episode per year. 
