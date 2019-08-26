@@ -80,7 +80,7 @@ Since these podcasts are often oriented in today's tech news, then you will gene
 - Connected
 - Upgrade
 
-### Horror
+### Horror Storytelling
 
 Don't listen to these podcasts. You have been warned. #NoSleep
 
