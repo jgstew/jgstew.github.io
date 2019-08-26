@@ -80,6 +80,17 @@ Since these podcasts are often oriented in today's tech news, then you will gene
 - Connected
 - Upgrade
 
+### Horror
+
+Don't listen to these podcasts. You have been warned. #NoSleep
+
+- [THE BLACK TAPES](http://theblacktapespodcast.com/)
+  - Start with [Episode 1](https://overcast.fm/+Ep6z1YteY)
+- [Limetown](https://www.twoupproductions.com/limetown)
+  - Start with [Episode 1](https://overcast.fm/+JnYEFkiIs)
+- [SAYER](https://overcast.fm/itunes831100527/sayer)
+  - Start with [Episode 1](https://overcast.fm/+Bj7IAsvto)
+  - first few episodes have been remastered and are later in the feed
 
 ### Others
 
