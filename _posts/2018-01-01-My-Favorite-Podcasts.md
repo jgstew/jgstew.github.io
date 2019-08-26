@@ -65,6 +65,8 @@ For these podcasts, just pick any episode about a movie you want to hear discuss
   - "We watch a bad movie, then we talk about it"
 - Defocused
 - Not Playing With Lex and Dan
+- [Feminist Frequency Radio](https://overcast.fm/itunes1307153574/feminist-frequency-radio) (not just movies)
+  - "Feminist Frequency Radio is coming for your media. Each week, Anita Sarkeesian, Carolyn Petit, and Ebony Aster bring you dispatches from the pop culture wars and invite you to listen in on their entertaining, stimulating, take-no-prisoners conversations about the latest films, games, and tv."
 
 
 ### Tech Podcasts
