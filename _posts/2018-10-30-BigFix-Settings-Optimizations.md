@@ -38,15 +38,14 @@ date: November 8, 2018
   - The client will wake if notified of new content.
 
 
-## _BESRelay_HealthCheck_EnableAtStartup
+## _BESClient_Resource_AccelerateForPendingMessage
 
 ### Default: Disabled (0)
 
 ### Recommendation: Enabled (1)
 
-- Applies to Relays
-- HealthCheck process validates site data integrity, and re-requests any site data that is corrupt so it can be properly served to clients.
-- Can Fix `FAILED to Synchronize` errors in client logs
+- This setting should be enabled everywhere
+- Allows BigFix to wakeup due to new actions (UDP)
 
 
 ## _BESClient_Log_Days
@@ -57,6 +56,17 @@ date: November 8, 2018
 
 - This setting controls how many log files the client will keep before deleting the oldest. 
 - The default of 10 days is often too short to catch issues before logs are rotated.
+
+
+## _BESRelay_HealthCheck_EnableAtStartup
+
+### Default: Disabled (0)
+
+### Recommendation: Enabled (1)
+
+- Applies to Relays
+- HealthCheck process validates site data integrity, and re-requests any site data that is corrupt so it can be properly served to clients.
+- Can Fix `FAILED to Synchronize` errors in client logs
 
 
 ## _BESRelay_RelaysFileUpdater_RefreshSeconds
@@ -113,6 +123,15 @@ Applicability: root server only (exists main gather service)
 - [***Run Always:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Comm_CommandPollEnable_%20to%20_1_%20-%20Universal.bes) Force command polling to be enabled
 - [***Run Always:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Force%20CommandPollInterval%20to%20be%20less%20than%206%20hours%20-%20Universal%20-%20Policy.bes) Set command polling to at least once every 6 hours
 - [***Run Once:***](https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Resource_PowerSaveEnable_%20to%20_1_%20after%202%20days%20-%20Universal.bes) Set `_BESClient_Resource_PowerSaveEnable` after 2 days in BigFix
+
+
+## What about new BigFix clients?
+
+### prepopulate settings with clientsettings.cfg
+
+- Can be used with Windows & Mac installers (EXE & PKG)
+- Can be used with Linux installers [using a script](https://github.com/jgstew/tools/blob/fa64fb29cac7788166b883c1a41c45a6f6ed7d58/bash/install_bigfix.sh#L277)
+- Will improve BigFix performance from the start!
 
 
 ## What about other settings?
