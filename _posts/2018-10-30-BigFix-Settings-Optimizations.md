@@ -134,6 +134,12 @@ Applicability: root server only (exists main gather service)
 - Can be used with Linux installers [using a script](https://github.com/jgstew/tools/blob/fa64fb29cac7788166b883c1a41c45a6f6ed7d58/bash/install_bigfix.sh#L277)
 - Will improve BigFix performance from the start!
 
+```
+_BESClient_Resource_StartupNormalSpeed=1
+_BESClient_Download_RetryMinutes=1
+_BESClient_Log_Days=31
+```
+
 
 ## What about other settings?
 
