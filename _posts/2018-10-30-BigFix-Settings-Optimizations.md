@@ -127,7 +127,7 @@ Applicability: root server only (exists main gather service)
 
 ## What about new BigFix clients?
 
-### prepopulate settings with clientsettings.cfg
+### prepopulate settings with `clientsettings.cfg`
 
 - Can be used with Windows & Mac installers (EXE & PKG)
 - Can be used with Linux installers [using a script](https://github.com/jgstew/tools/blob/fa64fb29cac7788166b883c1a41c45a6f6ed7d58/bash/install_bigfix.sh#L277)
@@ -149,3 +149,4 @@ Applicability: root server only (exists main gather service)
 - https://github.com/jgstew/jgstew.github.io/tree/master/_bfsettings
 - https://github.com/jgstew/bigfix-content/issues/2
 - https://github.com/jgstew/bigfix-content/blob/master/dashboards/ClientSettingsManager.ojo
+- Example `clientsettings.cfg` https://gist.github.com/jgstew/51a99ab4b5997efa0318
