@@ -136,7 +136,7 @@ Applicability: root server only (exists main gather service)
 
 ## What about other settings?
 
-![ ](/images/BigFix/Dashboards/DashboardClientSettingsManager.png)
+![ ](../images/BigFix/Dashboards/DashboardClientSettingsManager.png)
 
 
 ## Questions?
