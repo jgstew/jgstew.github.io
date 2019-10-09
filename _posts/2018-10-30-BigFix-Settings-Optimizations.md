@@ -69,6 +69,8 @@ date: November 8, 2018
 - Stored efficiently in a SQLite database
 - Can be queried with Relevance!
 
+`sum of (it as string as integer) of rows of statements "SELECT TotalActiveCount FROM ACTION_USER_RESPONSE_HISTORY" of sqlite databases of files "ActionHistory.db" of folders "__Global" of data folders of client`
+
 
 ## _BESRelay_HealthCheck_EnableAtStartup
 
