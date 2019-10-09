@@ -64,8 +64,10 @@ date: November 8, 2018
 
 ### Recommendation: 5 years (1825)
 
-- This setting controls how many log files the client will keep before deleting the oldest. 
-- The default of 10 days is often too short to catch issues before logs are rotated.
+- This setting controls how long the client keeps track of action history
+- Keep it for the entire device lifecycle!
+- Stored efficiently in a SQLite database
+- Can be queried with Relevance!
 
 
 ## _BESRelay_HealthCheck_EnableAtStartup
