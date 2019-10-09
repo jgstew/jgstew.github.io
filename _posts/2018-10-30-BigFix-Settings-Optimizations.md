@@ -58,6 +58,16 @@ date: November 8, 2018
 - The default of 10 days is often too short to catch issues before logs are rotated.
 
 
+## _BESClient_ActionManager_HistoryKeepDays
+
+### Default: 1 year (365)
+
+### Recommendation: 5 years (1825)
+
+- This setting controls how many log files the client will keep before deleting the oldest. 
+- The default of 10 days is often too short to catch issues before logs are rotated.
+
+
 ## _BESRelay_HealthCheck_EnableAtStartup
 
 ### Default: Disabled (0)
