@@ -113,6 +113,7 @@ Applicability: root server only (exists main gather service)
 
 - This setting controls the maximum size of the storage for utilities in a cache that does not get cleared out in the same way as the Client's Download Cache.
 - This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
+- BigFix actions that have downloads that are already cached will work without network connectivity!
 
 
 ## I'm Convinced, Now What?
