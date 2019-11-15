@@ -13,6 +13,7 @@ In this document I'm going to outline what I feel are conservative tweaks to Big
 #### Recommendation: 31 days (31)
 
 - The default of 10 days is often too short to catch issues before logs are rotated.
+- 1 full month of logs is very useful
 
 
 ### _BESClient_Comm_CommandPollEnable
