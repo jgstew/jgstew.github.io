@@ -21,6 +21,7 @@ In this document I'm going to outline what I feel are conservative tweaks to Big
 #### Recommendation: Enabled (1)
 
 - It should be enabled on 100% of endpoints, it is just a matter of how frequent the command polling should be done.
+- Even better would be a setting to tell BigFix to do command polling only if UDP hasn't been recieved in longer than the command polling interval.
 
 
 ### _BESClient_Download_UtilitiesCacheLimitMB
