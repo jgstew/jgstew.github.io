@@ -173,3 +173,5 @@ _BESClient_Log_Days=31
 - https://github.com/jgstew/bigfix-content/issues/2
 - https://github.com/jgstew/bigfix-content/blob/master/dashboards/ClientSettingsManager.ojo
 - Example `clientsettings.cfg` https://gist.github.com/jgstew/51a99ab4b5997efa0318
+- https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2019-11-15-BigFix-Settings-For-All-Computers.md
+
