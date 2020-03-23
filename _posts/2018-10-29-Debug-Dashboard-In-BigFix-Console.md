@@ -70,5 +70,4 @@
 
 ### Related:
 
-* https://github.com/jgstew/bigfix-content/blob/master/dashboards/Computer_Filter_Search.ojo
-* https://docs.google.com/presentation/d/1pg_j-9MM9-7rnF_l_8uhMG4ZiJxPW37cB8TVpd7Qmdk/edit?usp=sharing
+* [Intro to BigFix Dashboards Presentation](https://docs.google.com/presentation/d/1pg_j-9MM9-7rnF_l_8uhMG4ZiJxPW37cB8TVpd7Qmdk/edit?usp=sharing)
