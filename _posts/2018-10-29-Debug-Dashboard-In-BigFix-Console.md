@@ -67,3 +67,8 @@
 * [Edit DataTables Console Dashboard](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Edit-DataTables-Console-Dashboard.md)
 * [Debug BigFix Dashboard In Visual Studio](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-11-27-Debug-BigFix-Dashboard-In-Visual-Studio.md)
 
+
+### Related:
+
+* https://github.com/jgstew/bigfix-content/blob/master/dashboards/Computer_Filter_Search.ojo
+* https://docs.google.com/presentation/d/1pg_j-9MM9-7rnF_l_8uhMG4ZiJxPW37cB8TVpd7Qmdk/edit?usp=sharing
