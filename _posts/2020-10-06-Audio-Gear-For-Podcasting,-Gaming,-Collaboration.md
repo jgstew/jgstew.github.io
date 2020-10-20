@@ -51,6 +51,8 @@ Recommended for most people, but becareful about which one you pick
 
 Wired USB Audio is generally going to be high quality, high bandwidth and not prone to glitches like any kind of wireless tech, but also not prone to interference like Analog Headsets are.
 
+If you are looking to maximize quality, minimize cost, and have a pretty good ease of use, this is the right choice. Wireless options can be easier to use, but I think their possible glitches and problems can negate this ease of use. 
+
 
 ### XLR Options
 
