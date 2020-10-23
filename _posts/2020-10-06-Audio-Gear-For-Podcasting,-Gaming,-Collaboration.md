@@ -67,4 +67,11 @@ These are rare, but do exist. The Audio-Technica BPHS1 is a good example, but I 
 I use the $15 Pyle PDMIC58 XLR Microphone. I would highly recommend it, and because of it's price, it is a really good place to start even if you decide to try other XLR microphones in the future. 
 
 #### XLR to USB cable
+
+There are many of these out there. I have only ever tried one of them, and it was satisfactory. It let me get by when my first audio interface died. The specific one I tried doesn't seem like anything special, but it is the "TISINO USB Microphone Cable, XLR to USB Mic Link Converter Cord" from: https://www.amazon.com/gp/product/B083XNN1FR
+
 #### XLR to USB Audio Interface
+
+Highly recommend the Focusrite Scarlett Solo or 2i2
+
+I have tried 3 different models, all of which came highly recommended by other podcasters and reviewers. I love the one I ended up with, and kind of hate the other 2 due to problems and flaws. 
