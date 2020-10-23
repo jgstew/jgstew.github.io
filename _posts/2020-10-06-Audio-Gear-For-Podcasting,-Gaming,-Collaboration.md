@@ -59,6 +59,12 @@ If you are looking to maximize quality, minimize cost, and have a pretty good ea
 This is where you want to look if you are going to be serious about audio quality. XLR is an analog audio interface, but one that is not prone to interference like others due to it's "balanced" nature. Even so, you are going to want to convert it to digital USB Audio as early as possible in the chain because interferance is still possible. This means you will need some sort of XLR to USB audio interface, which could be as simple as a $15 XLR to USB cable, or it could be a more complicated but also more flexible XLR to USB Audio Interface, which is generally going to be $100 give or take.
 
 #### XLR Headset
+
+These are rare, but do exist. The Audio-Technica BPHS1 is a good example, but I have not tried it personally. It has both the complexity of an XLR microphone, but with slightly added ease of use of a headset, though definitely on the bulky side. 
+
 #### XLR Microphone
+
+I use the $15 Pyle PDMIC58 XLR Microphone. I would highly recommend it, and because of it's price, it is a really good place to start even if you decide to try other XLR microphones in the future. 
+
 #### XLR to USB cable
 #### XLR to USB Audio Interface
