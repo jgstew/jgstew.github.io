@@ -14,11 +14,13 @@ All of these recommendations should be valid for Windows, Mac, Linux, or Playsta
 
 ### Bluetooth
 
-Not Recommended
+Not Recommended - Especially on Windows PCs
 
 Usually better than nothing, easy to use, but DO NOT recommend for almost all cases. Bluetooth can be glitchy, and especially when being used for both microphone and headphone in headset mode, the quality is very bad due to compression. This is true even on the top of the line Bose 700 and the Sony WH-1000XM4, both of which I have tried. You can use either of these as wired headphones in combination with another microphone, but over bluetooth, the microphone quailty due to the Bluetooth compression is not great, though in my experience, the Bose 700 or Apple Airpods Pro will give you the best results when you are primarily concerned about microphone quality and how you sound on the other end.
 
 All of the above also assumes you have some of the best quality Bluetooth options available, which are generally $200+, but lower end Bluetooth options are generally much worse.
+
+If you are going to get a bluetooth headset primarily for calls, I have heard good things about the [Sennheiser MB 660](https://www.amazon.com/Sennheiser-MB-660-MS-507093/dp/B01MG5DSPS) but I haven't had a chance to try them myself. One advantage of the Sennheiser MB 660 is that it comes with a dedicated USB wireless adapter which can solve some of the problems with bluetooth on Windows.
 
 
 ### USB Wireless Headset
@@ -51,7 +53,13 @@ Recommended for most people, but becareful about which one you pick
 
 Wired USB Audio is generally going to be high quality, high bandwidth and not prone to glitches like any kind of wireless tech, but also not prone to interference like Analog Headsets are.
 
-If you are looking to maximize quality, minimize cost, and have a pretty good ease of use, this is the right choice. Wireless options can be easier to use, but I think their possible glitches and problems can negate this ease of use. 
+If you are looking to maximize quality, minimize cost, and have a pretty good ease of use, this is the right choice. Wireless options can be easier to use, but I think their possible glitches and problems can negate this ease of use.
+
+Wirecutter recommends 2 models, and I just ordered the [Microsoft LX-6000](https://www.amazon.com/Microsoft-LifeChat-LX-6000-for-Business/dp/B00465UNYI) to try: https://www.nytimes.com/wirecutter/reviews/best-usb-office-headset/
+
+Equally helpful is to read the "competition" section of Wirecutter to see why they DO NOT recommend certain models.
+
+There is also the interesting option called [ModMic](https://www.amazon.com/dp/B07YN26PBT) which is a microphone that can be added to any headphones. It comes in USB Wired, USB Wireless, and Analog options. I am very curious to try this option with my Audio-Technica ATH-M50x Professional Monitor Headphones I got for podcast recording and editing, but now use all the time because of the quality.
 
 
 ### XLR Options
