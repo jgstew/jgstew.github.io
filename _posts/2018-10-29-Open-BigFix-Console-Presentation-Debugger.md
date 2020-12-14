@@ -24,6 +24,11 @@
     * `ps of concatenations of ("There are ";it as string;" registered computers right now [ "; now as string; " ]") of number of bes computers`
     * ![Open Presentation Debugger](/images/BigFix/Console/PresentationDebuggerEvaluate.png)
 
+### BONUS: REST API Session Relevance Example:
+
+1. Use the same query as above in the BigFix REST API as a URL Encoded string
+    * <img src="/images/posts/BigFix-Debugging-REST-API-Example.PNG" alt="REST API Session Relevance Example" style="max-width:100px;"/>
+
 ### Next: 
 
 * [Debug A Dashboard In The BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
