@@ -27,7 +27,7 @@
 ### BONUS: REST API Session Relevance Example:
 
 1. Use the same query as above in the BigFix REST API as a URL Encoded string
-    * <img src="/images/posts/BigFix-Debugging-REST-API-Example.PNG" alt="REST API Session Relevance Example" style="max-width:100px;"/>
+    * <img src="/images/posts/BigFix-Debugging-REST-API-Example.PNG" alt="REST API Session Relevance Example" style="max-width:350px;"/>
 
 ### Next: 
 
