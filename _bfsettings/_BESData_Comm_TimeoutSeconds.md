@@ -13,3 +13,4 @@ Often times there will be a single time where a large query needs to complete, b
 
 - http://www-01.ibm.com/support/docview.wss?uid=swg21645679
 - https://bigfix.me/fixlet/details/3959
+- https://forum.bigfix.com/t/console-not-accepting-actions/22220/6
