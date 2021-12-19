@@ -58,12 +58,6 @@ If your organization is unique and needs higher assurances of uptime or security
 
 Sometimes the real issue is that the required compromises are hidden, inconsistent, or not clearly communicated. Sometimes a less than ideal compromise that is clearly communicated is better than a more ideal compromise that is not communicated.
 
-------------
-
-### How can BigFix help?
-
-    <still writing this part>
-
 --------
 
 ### Related:
