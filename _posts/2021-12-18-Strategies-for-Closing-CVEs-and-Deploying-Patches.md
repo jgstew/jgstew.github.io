@@ -64,4 +64,5 @@ Sometimes the real issue is that the required compromises are hidden, inconsiste
 
 - https://www.jgstew.com/bigfix/2019/08/16/What-makes-a-vulnerability-or-CVE-worse-than-others.html
 - https://forum.bigfix.com/t/log4j-cve-2021-44228-cve-2021-45046-summary-page/40222/9
+- https://forum.bigfix.com/t/log4j-cve-2021-44228-detection-and-mitigation/40141
 - https://forum.bigfix.com/t/working-to-detect-and-remove-the-edellroot-malicious-root-certificate/15089
