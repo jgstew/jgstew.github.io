@@ -13,3 +13,7 @@ In any case where the download is not available, you can put the binary in the r
 1. place the binary in the root server's wwwrootbes folder
   - On windows, the default location is: `C:\Program Files (x86)\BigFix Enterprise\BES Server\wwwrootbes\bfmirror\downloads\sha1`
   - On Linux, the default location is: `/var/opt/BESServer/wwwrootbes/bfmirror/downloads/sha1`
+
+### Related:
+
+- https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0095497
