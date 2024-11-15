@@ -10,7 +10,8 @@
 
 1. [Open BigFix Console Presentation Debugger](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 1. [Debug a Dashboard In the BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
-1. (recommended) Have the "Patches for Windows (English)" site enabled, gathered, and computers subscribed.
+1. (recommended) Patches for Windows (English)
+    * Have the site enabled, gathered, and computers subscribed.
 
 ### Steps:
 1. Put Dashboard Files in Folder
