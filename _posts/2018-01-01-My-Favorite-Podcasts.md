@@ -73,9 +73,6 @@ For these podcasts, just pick any episode about a movie you want to hear discuss
 
 Since these podcasts are often oriented in today's tech news, then you will generally want to start with the newest few episodes and go forward from there. That said, many of these shows have epsidoes that are interviews with special guests that are more timeless. It is also very interesting to listen to episodes from many years ago to get a different perspective on what was happening then. 
 
-- Rocket
-  - Rocket has become one of my favorite tech podcasts, partly due to the all women hosts, which is rare for any podcast, but especially tech podcasts. 
-- Hello Internet (See Also: Cortex)
 - Accidental Tech Podcast
 - Connected
 - Upgrade
@@ -88,9 +85,6 @@ Don't listen to these podcasts. You have been warned. #NoSleep
   - Start with [Episode 1](https://overcast.fm/+Ep6z1YteY)
 - [Limetown](https://www.twoupproductions.com/limetown)
   - Start with [Episode 1](https://overcast.fm/+JnYEFkiIs)
-- [SAYER](https://overcast.fm/itunes831100527/sayer)
-  - Start with [Episode 1](https://overcast.fm/+Bj7IAsvto)
-  - first few episodes have been remastered and are later in the feed
 
 ### Others
 
@@ -102,7 +96,4 @@ Don't listen to these podcasts. You have been warned. #NoSleep
 - Sophomore Lit
 - A Piece of Work
 - Bubble
-- Do By Friday
-
-
-
+- Cortex
