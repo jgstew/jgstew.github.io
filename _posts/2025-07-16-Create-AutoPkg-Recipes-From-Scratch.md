@@ -40,4 +40,6 @@ Process:
       url: https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
       filename: Firefox.dmg
       COMPUTE_HASHES: True
+
+  - Processor: EndOfCheckPhase
 ```
