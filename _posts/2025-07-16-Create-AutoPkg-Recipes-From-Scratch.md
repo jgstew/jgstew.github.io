@@ -22,3 +22,5 @@ These URLs will redirect to the newest Firefox download for each platform. We ar
 - Open the browser download page
 - Copy the link of the actual download
 - You should get a link like this: https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.0.4/mac/en-US/Firefox%20140.0.4.dmg
+
+Notice that this URL contains the version number for the latest version of Firefox that we downloaded.
