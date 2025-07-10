@@ -29,7 +29,7 @@ Create an autopkg download recipe `Firefox-Mac.download.recipe.yaml` to download
 
 ```
 ---
-Description: download Firefox for MacOS
+Description: Download Firefox for MacOS
 Identifier: com.github.macadmins.Firefox-Mac
 Input:
   NAME: Firefox-Mac
@@ -56,3 +56,53 @@ Add the following to the end of the download recipe to also get the version numb
 ```
 
 Run the recipe again. You should see that firefox does not download again, and this time a version number is shown in the output.
+
+Now compare the download links for macos and windows:
+
+```
+https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
+https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
+```
+
+The only difference is the macos one uses `osx` and the windows one uses `win64`. We can restructure the download recipe to make this easier to reuse.
+
+```
+---
+Description: Download Firefox for MacOS
+Identifier: com.github.macadmins.Firefox-Mac
+Input:
+  NAME: Firefox-Mac
+  OS: osx
+  filename: Firefox.dmg
+MinimumVersion: "2.3"
+Process:
+  - Processor: com.github.jgstew.SharedProcessors/URLDownloaderPython
+    Arguments:
+      url: https://download.mozilla.org/?product=firefox-latest-ssl&os=%OS%&lang=en-US
+      COMPUTE_HASHES: True
+
+  - Processor: EndOfCheckPhase
+
+  - Processor: com.github.jgstew.SharedProcessors/TextSearcher
+    Arguments:
+      input_string: "%download_url%"
+      re_pattern: 'releases/(?P<version>\d+(\.\d+)+)/'
+```
+
+Should run this and make sure we get the same output as before.
+
+Now we can create a windows download recipe based upon this one:
+
+```
+---
+Description: Download Firefox for Win
+Identifier: com.github.macadmins.Firefox-Win
+Input:
+  NAME: Firefox
+  os: win64
+  filename: FirefoxSetup.exe
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.Firefox-Mac
+```
