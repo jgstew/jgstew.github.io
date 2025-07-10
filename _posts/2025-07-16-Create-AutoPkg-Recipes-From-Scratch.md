@@ -25,7 +25,7 @@ These URLs will redirect to the newest Firefox download for each platform. We ar
 
 Notice that this URL contains the version number for the latest version of Firefox that we downloaded.
 
-Create an autopkg download recipe to download the latest Firefox for MacOS using the URL above:
+Create an autopkg download recipe `Firefox-Mac.download.recipe.yaml` to download the latest Firefox for MacOS using the URL above:
 
 ```
 ---
@@ -43,3 +43,16 @@ Process:
 
   - Processor: EndOfCheckPhase
 ```
+
+Run the recipe and see the output. It should download the newest version of firefox.
+
+Add the following to the end of the download recipe to also get the version number:
+
+```
+  - Processor: com.github.jgstew.SharedProcessors/TextSearcher
+    Arguments:
+      input_string: "%download_url%"
+      re_pattern: 'releases/(?P<version>\d+(\.\d+)+)/'
+```
+
+Run the recipe again. You should see that firefox does not download again, and this time a version number is shown in the output.
