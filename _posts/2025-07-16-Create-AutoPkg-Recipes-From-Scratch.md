@@ -72,13 +72,13 @@ Description: Download Firefox for MacOS
 Identifier: com.github.macadmins.Firefox-Mac
 Input:
   NAME: Firefox-Mac
-  OS: osx
+  os: osx
   filename: Firefox.dmg
 MinimumVersion: "2.3"
 Process:
   - Processor: com.github.jgstew.SharedProcessors/URLDownloaderPython
     Arguments:
-      url: https://download.mozilla.org/?product=firefox-latest-ssl&os=%OS%&lang=en-US
+      url: https://download.mozilla.org/?product=firefox-latest-ssl&os=%os%&lang=en-US
       COMPUTE_HASHES: True
 
   - Processor: EndOfCheckPhase
@@ -101,6 +101,25 @@ Input:
   NAME: Firefox
   os: win64
   filename: FirefoxSetup.exe
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.Firefox-Mac
+```
+
+Run this and see the different output.
+
+Then we can do the same, but for Linux:
+
+```
+---
+Description: download Firefox for Linux
+Identifier: com.github.macadmins.Firefox-Linux
+Input:
+  NAME: Firefox
+  os: linux64
+  filename: firefox.tar.bz2
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
 MinimumVersion: "2.3"
