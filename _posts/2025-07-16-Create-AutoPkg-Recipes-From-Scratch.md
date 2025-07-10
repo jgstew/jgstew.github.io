@@ -118,7 +118,7 @@ Identifier: com.github.macadmins.Firefox-Linux
 Input:
   NAME: Firefox-Linux
   os: linux64
-  filename: firefox.tar.bz2
+  filename: firefox.tar.xz
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
