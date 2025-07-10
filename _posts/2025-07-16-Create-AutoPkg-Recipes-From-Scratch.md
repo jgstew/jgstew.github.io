@@ -98,7 +98,7 @@ Now we can create a windows download recipe based upon this one:
 Description: Download Firefox for Win
 Identifier: com.github.macadmins.Firefox-Win
 Input:
-  NAME: Firefox
+  NAME: Firefox-Win
   os: win64
   filename: FirefoxSetup.exe
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
@@ -116,7 +116,7 @@ Then we can do the same, but for Linux:
 Description: download Firefox for Linux
 Identifier: com.github.macadmins.Firefox-Linux
 Input:
-  NAME: Firefox
+  NAME: Firefox-Linux
   os: linux64
   filename: firefox.tar.bz2
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
