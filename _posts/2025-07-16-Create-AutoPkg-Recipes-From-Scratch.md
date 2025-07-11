@@ -91,7 +91,7 @@ Process:
 
 Should run this and make sure we get the same output as before.
 
-Now we can create a windows download recipe based upon this one:
+Now we can create a windows download recipe based upon this one: Firefox-Win.download.recipe.yaml
 
 ```
 ---
@@ -109,7 +109,7 @@ ParentRecipe: com.github.macadmins.Firefox-Mac
 
 Run this and see the different output.
 
-Then we can do the same, but for Linux:
+Then we can do the same, but for Linux: Firefox-Linux.download.recipe.yaml
 
 ```
 ---
