@@ -3,7 +3,7 @@ published: false
 category: Other
 ---
 
-## Example: Firefox
+## Example: Firefox Download Recipes
 
 - Go here: https://www.mozilla.org/en-US/firefox/all/
 - Click Firefox under "Desktop" section
