@@ -205,4 +205,6 @@ cask "firefox" do
   end
 ```
 
-We can test this to make sure it works using:
+We can test this existing example to make sure it works using:
+
+`brew install --cask --verbose firefox.example.rb`
