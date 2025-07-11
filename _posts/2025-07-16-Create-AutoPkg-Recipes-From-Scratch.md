@@ -207,4 +207,10 @@ cask "firefox" do
 
 We can test this existing example to make sure it works using:
 
-`brew install --cask --verbose firefox.example.rb`
+`brew install --cask --verbose firefox.rb`
+
+We can turn this into a template by making a copy, renaming it to `firefox.template.rb` and changing the following:
+
+`version "127.0.2"` to `version "{{version}}"`
+
+`sha256 "af516f0222361a311e83de8ca9a27a99653b2c0a00a6653e25ab59046a44d128"` to `sha256 "{{file_sha256}}"`
