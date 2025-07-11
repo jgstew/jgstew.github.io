@@ -220,3 +220,36 @@ We can turn this into a template by making a copy, renaming it to `firefox.templ
 `version "127.0.2"` to `version "{{version}}"`
 
 `sha256 "af516f0222361a311e83de8ca9a27a99653b2c0a00a6653e25ab59046a44d128"` to `sha256 "{{file_sha256}}"`
+
+Now make a cask recipe that will use this template: `Firefox-Mac.cask.recipe.yaml`
+
+```
+---
+Description: Creates an homebrew cask for the latest version of Firefox
+Identifier: com.github.macadmins.cask.Firefox-Mac
+Input:
+  NAME: "Firefox"
+  OS: osx
+  filename: Firefox.dmg
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.download.Firefox-Mac
+Process:
+  # this is not actually BigFix specific, just sets up some defaults in the template dictionary:
+  - Processor: com.github.jgstew.SharedProcessors/BigFixSetupTemplateDictionary
+
+  # this generates the homebrew cask from the template
+  - Processor: com.github.jgstew.SharedProcessors/ContentFromTemplate
+    Arguments:
+      template_file_path: "%RECIPE_DIR%/firefox.template.rb"
+      content_file_pathname: "%RECIPE_CACHE_DIR%/firefox.rb"
+```
+
+Run this recipe, and it will generate the firefox homebrew cask.
+
+`autopkg run -vv Firefox/Firefox-Mac.cask.recipe.yaml`
+
+The generated item should be in a location like: (varies by OS)
+
+`/Users/_USER_/Library/AutoPkg/Cache/com.github.macadmins.cask.Firefox-Mac/firefox.rb`
+
+
