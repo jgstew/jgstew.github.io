@@ -109,6 +109,8 @@ ParentRecipe: com.github.macadmins.Firefox-Mac
 
 Run this and see the different output.
 
+`ParentRecipe: com.github.macadmins.Firefox-Mac` means that this recipe will run first, but using the items in the `Input` area of our `com.github.macadmins.Firefox-Win` recipe.
+
 Then we can do the same, but for Linux: Firefox-Linux.download.recipe.yaml
 
 ```
