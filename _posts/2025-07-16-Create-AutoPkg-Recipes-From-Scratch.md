@@ -252,6 +252,11 @@ The generated item should be in a location like: (varies by OS)
 
 `/Users/_USER_/Library/AutoPkg/Cache/com.github.macadmins.cask.Firefox-Mac/firefox.rb`
 
+Can test this generated cask on a MacOS test machine:
+
+`brew install --cask /Users/_USER_/Library/AutoPkg/Cache/com.github.macadmins.cask.Firefox-Mac/firefox.rb`
+
+From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
 
 ## Example: Firefox Linux Script Recipe
 
@@ -321,3 +326,41 @@ We can turn this into a template by making a copy, renaming it to `firefox-insta
 `url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/137.0/linux-x86_64/en-US/firefox-137.0.tar.xz"` to `url="{{download_url}}"`
 
 `expected_sha256="4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9"` to `expected_sha256="{{file_sha256}}"`
+
+Now make an installscript recipe that will use this template: `Firefox-Linux.installscript.recipe.yaml`
+
+```
+---
+Description: Creates an install script for the latest version of Firefox
+Identifier: com.github.macadmins.installscript.Firefox-Linux
+Input:
+  NAME: Firefox-Linux
+  OS: linux64
+  filename: firefox.tar.xz
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.download.Firefox-Linux
+Process:
+  # this is not actually BigFix specific, just sets up some defaults in the template dictionary:
+  - Processor: com.github.jgstew.SharedProcessors/BigFixSetupTemplateDictionary
+
+  # this generates the install script from the template
+  - Processor: com.github.jgstew.SharedProcessors/ContentFromTemplate
+    Arguments:
+      template_file_path: "%RECIPE_DIR%/firefox-install-linux.template.sh"
+      content_file_pathname: "%RECIPE_CACHE_DIR%/install-firefox-linux.sh"
+```
+
+Run this recipe, and it will generate the firefox install script.
+
+`autopkg run -vv Firefox/Firefox-Linux.installscript.recipe.yaml`
+
+The generated item should be in a location like: (varies by OS)
+
+`/Users/_USER_/Library/AutoPkg/Cache/com.github.macadmins.installscript.Firefox-Linux/install-firefox-linux.sh`
+
+Can then test this script on a linux test machine: (or docker container)
+
+`bash install-firefox-linux.sh`
+
+From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
+
