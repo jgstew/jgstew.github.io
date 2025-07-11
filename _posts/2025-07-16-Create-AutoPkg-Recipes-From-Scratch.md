@@ -127,3 +127,82 @@ Input:
 MinimumVersion: "2.3"
 ParentRecipe: com.github.macadmins.Firefox-Mac
 ```
+
+
+## Example: Firefox MacOS Homebrew Recipe
+
+Now that we have a working download recipe for FireFox for MacOS, we need to create a recipe to "package" it for a distribution tool.
+
+For this example, we are going to make a homebrew cask.
+
+We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
+
+Here is a working example that installs an outdated version of FireFox: firefox.example.rb
+
+```
+# https://github.com/Homebrew/homebrew-cask/blob/master/Casks/f/firefox.rb
+cask "firefox" do
+    version "127.0.2"
+
+    language "en", default: true do
+      sha256 "af516f0222361a311e83de8ca9a27a99653b2c0a00a6653e25ab59046a44d128"
+      "en-US"
+    end
+
+    url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg",
+        verified: "download-installer.cdn.mozilla.net/pub/firefox/releases/"
+    name "Mozilla Firefox"
+    desc "Web browser"
+    homepage "https://www.mozilla.org/firefox/"
+
+    livecheck do
+      url "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx"
+      strategy :header_match
+    end
+
+    auto_updates true
+    conflicts_with cask: [
+      "firefox@beta",
+      "firefox@cn",
+      "firefox@esr",
+    ]
+    depends_on macos: ">= :catalina"
+
+    app "Firefox.app"
+    # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+    shimscript = "#{staged_path}/firefox.wrapper.sh"
+    binary shimscript, target: "firefox"
+
+    preflight do
+      File.write shimscript, <<~EOS
+        #!/bin/bash
+        exec '#{appdir}/Firefox.app/Contents/MacOS/firefox' "$@"
+      EOS
+    end
+
+    uninstall quit: "org.mozilla.firefox"
+
+    zap trash: [
+          "/Library/Logs/DiagnosticReports/firefox_*",
+          "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*",
+          "~/Library/Application Support/CrashReporter/firefox_*",
+          "~/Library/Application Support/Firefox",
+          "~/Library/Caches/Firefox",
+          "~/Library/Caches/Mozilla/updates/Applications/Firefox",
+          "~/Library/Caches/org.mozilla.crashreporter",
+          "~/Library/Caches/org.mozilla.firefox",
+          "~/Library/Preferences/org.mozilla.crashreporter.plist",
+          "~/Library/Preferences/org.mozilla.firefox.plist",
+          "~/Library/Saved Application State/org.mozilla.firefox.savedState",
+          "~/Library/WebKit/org.mozilla.firefox",
+        ],
+        rmdir: [
+          "~/Library/Application Support/Mozilla", #  May also contain non-Firefox data
+          "~/Library/Caches/Mozilla",
+          "~/Library/Caches/Mozilla/updates",
+          "~/Library/Caches/Mozilla/updates/Applications",
+        ]
+  end
+```
+
+We can test this to make sure it works using:
