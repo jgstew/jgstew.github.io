@@ -30,7 +30,7 @@ Create an autopkg download recipe `Firefox-Mac.download.recipe.yaml` to download
 ```
 ---
 Description: Download Firefox for MacOS
-Identifier: com.github.macadmins.Firefox-Mac
+Identifier: com.github.macadmins.download.Firefox-Mac
 Input:
   NAME: Firefox-Mac
 MinimumVersion: "2.3"
@@ -69,7 +69,7 @@ The only difference is the macos one uses `osx` and the windows one uses `win64`
 ```
 ---
 Description: Download Firefox for MacOS
-Identifier: com.github.macadmins.Firefox-Mac
+Identifier: com.github.macadmins.download.Firefox-Mac
 Input:
   NAME: Firefox-Mac
   os: osx
@@ -96,7 +96,7 @@ Now we can create a windows download recipe based upon this one: Firefox-Win.dow
 ```
 ---
 Description: Download Firefox for Win
-Identifier: com.github.macadmins.Firefox-Win
+Identifier: com.github.macadmins.download.Firefox-Win
 Input:
   NAME: Firefox-Win
   os: win64
@@ -104,7 +104,7 @@ Input:
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
 MinimumVersion: "2.3"
-ParentRecipe: com.github.macadmins.Firefox-Mac
+ParentRecipe: com.github.macadmins.download.Firefox-Mac
 ```
 
 Run this and see the different output.
@@ -116,7 +116,7 @@ Then we can do the same, but for Linux: Firefox-Linux.download.recipe.yaml
 ```
 ---
 Description: download Firefox for Linux
-Identifier: com.github.macadmins.Firefox-Linux
+Identifier: com.github.macadmins.download.Firefox-Linux
 Input:
   NAME: Firefox-Linux
   os: linux64
@@ -125,7 +125,7 @@ Input:
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
   # https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US
 MinimumVersion: "2.3"
-ParentRecipe: com.github.macadmins.Firefox-Mac
+ParentRecipe: com.github.macadmins.download.Firefox-Mac
 ```
 
 
