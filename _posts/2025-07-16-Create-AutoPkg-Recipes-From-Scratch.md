@@ -3,6 +3,12 @@ published: false
 category: Other
 ---
 
+## Setup:
+
+Install AutoPkg or clone repo and run it using python directly.
+
+Run: `autopkg repo-add https://github.com/jgstew/jgstew-recipes.git`
+
 ## Example: Firefox Download Recipes
 
 - Go here: https://www.mozilla.org/en-US/firefox/all/
