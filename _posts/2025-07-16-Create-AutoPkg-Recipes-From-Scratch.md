@@ -139,7 +139,7 @@ ParentRecipe: com.github.macadmins.download.Firefox-Mac
 
 Now that we have a working download recipe for FireFox for MacOS, we need to create a recipe to "package" it for a distribution tool.
 
-For this example, we are going to make a homebrew cask.
+For this example, we are going to make a homebrew cask, which is just a ruby file with a specific format.
 
 We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
 
