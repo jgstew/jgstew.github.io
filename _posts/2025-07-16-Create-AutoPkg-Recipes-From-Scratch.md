@@ -489,3 +489,5 @@ Can test this generated chocolatey package on a Windows test machine:
 `choco install firefox -s "$env:USERPROFILE\Library\AutoPkg\Cache\com.github.macadmins.ChocolateyTemplate.Firefox-Win64\" --pre --no-progress --yes --force --verbose`
 
 From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
+
+Because the process to create Chocolatey packages doesn't vary much between different software titles, you can then turn this FireFox example into one that uses the Input variables and is easier to reuse.
