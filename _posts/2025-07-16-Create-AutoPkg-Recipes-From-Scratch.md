@@ -327,7 +327,9 @@ We can turn this into a template by making a copy, renaming it to `firefox-insta
 
 `expected_sha256="4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9"` to `expected_sha256="{{file_sha256}}"`
 
-Now make an installscript recipe that will use this template: `Firefox-Linux.installscript.recipe.yaml`
+Now make an installscript recipe that will use this template: 
+
+### Firefox-Linux.installscript.recipe.yaml
 
 ```
 ---
@@ -369,7 +371,7 @@ From here, AutoPkg can import this into your preferred management tool, you can 
 
 Now that we have a working download recipe for FireFox for Windows, we need to create a recipe to "package" it for a distribution tool.
 
-For this example, we are going to make a chocolatey package.
+For this example, we are going to make a chocolatey package, which is really just a zip file with specific files in it.
 
 We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
 
@@ -377,3 +379,39 @@ In this case we are going to bundle the Firefox download into the chocolatey pac
 
 Here is a working example that installs an outdated version of FireFox:
 
+### chocolateyInstall.ps1
+
+```
+$ErrorActionPreference = 'Stop'
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+$file = Join-Path $toolsDir 'FirefoxSetup.exe'
+$packageArgs = @{
+  packageName = 'Firefox'
+  fileType = 'exe'
+  silentArgs = '/S'
+  file = $file
+}
+
+Install-ChocolateyInstallPackage @packageArgs
+```
+
+Turn this into a template by changing `'FirefoxSetup.exe'` into `'{{file_name}}'`
+
+
+### Firefox.nuspec
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Firefox</id>
+    <version>127.0.2</version>
+    <title>Firefox</title>
+    <authors>Mozilla</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Firefox web browser.</description>
+  </metadata>
+</package>
+```
+
+Turn this into a template by changing `<version>127.0.2</version>` into `<version>{{version}}</version>`
