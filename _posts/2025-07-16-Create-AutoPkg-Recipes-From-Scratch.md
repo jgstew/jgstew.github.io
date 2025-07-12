@@ -486,6 +486,6 @@ The generated item should be in a location like: (varies by OS)
 
 Can test this generated chocolatey package on a Windows test machine:
 
-`choco install autopkg -s "$env:USERPROFILE\Library\AutoPkg\Cache\com.github.jgstew.nupkg.AutoPkg\nupkgs\" --pre --no-progress --yes --force --verbose`
+`choco install firefox -s "$env:USERPROFILE\Library\AutoPkg\Cache\com.github.macadmins.ChocolateyTemplate.Firefox-Win64\" --pre --no-progress --yes --force --verbose`
 
 From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
