@@ -490,4 +490,4 @@ Can test this generated chocolatey package on a Windows test machine:
 
 From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
 
-Because the process to create Chocolatey packages doesn't vary much between different software titles, you can then turn this FireFox example into one that uses the Input variables and is easier to reuse.
+Because the process to create Chocolatey packages doesn't vary much between different software titles, you can then turn this FireFox recipe into one that uses the Input variables and is easier to reuse.
