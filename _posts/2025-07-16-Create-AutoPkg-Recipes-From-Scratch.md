@@ -364,3 +364,16 @@ Can then test this script on a linux test machine: (or docker container)
 
 From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
 
+
+## Example: Firefox Windows Chocolatey Recipe
+
+Now that we have a working download recipe for FireFox for Windows, we need to create a recipe to "package" it for a distribution tool.
+
+For this example, we are going to make a chocolatey package.
+
+We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
+
+In this case we are going to bundle the Firefox download into the chocolatey package itself, so then this can be deployed to systems that do not have an internet connection.
+
+Here is a working example that installs an outdated version of FireFox:
+
