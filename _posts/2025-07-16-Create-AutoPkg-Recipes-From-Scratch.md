@@ -475,3 +475,17 @@ Process:
       # need to change the relative directory to NOT include the directory name
       relative_directory: tmp
 ```
+
+Run this recipe, and it will generate the firefox chocolatey package.
+
+`autopkg run -vv Firefox/Firefox-Win.ChocolateyTemplate.recipe.yaml`
+
+The generated item should be in a location like: (varies by OS)
+
+`/Users/_User_/Library/AutoPkg/Cache/com.github.macadmins.ChocolateyTemplate.Firefox-Win64/firefox.nupkg`
+
+Can test this generated chocolatey package on a Windows test machine:
+
+`choco install ???`
+
+From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
