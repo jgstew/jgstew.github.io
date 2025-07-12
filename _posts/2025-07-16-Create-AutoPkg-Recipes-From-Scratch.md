@@ -397,6 +397,8 @@ Install-ChocolateyInstallPackage @packageArgs
 
 Turn this into a template by changing `'FirefoxSetup.exe'` into `'{{file_name}}'`
 
+Rename it to `Firefox-Win.ChocolateyTemplate.chocolateyInstall.ps1`
+
 
 ### Firefox.nuspec
 
@@ -415,3 +417,59 @@ Turn this into a template by changing `'FirefoxSetup.exe'` into `'{{file_name}}'
 ```
 
 Turn this into a template by changing `<version>127.0.2</version>` into `<version>{{version}}</version>`
+
+Rename it to `Firefox-Win.ChocolateyTemplate.Firefox.nuspec`
+
+Create a recipe to create the chocolatey package from the templates:
+
+### Firefox-Win.ChocolateyTemplate.recipe.yaml
+
+```
+---
+Description: Creates an choco package for the latest version of Firefox
+Identifier: com.github.macadmins.ChocolateyTemplate.Firefox-Win64
+Input:
+  NAME: "Firefox"
+  OS: win64
+  filename: FirefoxSetup.exe
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
+  # https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en-US
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.download.Firefox-Win
+Process:
+  # this is not actually BigFix specific, just sets up some defaults in the template dictionary:
+  - Processor: com.github.jgstew.SharedProcessors/BigFixSetupTemplateDictionary
+
+  # create missing folders:
+  - Processor: com.github.jgstew.SharedProcessors/FileTouch
+    Arguments:
+      pathname: "%RECIPE_CACHE_DIR%/tmp/tools/chocolateyInstall.ps1"
+      touch_create_folders: True
+
+  # create Firefox.nuspec from template
+  - Processor: com.github.jgstew.SharedProcessors/ContentFromTemplate
+    Arguments:
+      template_file_path: "%RECIPE_DIR%/Firefox-Win.ChocolateyTemplate.Firefox.nuspec"
+      content_file_pathname: "%RECIPE_CACHE_DIR%/tmp/Firefox.nuspec"
+
+  # create chocolateyInstall.ps1 from template
+  # https://docs.chocolatey.org/en-us/create/create-packages/
+  # https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage/
+  - Processor: com.github.jgstew.SharedProcessors/ContentFromTemplate
+    Arguments:
+      template_file_path: "%RECIPE_DIR%/Firefox-Win.ChocolateyTemplate.chocolateyInstall.ps1"
+      content_file_pathname: "%RECIPE_CACHE_DIR%/tmp/tools/chocolateyInstall.ps1"
+
+  # copy FirefoxSetup.exe into tmp directory for creation of nupkg
+  - Processor: com.github.jgstew.SharedProcessors/FileCopyNewest
+    Arguments:
+      file_path_first: "%RECIPE_CACHE_DIR%/downloads/FirefoxSetup.exe"
+      file_path_second: "%RECIPE_CACHE_DIR%/tmp/tools/FirefoxSetup.exe"
+
+  # create zip file Firefox.nupkg
+  - Processor: com.github.jgstew.SharedProcessors/SevenZip
+    Arguments:
+      sevenzip_args: ["a", "-tzip", "../firefox.nupkg", "*"]
+      # need to change the relative directory to NOT include the directory name
+      relative_directory: tmp
+```
