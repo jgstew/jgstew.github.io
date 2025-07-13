@@ -491,3 +491,68 @@ Can test this generated chocolatey package on a Windows test machine:
 From here, AutoPkg can import this into your preferred management tool, you can test it, and run on a target systems.
 
 Because the process to create Chocolatey packages doesn't vary much between different software titles, you can then turn this FireFox recipe into one that uses the Input variables and is easier to reuse.
+
+## Example: Firefox Windows BigFix Recipe
+
+Now that we have a working download recipe for FireFox for Windows, we need to create a recipe to "package" it for a distribution tool.
+
+For this example, we are going to make a BigFix Install Task, which is really just an XML file.
+
+We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
+
+Here is a working example that installs an outdated version of FireFox:
+
+### Firefox-Win.bigfix.install.bes
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Task>
+		<Title>Install: Mozilla Firefox v127.0.2 - Windows</Title>
+		<Description><![CDATA[
+This task will download and install "Mozilla Firefox v127.0.2" package onto selected endpoints.
+		]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance><![CDATA[not exists keys whose(value "DisplayName" of it as string starts with "Mozilla Firefox") of keys "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall" of (x32 registries; x64 registries)]]></Relevance>
+		<Category></Category>
+		<DownloadSize>64728328</DownloadSize>
+		<Source>Mozilla</Source>
+		<SourceID></SourceID>
+		<SourceReleaseDate>2024-06-25</SourceReleaseDate>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Sun, 07 Jul 2024 17:49:09 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<DefaultAction ID="Action1">
+			<Description>
+				<PreLink>Click </PreLink>
+				<Link>here</Link>
+				<PostLink> to deploy Mozilla Firefox v127.0.2.</PostLink>
+			</Description>
+			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell"><![CDATA[
+// Download:
+prefetch FirefoxSetup.exe sha1:97d16ec0c749ede9244446507ed4ae53f4c7a873 size:64728328 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US sha256:aa20d3d8f755f13db6091665439f310a850a86cd06d326c8db449ebacfa50051
+
+// Install:
+wait __Download\FirefoxSetup.exe /S
+
+// End]]></ActionScript>
+      		<SuccessCriteria Option="OriginalRelevance"></SuccessCriteria>
+		</DefaultAction>
+	</Task>
+</BES>
+```
+
+Turn this into a template by changing:
+
+`<DownloadSize>64728328</DownloadSize>` into ``
+
+`<SourceReleaseDate>2024-06-25</SourceReleaseDate>` into ``
+
+`<Value>Sun, 07 Jul 2024 17:49:09 +0000</Value>` into ``
+
+the line `prefetch FirefoxSetup.exe sha1:`... into ``
