@@ -549,10 +549,47 @@ wait __Download\FirefoxSetup.exe /S
 
 Turn this into a template by changing:
 
-`<DownloadSize>64728328</DownloadSize>` into ``
+`<DownloadSize>64728328</DownloadSize>` into `<DownloadSize>{{DownloadSize}}</DownloadSize>`
 
-`<SourceReleaseDate>2024-06-25</SourceReleaseDate>` into ``
+`<SourceReleaseDate>2024-06-25</SourceReleaseDate>` into `<SourceReleaseDate>{{SourceReleaseDate}}</SourceReleaseDate>`
 
-`<Value>Sun, 07 Jul 2024 17:49:09 +0000</Value>` into ``
+`<Value>Sun, 07 Jul 2024 17:49:09 +0000</Value>` into `<Value>{{x-fixlet-modification-time}}</Value>`
 
-the line `prefetch FirefoxSetup.exe sha1:`... into ``
+the line `prefetch FirefoxSetup.exe sha1:`... into `{{prefetch}}`
+
+Search and replace `127.0.2` to `{{version}}`
+
+Rename it to `Firefox-Win.bigfix.install.template.bes`
+
+Create a recipe to create the BigFix install task from the templates:
+
+```
+---
+Description: Creates a bigfix install fixlet for the latest version of Firefox
+Identifier: com.github.macadmins.bigfix.Firefox-Win
+Input:
+  NAME: "Firefox"
+  DisplayName: "Mozilla Firefox"
+  OS: win64
+  filename: FirefoxSetup.exe
+  # https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
+  # https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en-US
+MinimumVersion: "2.3"
+ParentRecipe: com.github.macadmins.download.Firefox-Win
+Process:
+  - Processor: com.github.jgstew.SharedProcessors/BigFixPrefetchItem
+
+  - Processor: com.github.jgstew.SharedProcessors/BigFixSetupTemplateDictionary
+
+  - Processor: com.github.jgstew.SharedProcessors/TemplateDictionaryAppendInput
+
+  - Processor: com.github.jgstew.SharedProcessors/ContentFromTemplate
+    Arguments:
+      # use UNIX style paths so this works on Windows and non-Windows:
+      template_file_path: "%RECIPE_DIR%/Firefox-Win.bigfix.install.template.bes"
+      content_file_pathname: "%RECIPE_CACHE_DIR%/%NAME%-Install.bes"
+
+  - Processor: com.github.jgstew.SharedProcessors/BESImport
+
+  # - Processor: com.github.jgstew.SharedProcessors/BigFixActioner
+```
