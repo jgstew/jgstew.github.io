@@ -11,6 +11,7 @@ Install AutoPkg or clone repo and run it using python directly.
 
 Run: `autopkg repo-add https://github.com/jgstew/jgstew-recipes.git`
 
+
 ## Example: Firefox Download Recipes
 
 - Go here: https://www.mozilla.org/en-US/firefox/all/
@@ -32,6 +33,9 @@ These URLs will redirect to the newest Firefox download for each platform. We ar
 - You should get a link like this: https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.0.4/mac/en-US/Firefox%20140.0.4.dmg
 
 Notice that this URL contains the version number for the latest version of Firefox that we downloaded.
+
+
+### Firefox-Mac.download.recipe.yaml
 
 Create an autopkg download recipe `Firefox-Mac.download.recipe.yaml` to download the latest Firefox for MacOS using the URL above:
 
@@ -99,6 +103,9 @@ Process:
 
 Should run this and make sure we get the same output as before.
 
+
+### Firefox-Win.download.recipe.yaml
+
 Now we can create a windows download recipe based upon this one: Firefox-Win.download.recipe.yaml
 
 ```
@@ -118,6 +125,9 @@ ParentRecipe: com.github.macadmins.download.Firefox-Mac
 Run this and see the different output.
 
 `ParentRecipe: com.github.macadmins.Firefox-Mac` means that this recipe will run first, but using the items in the `Input` area of our `com.github.macadmins.Firefox-Win` recipe.
+
+
+### Firefox-Linux.download.recipe.yaml
 
 Then we can do the same, but for Linux: Firefox-Linux.download.recipe.yaml
 
@@ -144,6 +154,9 @@ Now that we have a working download recipe for FireFox for MacOS, we need to cre
 For this example, we are going to make a homebrew cask, which is just a ruby file with a specific format.
 
 We are going to start with a working example then turn it into a template so that we can automate the creation of it using AutoPkg.
+
+
+### firefox.example.rb
 
 Here is a working example that installs an outdated version of FireFox: firefox.example.rb
 
@@ -223,6 +236,9 @@ We can turn this into a template by making a copy, renaming it to `firefox.templ
 
 `sha256 "af516f0222361a311e83de8ca9a27a99653b2c0a00a6653e25ab59046a44d128"` to `sha256 "{{file_sha256}}"`
 
+
+### Firefox-Mac.cask.recipe.yaml
+
 Now make a cask recipe that will use this template: `Firefox-Mac.cask.recipe.yaml`
 
 ```
@@ -263,6 +279,9 @@ From here, AutoPkg can import this into your preferred management tool, you can 
 ## Example: Firefox Linux Script Recipe
 
 Now a similar example for Linux, but this time using a bash script to install firefox.
+
+
+### firefox-install-linux.example.sh
 
 Create a bash script to install FireFox on Linux, based upon the Mozilla documentation: `firefox-install-linux.example.sh`
 
@@ -560,6 +579,8 @@ the line `prefetch FirefoxSetup.exe sha1:`... into `{{prefetch}}`
 Search and replace `127.0.2` to `{{version}}`
 
 Rename it to `Firefox-Win.bigfix.install.template.bes`
+
+### Firefox-Win.bigfix.recipe.yaml
 
 Create a recipe to create the BigFix install task from the templates:
 
