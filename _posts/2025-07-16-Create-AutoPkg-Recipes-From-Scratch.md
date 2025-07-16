@@ -610,7 +610,7 @@ Process:
       template_file_path: "%RECIPE_DIR%/Firefox-Win.bigfix.install.template.bes"
       content_file_pathname: "%RECIPE_CACHE_DIR%/%NAME%-Install.bes"
 
-  - Processor: com.github.jgstew.SharedProcessors/BESImport
+  # - Processor: com.github.jgstew.SharedProcessors/BESImport
 
   # - Processor: com.github.jgstew.SharedProcessors/BigFixActioner
 ```
