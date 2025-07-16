@@ -599,6 +599,8 @@ MinimumVersion: "2.3"
 ParentRecipe: com.github.macadmins.download.Firefox-Win
 Process:
   - Processor: com.github.jgstew.SharedProcessors/BigFixPrefetchItem
+    Arguments:
+      prefetch_url: "%download_url%"
 
   - Processor: com.github.jgstew.SharedProcessors/BigFixSetupTemplateDictionary
 
