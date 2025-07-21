@@ -2,11 +2,17 @@
 category: Other
 ---
 
+## Resources:
+
+- [Presentation](https://docs.google.com/presentation/d/1qxfqkfU2R9xhR_9TvlvbbFTvYuFOCywLK58mZT9mnoQ/edit?usp=sharing)
+- https://github.com/jgstew/jgstew-recipes
+
+
 ## Setup:
 
-Use a Mac, Windows, or Linux system. (Ubuntu specifically is well tested, but other distros should work)
+Use a Mac, Windows, or Linux system. (Ubuntu specifically is well tested, but other Linux distros should work)
 
-Install AutoPkg or clone repo and run it using python directly.
+Install AutoPkg on MacOS or clone repo and run it using python directly. See the setup scripts in the jgstew-recipes repo.
 
 Run: `autopkg repo-add https://github.com/jgstew/jgstew-recipes.git`
 
