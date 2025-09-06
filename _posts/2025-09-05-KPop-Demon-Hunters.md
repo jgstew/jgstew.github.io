@@ -36,4 +36,4 @@ I'm not Korean, so you should really look for analysis of the Korean Culture det
 
 ### Food
 
-I also really like how there is a lot of Korean food throughout the movie. A lot of it I immediately recognized, while others I learned about after the fact from discussions around it.
+I also really like how there is a lot of Korean food throughout the movie. A lot of it I immediately recognized, while others I learned about after the fact from discussions around it. It makes me want to go try any of it I can find at a restaurant.
