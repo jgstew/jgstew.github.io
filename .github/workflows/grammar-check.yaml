@@ -19,6 +19,18 @@ jobs:
       - name: run harper-cli config
         run: harper-cli config
 
+      - name: add to dictionary
+        run: |
+          cat <<EOFEOF >> ~/.config/harper-ls/dictionary.txt
+          jgstew
+          BigFix
+          ActionScript
+          SCEP
+          Strawgate
+          IOCs
+          etc
+          EOFEOF
+
       - name: run harper-cli lint help
         run: harper-cli lint --help
 
