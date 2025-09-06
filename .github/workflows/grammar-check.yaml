@@ -53,7 +53,7 @@ jobs:
           # cat harper-lint-output.txt
 
       - name: upload harper lint output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: harper-lint-output
           path: harper-lint-output.txt
