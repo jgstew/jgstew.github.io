@@ -45,6 +45,48 @@ jobs:
           IOCs
           etc
           MB
+          Analyses
+          BESClient
+          BESRelay
+          CVSS
+          CVE
+          Chocolatey
+          DEP
+          GPO
+          HCL
+          CommandPollEnable
+          EXE
+          MSI
+          Ctrl
+          Eero
+          FireFox
+          Fixlets
+          LocalGPO
+          MacOS
+          Prefetch
+          Prefetches
+          SHA1
+          SHA256
+          sha1
+          sha256
+          SoCs
+          UtilitiesCacheLimitMB
+          WiFi
+          VLC
+          WineBottler
+          wwwrootbes
+          opsite
+          svg
+          yaml
+          png
+          jpg
+          jpeg
+          gif
+          mAh
+          RefreshSeconds
+          RDP
+          NVD
+          CommandPollIntervalSeconds
           EOFEOF
 
       - name: run harper-cli lint help
