@@ -9,7 +9,7 @@ BigFix relevance to generate filenames for Jekyll blog posts: https://bigfix.me/
 
 ----------
 
-# TODO - Work In Progress Posts:
+# Work In Progress Posts:
 
 - BigFix Relevance/ActionScript Style Guide
  - Use plural relevance when possible, use comments, preserve relevance left to right flow
