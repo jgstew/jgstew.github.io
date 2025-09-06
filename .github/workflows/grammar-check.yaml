@@ -49,4 +49,4 @@ jobs:
       - name: run harper grammar checker
         shell: bash
         run: |
-          find . -name "*.md" -print0 | xargs -0 harper-cli lint
+          find . -name "*.md" -exec harper-cli lint {} \;
