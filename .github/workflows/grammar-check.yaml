@@ -9,6 +9,10 @@ on:
     branches:
       - master
       - main
+  pull_request:
+    paths:
+      - ".github/workflows/grammar-check.yaml"
+
 
 jobs:
   grammar-check:
@@ -41,6 +45,48 @@ jobs:
           IOCs
           etc
           MB
+          Analyses
+          BESClient
+          BESRelay
+          CVSS
+          CVE
+          Chocolatey
+          DEP
+          GPO
+          HCL
+          CommandPollEnable
+          EXE
+          MSI
+          Ctrl
+          Eero
+          FireFox
+          Fixlets
+          LocalGPO
+          MacOS
+          Prefetch
+          Prefetches
+          SHA1
+          SHA256
+          sha1
+          sha256
+          SoCs
+          UtilitiesCacheLimitMB
+          WiFi
+          VLC
+          WineBottler
+          wwwrootbes
+          opsite
+          svg
+          yaml
+          png
+          jpg
+          jpeg
+          gif
+          mAh
+          RefreshSeconds
+          RDP
+          NVD
+          CommandPollIntervalSeconds
           EOFEOF
 
       - name: run harper-cli lint help
@@ -49,7 +95,7 @@ jobs:
       - name: run harper grammar checker
         shell: bash
         run: |
-          find . -name "*.md" -exec harper-cli lint {} >> harper-lint-output.txt \;
+          find . -name "*.md" -exec harper-cli lint {} \; >> harper-lint-output.txt
           # cat harper-lint-output.txt
 
       - name: upload harper lint output
