@@ -1,7 +1,14 @@
 ---
 name: grammar-check
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/grammar-check.yaml"
+    branches:
+      - master
+      - main
 
 jobs:
   grammar-check:
