@@ -47,4 +47,4 @@ jobs:
         run: harper-cli lint --help
 
       - name: run harper grammar checker
-        run: harper-cli lint _posts/**.md
+        run: harper-cli lint "_posts/**.md"
