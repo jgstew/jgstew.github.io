@@ -40,7 +40,7 @@ jobs:
           Strawgate's
           IOCs
           etc
-          TODO
+          MB
           EOFEOF
 
       - name: run harper-cli lint help
@@ -49,4 +49,5 @@ jobs:
       - name: run harper grammar checker
         shell: bash
         run: |
-          find . -name "*.md" -exec harper-cli lint {} \;
+          find . -name "*.md" -exec harper-cli lint {} >> harper-lint-output.txt \;
+          cat harper-lint-output.txt
