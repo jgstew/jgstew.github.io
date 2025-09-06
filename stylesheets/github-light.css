@@ -47,7 +47,7 @@
 .pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
 .pl-sr               /* string.regexp */,
 .pl-sr .pl-cce       /* string.regexp constant.character.escape */,
-.pl-sr .pl-sra       /* string.regexp string.regexp.arbitrary-repitition */,
+.pl-sr .pl-sra       /* string.regexp string.regexp.arbitrary-repetition */,
 .pl-sr .pl-sre       /* string.regexp source.ruby.embedded */ {
   color: #183691;
 }

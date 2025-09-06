@@ -16,7 +16,7 @@ All of these recommendations should be valid for Windows, Mac, Linux, or Playsta
 
 Not Recommended - Especially on Windows PCs
 
-Usually better than nothing, easy to use, but DO NOT recommend for almost all cases. Bluetooth can be glitchy, and especially when being used for both microphone and headphone in headset mode, the quality is very bad due to compression. This is true even on the top of the line Bose 700 and the Sony WH-1000XM4, both of which I have tried. You can use either of these as wired headphones in combination with another microphone, but over bluetooth, the microphone quailty due to the Bluetooth compression is not great, though in my experience, the Bose 700 or Apple Airpods Pro will give you the best results when you are primarily concerned about microphone quality and how you sound on the other end.
+Usually better than nothing, easy to use, but DO NOT recommend for almost all cases. Bluetooth can be glitchy, and especially when being used for both microphone and headphone in headset mode, the quality is very bad due to compression. This is true even on the top of the line Bose 700 and the Sony WH-1000XM4, both of which I have tried. You can use either of these as wired headphones in combination with another microphone, but over bluetooth, the microphone quality due to the Bluetooth compression is not great, though in my experience, the Bose 700 or Apple Airpods Pro will give you the best results when you are primarily concerned about microphone quality and how you sound on the other end.
 
 All of the above also assumes you have some of the best quality Bluetooth options available, which are generally $200+, but lower end Bluetooth options are generally much worse.
 
