@@ -31,12 +31,16 @@ jobs:
           mkdir -p ~/.config/harper-ls
           cat <<EOFEOF >> ~/.config/harper-ls/dictionary.txt
           jgstew
+          jgstew's
           BigFix
           ActionScript
+          Fixlet
           SCEP
           Strawgate
+          Strawgate's
           IOCs
           etc
+          TODO
           EOFEOF
 
       - name: run harper-cli lint help
