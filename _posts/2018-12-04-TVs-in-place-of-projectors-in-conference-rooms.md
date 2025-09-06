@@ -12,11 +12,11 @@ Large TVs are generally better at:
 - resolution (4k)
 - clarity
 - cost (high lumen, high native resolution projectors can be very expensive, plus you have to replace the bulbs regularly)
-- bult in wireless screen mirroring features (Chromecast, Airplay 2, Miracast)
+- built in wireless screen mirroring features (Chromecast, Airplay 2, Miracast)
 
 One problem with TVs is reflections, so it is important to have an anti reflective surface, which generally is going to require an LCD TV instead of an OLED or Plasma TV. Also, the brighter the better to counter reflections.
 
-When considering what LCD TV to use in a conference room, the most imporant factors are:
+When considering what LCD TV to use in a conference room, the most important factors are:
 - screen size
 - maximum brightness
 - wireless screen mirroring features

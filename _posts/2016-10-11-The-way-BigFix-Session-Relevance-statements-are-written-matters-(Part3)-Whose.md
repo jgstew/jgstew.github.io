@@ -14,7 +14,7 @@ Here are 2 examples:
     T: 0.043 ms
     I: singular integer
 
-Generally, `starts with` will be faster than `contains` because `contains` is more dependant upon the length of the string being examined than `starts with` is.
+Generally, `starts with` will be faster than `contains` because `contains` is more dependent upon the length of the string being examined than `starts with` is.
 
 This means that if you want to know which strings start with `a` and contain `b`, you should first filter by `starts with` before using `contains`. Both of the following examples are equivalent, but the first is faster:
 
@@ -30,7 +30,7 @@ This means that if you want to know which strings start with `a` and contain `b`
 
 The reason that this works is because when statements are combined with `AND` inside of a `WHOSE` clause, the first statement to be false stops the evaluation and eliminates the result immediately.
 
-This means you generally want the fastest to evaluate items first in the `WHOSE` clause, except in rare cases in which you also have to care about how many of the results the statement eliminates. If a statement is very fast, but only eliminates a small percentage of the results, then it may be better to use a statement that is a tad slower but eliminates a larger set of the results so that the subsequent clauses have less items to evalute.
+This means you generally want the fastest to evaluate items first in the `WHOSE` clause, except in rare cases in which you also have to care about how many of the results the statement eliminates. If a statement is very fast, but only eliminates a small percentage of the results, then it may be better to use a statement that is a tad slower but eliminates a larger set of the results so that the subsequent clauses have less items to evaluate.
 
 ----------
 
@@ -79,9 +79,9 @@ Final result: (~4ms)
 
     number of bes actions whose(multiple flag of it AND baseline flag of source fixlet of it AND "Open"= state of it AND source of source fixlet of it contains "RESTAPI: Generate " AND "jgstew" = name of issuer of it AND name of it as lowercase contains "Firefox" as lowercase AND name of it as lowercase contains "Windows" as lowercase )
 
-So what? 4ms is 10 times faster than 40ms, but 40ms is still pleanty fast. Why bother with all of this optimization in this case? It is a valid point that for this particlar usecase in my particular environment, this optimization will make very little difference overall, BUT it is important to undertand that this optimization could have a much greater impact in a different environment with many more items to filter or more criteria to filter on.
+So what? 4ms is 10 times faster than 40ms, but 40ms is still pleanty fast. Why bother with all of this optimization in this case? It is a valid point that for this particular usecase in my particular environment, this optimization will make very little difference overall, BUT it is important to understand that this optimization could have a much greater impact in a different environment with many more items to filter or more criteria to filter on.
 
-#### The bigger the difference between the fastest query and the slowest query, the more optimzation like this will make a difference.
+#### The bigger the difference between the fastest query and the slowest query, the more optimization like this will make a difference.
 
 ### Related:
 - https://forum.bigfix.com/t/the-way-session-relevance-statements-are-written-matters-part-2-computer-names/14340

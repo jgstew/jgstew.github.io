@@ -28,7 +28,7 @@ This particular use case refers to OS containers only, and specifically those wh
 - Create Docker [Images](https://github.com/jgstew/tools/blob/master/docker/Dockerfiles/bigfix_ubuntu/Dockerfile) -> Containers
 - Create Many Containers with Docker Compose
 
-## Analize Docker Host & Containers
+## Analyze Docker Host & Containers
 
 Most info for Docker Containers is stored as JSON on the Docker Host, which BigFix can read.
 

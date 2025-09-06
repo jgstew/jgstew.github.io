@@ -5,7 +5,7 @@
 
 - This setting controls the maximum size of the pool of storage to hold utilities in a separate cache that does not get cleared out in the same way as the Client's Download Cache.
 - In order for things to be stored in the client utility cache, they have to be explicitly added through actionscript command.
-- This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
+- This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded every time.
 - https://github.com/jgstew/bigfix-content/blob/master/fixlet/clientsettings/Set%20__BESClient_Download_UtilitiesCacheLimitMB_%20to%20_500_%20-%20Universal.bes
 
 ### Actionscript:

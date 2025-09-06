@@ -27,7 +27,7 @@ I love BigFix and I use it for almost everything, but it has some things that ne
 The mac needs some love, especially in inspectors.
 
 - Profiles
- - This is critical for modern MacOS managment.
+ - This is critical for modern MacOS management.
 - XML
  - Other OSes have this, this is a big omission.
 - OSQuery

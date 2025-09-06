@@ -16,7 +16,7 @@ Possible Additions:
 - PowerLine Networking
 - Motion, Temp, Humidity Sensor
 
-It occurs to me that all 3 of these devices are best implimented as something that is on the center of the ceiling of each room in the house. It would be rather annoying and ugly to run wires and mount all 3 separately to the ceiling, so this seems like an obvious and ideal combination for home use. It would have to be wired to power to support continuous operation of these functions, but it would ideally also include a backup battery so that most of the features would continue during a short term power outage and then everything would power down so that the battery could allow the smoke detector to continue to function for longer on battery only power.
+It occurs to me that all 3 of these devices are best implemented as something that is on the center of the ceiling of each room in the house. It would be rather annoying and ugly to run wires and mount all 3 separately to the ceiling, so this seems like an obvious and ideal combination for home use. It would have to be wired to power to support continuous operation of these functions, but it would ideally also include a backup battery so that most of the features would continue during a short term power outage and then everything would power down so that the battery could allow the smoke detector to continue to function for longer on battery only power.
 
 Since power is the only required connectivity, it could be a drop in replacement for powered Smoke Detectors.
 

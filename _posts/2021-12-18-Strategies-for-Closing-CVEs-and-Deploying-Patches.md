@@ -10,7 +10,7 @@ I use a combination of laptop, desktop, or mobile devices to do my job. I want s
 
 **Preferred Patching Strategy:** Do not apply patches. Do not reboot my system for me. Don't ever force me to do anything.
 
-**What I loose sleep over:** Loosing data or work I was in the middle of because of a forced reboot or similar change or any other reason. Or just loosing track of what I was working on because of a forced or unexpected disruption.
+**What I loose sleep over:** Losing data or work I was in the middle of because of a forced reboot or similar change or any other reason. Or just losing track of what I was working on because of a forced or unexpected disruption.
 
 ### Application / Service Owner
 

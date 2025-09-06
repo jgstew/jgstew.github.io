@@ -64,7 +64,7 @@ There is also the interesting option called [ModMic](https://www.amazon.com/dp/B
 
 ### XLR Options
 
-This is where you want to look if you are going to be serious about audio quality. XLR is an analog audio interface, but one that is not prone to interference like others due to it's "balanced" nature. Even so, you are going to want to convert it to digital USB Audio as early as possible in the chain because interferance is still possible. This means you will need some sort of XLR to USB audio interface, which could be as simple as a $15 XLR to USB cable, or it could be a more complicated but also more flexible XLR to USB Audio Interface, which is generally going to be $100 give or take.
+This is where you want to look if you are going to be serious about audio quality. XLR is an analog audio interface, but one that is not prone to interference like others due to it's "balanced" nature. Even so, you are going to want to convert it to digital USB Audio as early as possible in the chain because interference is still possible. This means you will need some sort of XLR to USB audio interface, which could be as simple as a $15 XLR to USB cable, or it could be a more complicated but also more flexible XLR to USB Audio Interface, which is generally going to be $100 give or take.
 
 #### XLR Headset
 
