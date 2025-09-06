@@ -53,7 +53,7 @@ jobs:
       - name: run harper grammar checker
         shell: bash
         run: |
-          find . -name "*.md" -exec harper-cli lint {} >> harper-lint-output.txt \;
+          find . -name "*.md" -exec harper-cli lint {} \; >> harper-lint-output.txt
           # cat harper-lint-output.txt
 
       - name: upload harper lint output
