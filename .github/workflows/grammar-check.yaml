@@ -28,6 +28,7 @@ jobs:
 
       - name: add to dictionary
         run: |
+          mkdir -p ~/.config/harper-ls
           cat <<EOFEOF >> ~/.config/harper-ls/dictionary.txt
           jgstew
           BigFix
