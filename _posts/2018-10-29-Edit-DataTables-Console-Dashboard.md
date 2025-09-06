@@ -1,5 +1,5 @@
 
-### Objectives: 
+### Objectives:
 1. Edit and Use a JQuery DataTables Dashboard
     * Steps 1 through 7
     * Optionally Steps 8 & 9

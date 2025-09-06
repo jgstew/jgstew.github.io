@@ -10,7 +10,7 @@
 
 ### Steps:
 
-1. Create Empty Temp Folder 
+1. Create Empty Temp Folder
     * Example: `_tmp_Dashboard`
     * **NOTE:** The console will copy all of the files in the folder!
     * ![Create Empty Temp Folder](/images/BigFix/Dashboards/CreateEmptyFolder.png)
@@ -19,7 +19,7 @@
     * ![Put Dashboard Files in Folder](/images/BigFix/Dashboards/PutDashboardFilesInFolder.png)
 1. Open the Debug Menu
     * ![Open Debug Menu](/images/BigFix/Console/OpenDebugMenu.png)
-    * If missing, See here on how to enable the Debug Menu: 
+    * If missing, See here on how to enable the Debug Menu:
         * [Open The BigFix Console Presentation Debugger](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Open-BigFix-Console-Presentation-Debugger.md)
 1. Select "Load Wizard..."
     * Note: Wizards and Dashboards are [basically the same](https://github.com/jgstew/bigfix-content/blob/master/dashboards/README.md)

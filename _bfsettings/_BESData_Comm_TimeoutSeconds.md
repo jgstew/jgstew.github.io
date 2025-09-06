@@ -5,7 +5,7 @@ Recommendation: 60 seconds (60) or more
 
 Applicability: Root Server Only (exists main gather service)
 
-The default timeout for communication with the BigFix Console and root server is too low which can cause the console to retry over and over again, never actually completing successfully. 
+The default timeout for communication with the BigFix Console and root server is too low which can cause the console to retry over and over again, never actually completing successfully.
 
 If this is causing issues, then you should see HTTP 28 errors in the Console. Also check BESRelay.log for HTTP 28 errors.
 

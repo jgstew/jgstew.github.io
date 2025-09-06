@@ -19,7 +19,7 @@ The following 2 statements are equivalent. They will always return the same resu
     A: True
     T: 0.354 ms
     I: singular boolean
-    
+
 The first example, which does not use `exists`, actually needs to count up every single file within the folder before comparing it to 0. This means the statement will be slower the more files there are in the folder in question.
 
 The second example, which does use `exists`, does not actually get every file within the folder. Instead, as soon as `descendants` returns a single result, `exists` is satisfied and evaluation stops.

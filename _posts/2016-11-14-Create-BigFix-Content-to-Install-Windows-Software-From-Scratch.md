@@ -66,7 +66,7 @@ Copy the generated prefetch statement and save it. Remove the version info from 
 
 You want to use `VSCodeSetup.exe` instead of `VSCodeSetup-1.7.1.exe` so that the rest of the actionscript doesn't change for future versions.
 
-_**Note:** There are MANY ways to make prefetch statements, but this is the one I tend to prefer since I prefer to use VirusTotal in the first place._ 
+_**Note:** There are MANY ways to make prefetch statements, but this is the one I tend to prefer since I prefer to use VirusTotal in the first place._
 
 ## Step 5: Create fixlet / task
 
@@ -88,7 +88,7 @@ Change the relevance "`true`" to "`windows of operating system`"
 
 More relevance will be added later, but this is all we are going to add for now.
 
-(Optional) Change the `Create in site:` from your opsite or `Master Action Site` to a custom site. Generally it is a good idea to keep as little as possible in the `Master Action Site` and if you create it in your opsite, then only you will be able to see it, which is not helpful for collaborating with other operators. 
+(Optional) Change the `Create in site:` from your opsite or `Master Action Site` to a custom site. Generally it is a good idea to keep as little as possible in the `Master Action Site` and if you create it in your opsite, then only you will be able to see it, which is not helpful for collaborating with other operators.
 
 <img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_CreateInSite.PNG" width="348" height="58">
 
@@ -100,7 +100,7 @@ Enter your username in the `Source ID:` field. In my case, it is `jgstew`, but n
 
 <img src="http://jgstew.github.io/images/BFromScratch/BigFix_Console_Properties.PNG" width="310" height="182">
 
-Click `OK` to save the Fixlet. You may need to reauthenticate to the console. 
+Click `OK` to save the Fixlet. You may need to reauthenticate to the console.
 
 ## Step 6: Test download through BigFix
 
@@ -110,7 +110,7 @@ Since this is a newly created item, you may have to enter the computer name of y
 
 Click the `Enter device names` radio button.
 
-Enter the name of your windows test machine. 
+Enter the name of your windows test machine.
 
 Click `OK` to deploy it to this test machine. You may need to reauthenticate to the console.
 
@@ -279,11 +279,11 @@ This is actually sufficient for detecting if `Visual Studio Code` is installed o
 
 Adding `exists` in front of the relevance in place of `number of` would cause the relevance to only be TRUE on systems that already have `Visual Studio Code` installed. This is the opposite of what we want. By putting `not` in front, the relevance will only be TRUE on systems that DO NOT already have `Visual Studio Code` installed, which is exactly what we want. If we only wanted the fixlet to run on systems that do not have `Visual Studio Code` installed at all, then we could stop here.
 
-To go a step further, what if we wanted to install this version of Visual Studio Code if it is not already installed OR an older version is installed? We add a check to see if the current or newer version of Visual Studio Code is installed, and then put `not` in front of that. 
+To go a step further, what if we wanted to install this version of Visual Studio Code if it is not already installed OR an older version is installed? We add a check to see if the current or newer version of Visual Studio Code is installed, and then put `not` in front of that.
 
     not exists keys whose(exists values "DisplayName" whose(it as string starts with "Microsoft Visual Studio Code") of it AND exists values "DisplayVersion" whose(it as string as version >= "1.7.1" as version) of it) of keys "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" of (x64 registries; x32 registries)
 
-We don't want to install Visual Studio Code 1.7.1 if it is already installed OR if a newer version is installed and that is what this final relevance will do. This allows the same relevance to be used for Installs OR Upgrades. 
+We don't want to install Visual Studio Code 1.7.1 if it is already installed OR if a newer version is installed and that is what this final relevance will do. This allows the same relevance to be used for Installs OR Upgrades.
 
 You can also create relevance just for upgrades with slight modifications, like this:
 
@@ -315,7 +315,7 @@ Uninstall `Visual Studio Code` from your test machine once again.
 
 Click the `Take Action` button on the edited fixlet.
 
-Choose the test machine, or enter it manually. 
+Choose the test machine, or enter it manually.
 
 This time, the console should report `Fixed` as the status once the fixlet runs. This should mean that the fixlet was applicable (relevance was true) then the fixlet ran on the system, and then the fixlet was no longer applicable (relevance is false). This means that the relevance is now giving you real feedback on the results of the actionscript. Once the relevance is working properly like this, then a result of `Fixed` has real meaning. The result should be `Fixed` anytime the fixlet is run unless there is a problem from now on.
 

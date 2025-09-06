@@ -38,6 +38,6 @@ The main advantage to doing this is that it allows you to do the debugging direc
 }
 ```
 
-### References: 
+### References:
 - [https://github.com/Microsoft/vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug)
 - [https://code.visualstudio.com/](https://code.visualstudio.com/)

@@ -1,6 +1,6 @@
 # jgstew.github.io
 
-jgstew's personal pages 
+jgstew's personal pages
 - http://jgstew.github.io/
 - https://github.com/jgstew/jgstew.github.io
 - https://travis-ci.org/jgstew/jgstew.github.io

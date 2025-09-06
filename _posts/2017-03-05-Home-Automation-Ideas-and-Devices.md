@@ -20,10 +20,9 @@ It occurs to me that all 3 of these devices are best implimented as something th
 
 Since power is the only required connectivity, it could be a drop in replacement for powered Smoke Detectors.
 
-Ideally there would be an option for Gigabit Ethernet connectivity to reduce the need for wireless mesh in cases where Ethernet can be run easily, as well as if the device is installed in non-ceiling use cases. If it supported Power over Ethernet, then there is the possibility of running only a single wire for new locations. If powerline ethernet was supported as well, then that would provide better communication options in cases where there is power but not ethernet. 
+Ideally there would be an option for Gigabit Ethernet connectivity to reduce the need for wireless mesh in cases where Ethernet can be run easily, as well as if the device is installed in non-ceiling use cases. If it supported Power over Ethernet, then there is the possibility of running only a single wire for new locations. If powerline ethernet was supported as well, then that would provide better communication options in cases where there is power but not ethernet.
 
 ## Automation Ideas
 
 - [Smart Thermostat Controlled Space Heater](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2016-12-20-Using-a-Nest-Thermostat-to-control-a-space-heater.md)
 - If door is open, then turn off thermostat (or set to fan on, heat/cool off)
-

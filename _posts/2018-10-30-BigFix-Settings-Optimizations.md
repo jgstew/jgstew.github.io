@@ -54,7 +54,7 @@ date: November 8, 2018
 
 ### Recommendation: 31 days (31)
 
-- This setting controls how many log files the client will keep before deleting the oldest. 
+- This setting controls how many log files the client will keep before deleting the oldest.
 - The default of 10 days is often too short to catch issues before logs are rotated.
 
 
@@ -102,7 +102,7 @@ Applicability: root server only (exists main gather service)
 ### Recommendation: Enabled (1)
 
 - It should be enabled on 100% of endpoints, it is just a matter of how frequent the command polling should be done.
-- The frequency of command polling is controlled by [the setting](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollIntervalSeconds.md): 
+- The frequency of command polling is controlled by [the setting](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollIntervalSeconds.md):
   - `_BESClient_Comm_CommandPollIntervalSeconds`
 
 
@@ -112,7 +112,7 @@ Applicability: root server only (exists main gather service)
 
 ### Recommendation: 3 hours (10800)
 
-- This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md): 
+- This setting controls how often a client polls for commands, if [enabled by](https://github.com/jgstew/jgstew.github.io/blob/master/_bfsettings/_BESClient_Comm_CommandPollEnable.md):
   - `_BESClient_Comm_CommandPollEnable`
 - All systems should have it set to at least once every 6 hours.
 - Those not getting UDP should have a more aggressive value.
@@ -126,7 +126,7 @@ Applicability: root server only (exists main gather service)
 ### Recommendation: 200MB (200) or more
 
 - This setting controls the maximum size of the storage for utilities in a cache that does not get cleared out in the same way as the Client's Download Cache.
-- This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded everytime.
+- This cache is designed for small files that are used across many different actions where you would not want them to have to be redownloaded every time.
 - BigFix actions that have downloads that are already cached will work without network connectivity!
 
 
@@ -174,4 +174,3 @@ _BESClient_Log_Days=31
 - https://github.com/jgstew/bigfix-content/blob/master/dashboards/ClientSettingsManager.ojo
 - Example `clientsettings.cfg` https://gist.github.com/jgstew/51a99ab4b5997efa0318
 - https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2019-11-15-BigFix-Settings-For-All-Computers.md
-

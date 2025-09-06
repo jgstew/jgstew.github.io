@@ -1,6 +1,6 @@
 The best way to close [vulnerabilities (CVEs)](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2019-08-16-What-makes-a-vulnerability-or-CVE-worse-than-others%3F.md) and deploy patches depends on who you ask. Today the biggest concern may be Log4j CVEs, but this really applies to every patch and every CVE every day.
 
-I am going to present some exaggerated options from different perspectives. 
+I am going to present some exaggerated options from different perspectives.
 
 ### Device Owner / Service User
 
@@ -30,7 +30,7 @@ I am responsible for the overall security of all aspects of the organization. I 
 
 **Preferred Patching Strategy:** All patches should be installed and effective within 72 hours or less of vendor availability.
 
-**What I loose sleep over:** Today it is Log4j, but tomorrow it will be something new. Even worse is all the old vulnerabilities that are still open that I do not know about, and any unknown ones that are already being exploited that I don't know how to look for yet. It is the amount of things I know I do not know that truly frighten me, and the knowledge that compromises are inevitable even with infinite resources to combat them. 
+**What I loose sleep over:** Today it is Log4j, but tomorrow it will be something new. Even worse is all the old vulnerabilities that are still open that I do not know about, and any unknown ones that are already being exploited that I don't know how to look for yet. It is the amount of things I know I do not know that truly frighten me, and the knowledge that compromises are inevitable even with infinite resources to combat them.
 
 ### IT Operations
 

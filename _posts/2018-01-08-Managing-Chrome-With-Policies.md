@@ -11,7 +11,7 @@ Google Chrome settings can be managed by Local GPO on Windows or similar mechani
 Registry(LocalGPO): `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ManagedBookmarks`
 
     [{"toplevel_name": "BigFix!"}, {"url": "https://github.com/bigfix", "name": "BigFix GitHub"}, {"url": "https://bigfix.me", "name": "BigFix Me"}, {"url": "https://forum.bigfix.com", "name": "BigFix Forums"}, {"url": "https://developer.bigfix.com/", "name": "BigFix Developer"}, {"url": "https://macadmins.psu.edu/", "name": "PSU MacAdmins Conference"}, {"url": "macadmins.org", "name": "MacAdmins Slack"}]
-    
+
 ### Plist:
 
 File: `/Library/Preferences/com.google.chrome.plist` or `/Library/Managed Preferences/com.google.chrome.plist`
@@ -62,11 +62,10 @@ BigFix Example: https://github.com/jgstew/bigfix-content/blob/master/fixlet/Chro
     </array>
     </dict>
     </plist>
-    
+
 ### Related:
 
 - chrome://policy/
 - https://www.chromium.org/administrators/policy-templates
 - https://www.chromium.org/administrators/policy-list-3#ManagedBookmarks
 - https://www.jamf.com/jamf-nation/discussions/13947/configuring-google-chrome
-

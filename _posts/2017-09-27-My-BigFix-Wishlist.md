@@ -1,5 +1,5 @@
 
-I love BigFix and I use it for almost everything, but it has some things that need improvement, and this post is about what I think are the biggest missing pieces. 
+I love BigFix and I use it for almost everything, but it has some things that need improvement, and this post is about what I think are the biggest missing pieces.
 
 
 ## BigFix Platform
@@ -27,9 +27,9 @@ I love BigFix and I use it for almost everything, but it has some things that ne
 The mac needs some love, especially in inspectors.
 
 - Profiles
- - This is critical for modern MacOS managment. 
+ - This is critical for modern MacOS managment.
 - XML
- - Other OSes have this, this is a big omission. 
+ - Other OSes have this, this is a big omission.
 - OSQuery
 
 ### Windows specific

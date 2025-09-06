@@ -7,9 +7,9 @@ I recommend enabling this setting, especially for Laptops, VMs, Docker container
 
 This setting tells the client to sleep (stop evaluating relevance) if things are not changing for a period of time, then do another evaluation loop, and if things continue to not change, then sleep again.
 
-This setting causes the idle CPU usage of the BigFix client to drop significantly, which ends up saving battery life on laptops, while also reducing the idle CPU usage consumed by VMs, which can take a lot of load off of the hypervisor in aggragate. 
+This setting causes the idle CPU usage of the BigFix client to drop significantly, which ends up saving battery life on laptops, while also reducing the idle CPU usage consumed by VMs, which can take a lot of load off of the hypervisor in aggregate.
 
-The default duration the client sleeps is 10 minutes, which generally does not cause any noticable loss of responsiveness in the client.
+The default duration the client sleeps is 10 minutes, which generally does not cause any noticeable loss of responsiveness in the client.
 
 The sleep duration is configurable by another client setting.
 

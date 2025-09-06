@@ -1,5 +1,5 @@
 
-I have always cared a lot about audio quality in general, but I have been doing a lot of PC Gaming lately, which has led me down the path of streaming. I also do a lot of online meetings for work, as well as recorded training sessions, and most recenetly, a Podcast for my work.
+I have always cared a lot about audio quality in general, but I have been doing a lot of PC Gaming lately, which has led me down the path of streaming. I also do a lot of online meetings for work, as well as recorded training sessions, and most recently, a Podcast for my work.
 
 All of these things benefit from better quality microphones, which are frequently lacking by default.
 
@@ -44,7 +44,7 @@ These are wired headsets that have a headphone jack and a microphone jack or a c
 
 These kinds of headsets are prone to audio interference and don't generally have any kind of noise cancelling microphones.
 
-There are some of these that don't suck, but overall it is a category I would recommend against. 
+There are some of these that don't suck, but overall it is a category I would recommend against.
 
 
 ### Wired USB Headsets
@@ -68,11 +68,11 @@ This is where you want to look if you are going to be serious about audio qualit
 
 #### XLR Headset
 
-These are rare, but do exist. The Audio-Technica BPHS1 is a good example, but I have not tried it personally. It has both the complexity of an XLR microphone, but with slightly added ease of use of a headset, though definitely on the bulky side. 
+These are rare, but do exist. The Audio-Technica BPHS1 is a good example, but I have not tried it personally. It has both the complexity of an XLR microphone, but with slightly added ease of use of a headset, though definitely on the bulky side.
 
 #### XLR Microphone
 
-I use the $15 Pyle PDMIC58 XLR Microphone. I would highly recommend it, and because of it's price, it is a really good place to start even if you decide to try other XLR microphones in the future. 
+I use the $15 Pyle PDMIC58 XLR Microphone. I would highly recommend it, and because of it's price, it is a really good place to start even if you decide to try other XLR microphones in the future.
 
 #### XLR to USB cable
 
@@ -82,4 +82,4 @@ There are many of these out there. I have only ever tried one of them, and it wa
 
 Highly recommend the Focusrite Scarlett Solo or 2i2
 
-I have tried 3 different models, all of which came highly recommended by other podcasters and reviewers. I love the one I ended up with, and kind of hate the other 2 due to problems and flaws. 
+I have tried 3 different models, all of which came highly recommended by other podcasters and reviewers. I love the one I ended up with, and kind of hate the other 2 due to problems and flaws.

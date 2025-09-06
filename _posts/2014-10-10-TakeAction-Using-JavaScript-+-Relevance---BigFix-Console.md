@@ -51,14 +51,14 @@
 <h2 dir="ltr">
 	Full JavaScript + Relevance Example:</h2>
 <pre dir="ltr">
-document.body.ontakeaction = function() { 
-	if ( "NormalUser1" == Relevance('name of current console user') || Relevance('(master flag of current console user) OR ( /* Make sure the user has at least one of the roles */ 1 is less than or equal to the number of elements of intersections of (set of bes roles whose(name of it = "ROLE1" OR name of it = "ROLE2"); role set of current console user))') ) 
-	{ 
-		TakeFixletAction( Relevance('id of current fixlet'), Relevance('id of current bes site'), "Action1", {}, {} ); 
+document.body.ontakeaction = function() {
+	if ( "NormalUser1" == Relevance('name of current console user') || Relevance('(master flag of current console user) OR ( /* Make sure the user has at least one of the roles */ 1 is less than or equal to the number of elements of intersections of (set of bes roles whose(name of it = "ROLE1" OR name of it = "ROLE2"); role set of current console user))') )
+	{
+		TakeFixletAction( Relevance('id of current fixlet'), Relevance('id of current bes site'), "Action1", {}, {} );
 	} else {
-		alert( "Only for authorized users, please contact support for assistance." ); 
+		alert( "Only for authorized users, please contact support for assistance." );
 	}
-	return false; 
+	return false;
 }
 </pre>
 <p dir="ltr">

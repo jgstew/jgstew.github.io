@@ -3,7 +3,7 @@
 
 ### Recommendation: 31 days (31)
 
-This setting controls how many log files the client will keep before deleting the oldest. I think the default of 10 days is too short. 
+This setting controls how many log files the client will keep before deleting the oldest. I think the default of 10 days is too short.
 
 Often issues are reported after the log that would have the origin time / source of the issue is deleted. I think 1 month of logs makes much more sense then the default of 10 days.
 

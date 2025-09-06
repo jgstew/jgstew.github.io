@@ -4,7 +4,7 @@ category: Web
 
 I personally recommend large TVs in conference rooms instead of projectors, especially given how cheap 4k LCD TVs have become.
 
-Kelly Guimont wholeheartedly agrees with this sentiment. 
+Kelly Guimont wholeheartedly agrees with this sentiment.
 
 Large TVs are generally better at:
 - brightness

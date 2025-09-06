@@ -1,0 +1,58 @@
+---
+# run on only items staged in git:  pre-commit
+# automatically run on commit:      pre-commit install
+# check all files in repo:          pre-commit run --all-files
+# check all files manual stage:     pre-commit run --all-files --hook-stage manual
+# update all checks to latest:      pre-commit autoupdate
+# https://github.com/pre-commit/pre-commit-hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: ["--maxkb=150"]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-xml
+      - id: end-of-file-fixer
+        # exclude svg:
+        exclude: '\.(svg)$'
+
+      # https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/
+      # - id: mixed-line-ending
+      #   args: ['--fix=no']
+      - id: trailing-whitespace
+      #  args: [--markdown-linebreak-ext=md]
+      - id: detect-private-key
+      # - id: no-commit-to-branch
+      #   args: [--branch, main]
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.36.0
+    hooks:
+      - id: yamllint
+        args: [-c=.yamllint.yaml]
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.31.3
+    hooks:
+      - id: check-github-workflows
+        args: ["--verbose"]
+      - id: check-dependabot
+
+  - repo: meta
+    hooks:
+      - id: check-useless-excludes
+      - id: check-hooks-apply
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+
+  # - repo: https://github.com/crate-ci/typos
+  #   rev: v1.30.0
+  #   hooks:
+  #     - id: typos

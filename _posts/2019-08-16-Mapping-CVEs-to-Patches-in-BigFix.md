@@ -21,11 +21,11 @@ The following BigFix Session Relevance will find all patches which resolve Micro
 
 `names of fixlets whose(exists (cve id list of it | ""; source id of it | "") whose(it as lowercase contains "KB4511553" as trimmed string as lowercase) ) of bes sites whose("Patches for Windows" = display name of it)`
 
-Notice that both of these examples are using the same BigFix Session Relevance, only changing which value is being queried. This could easily be turned into a BigFix Windows Console Dashboard which would make it easier to search for windows patches based upon CVE or KB article. 
+Notice that both of these examples are using the same BigFix Session Relevance, only changing which value is being queried. This could easily be turned into a BigFix Windows Console Dashboard which would make it easier to search for windows patches based upon CVE or KB article.
 
 ### How to find the related Session Relevance Inspectors:
 
-I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on [developer.bigfix.com](https://developer.bigfix.com/relevance/search/) for CVE like the following photo: 
+I was able to figure out how to write the BigFix Session Relevance for Fixlet CVEs by searching on [developer.bigfix.com](https://developer.bigfix.com/relevance/search/) for CVE like the following photo:
 
 ![Search Results for CVE](http://jgstew.github.io/images/posts/BigFix-Mapping-CVEs-to-Patches-01.png)
 

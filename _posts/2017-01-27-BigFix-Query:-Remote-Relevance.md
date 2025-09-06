@@ -10,13 +10,13 @@ For some reason, there is no session relevane or rest api to get the list of BFQ
 
 Get all Query IDs with results:
 
-    SELECT DISTINCT TOP (1000) 
+    SELECT DISTINCT TOP (1000)
           [QueryID]
       FROM [BFEnterprise].[dbo].[QUERYRESULTTEXT]
 
 Get all Query IDs:
 
-    SELECT TOP (1000) 
+    SELECT TOP (1000)
           [QueryID]
           ,[Operator]
           ,[CreationTime]
@@ -24,7 +24,7 @@ Get all Query IDs:
 
 Get (username, queryID, creationtime, mastheadusername) for all BFQueries
 
-    SELECT TOP (1000) 
+    SELECT TOP (1000)
           [BFEnterprise].[dbo].[USERINFO].[Username]
     	  ,[BFEnterprise].[dbo].[QUERIES].[QueryID]
           ,[BFEnterprise].[dbo].[QUERIES].[CreationTime]
@@ -35,7 +35,7 @@ Get (username, queryID, creationtime, mastheadusername) for all BFQueries
 
 Get (QueryID, Operator, Creationtime) for all BFQueries with results:
 
-    SELECT DISTINCT TOP (1000) 
+    SELECT DISTINCT TOP (1000)
           [BFEnterprise].[dbo].[QUERYRESULTTEXT].[QueryID]
     	  ,[BFEnterprise].[dbo].[QUERIES].[Operator]
     	  ,[BFEnterprise].[dbo].[QUERIES].[CreationTime]
@@ -45,7 +45,7 @@ Get (QueryID, Operator, Creationtime) for all BFQueries with results:
 
 Get (username, queryID, CreationTime, mastheadusername) for all BFQueries with results:
 
-    SELECT DISTINCT TOP (1000) 
+    SELECT DISTINCT TOP (1000)
           [BFEnterprise].[dbo].[USERINFO].[Username]
     	  ,[BFEnterprise].[dbo].[QUERYRESULTTEXT].[QueryID]
     	  ,[BFEnterprise].[dbo].[QUERIES].[CreationTime]
@@ -55,7 +55,7 @@ Get (username, queryID, CreationTime, mastheadusername) for all BFQueries with r
     	ON [BFEnterprise].[dbo].[QUERIES].[QueryID]=[BFEnterprise].[dbo].[QUERYRESULTTEXT].[QueryID]
       INNER JOIN [BFEnterprise].[dbo].[USERINFO]
       ON [BFEnterprise].[dbo].[QUERIES].[Operator]=[BFEnterprise].[dbo].[USERINFO].[MastheadUsername];
-      
+
 
 ### Related:
 

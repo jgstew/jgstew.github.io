@@ -353,7 +353,7 @@ We can turn this into a template by making a copy, renaming it to `firefox-insta
 
 `expected_sha256="4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9"` to `expected_sha256="{{file_sha256}}"`
 
-Now make an installscript recipe that will use this template: 
+Now make an installscript recipe that will use this template:
 
 ### Firefox-Linux.installscript.recipe.yaml
 

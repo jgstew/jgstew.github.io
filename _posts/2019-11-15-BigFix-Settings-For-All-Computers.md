@@ -7,7 +7,7 @@ In this document I'm going to outline what I feel are conservative tweaks to Big
 
 ### _BESClient_Log_Days
 
-- This setting controls how many log files the client will keep before deleting the oldest. 
+- This setting controls how many log files the client will keep before deleting the oldest.
 
 #### Default: 10 days (10)
 #### Recommendation: 31 days (31)

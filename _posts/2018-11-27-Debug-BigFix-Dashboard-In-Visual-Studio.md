@@ -1,6 +1,6 @@
 
 
-### Objectives: 
+### Objectives:
 1. View JavaScript Console Output in Visual Studio
 2. View HTML currently rendered in Dashboard (from RAM)
 3. Edit live HTML and see changes immediately
@@ -12,9 +12,9 @@
 1. [Debug a Dashboard In the BigFix Console](https://github.com/jgstew/jgstew.github.io/blob/master/_posts/2018-10-29-Debug-Dashboard-In-BigFix-Console.md)
 
 
-### Background: 
+### Background:
 
-The BigFix Windows Console has many fundamental parts that run an embedded "Web Browser Control" to display an HTML based UI and make use of JavaScript for dynamic content. These are not web pages or web based content and the HTML is all local. The "Web Browser Control" used is provided by Windows itself and is based upon Internet Explorer, but without the traditional UI or development tools that are accessible in a typical full Internet Explorer Browser window. This makes debugging JavaScript and HTML within the Console, generally in the form of a Console Dashobard quite difficult as you can't see the JavaScript Console output that is useful for error messages and diagnosing problems. 
+The BigFix Windows Console has many fundamental parts that run an embedded "Web Browser Control" to display an HTML based UI and make use of JavaScript for dynamic content. These are not web pages or web based content and the HTML is all local. The "Web Browser Control" used is provided by Windows itself and is based upon Internet Explorer, but without the traditional UI or development tools that are accessible in a typical full Internet Explorer Browser window. This makes debugging JavaScript and HTML within the Console, generally in the form of a Console Dashobard quite difficult as you can't see the JavaScript Console output that is useful for error messages and diagnosing problems.
 
 The solution is to use Visual Studio in Script code debugging mode to access the underlying JavaScript Console of the embedded Internet Explorer based Web Browser Control.
 
