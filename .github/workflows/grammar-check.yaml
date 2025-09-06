@@ -1,0 +1,26 @@
+---
+name: grammar-check
+
+on: workflow_dispatch
+
+jobs:
+  grammar-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          target: x86_64-unknown-linux-gnu
+
+      - name: install harper grammar checker
+        run: cargo install --locked --git https://github.com/Automattic/harper.git --branch master --tag v0.23.0 harper-cli
+
+      - name: run harper-cli config
+        run: harper-cli config
+
+      - name: run harper-cli lint help
+        run: harper-cli lint --help
+
+      - name: run harper grammar checker
+        run: harper-cli lint **.md
