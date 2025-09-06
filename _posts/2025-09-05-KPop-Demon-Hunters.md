@@ -2,8 +2,6 @@
 category: Movies
 ---
 
-# KPop Demon Hunters
-
 I really like the KPop Demon Hunters movie, but especially the fact that the more I think about it and the more layers I unpack, the better it becomes in my head.
 
 KPop Demon Hunters is basically a badass superhero anime musical, and I think it is greater than the sum of it's parts. It is definitely more than a "kids" movie as animated movies are often considered. I think it is aimed at young adults but has appeals to kids and adults alike. I think a lot of Pixar movies are in a way targeted to parents such that they are movies that parents would want to bring their kids to and both the parents and children get enjoyment out of it. I think this gave Pixar success at the theatrical box office early on because kids can't drive themselves to the movie theater, so having something high quality that parents would want to go to mattered. I think this works out well for a movie on Netflix where kids can engage with it more directly without having to be taken to a movie theater by a parent. I think that KPop Demon Hunters does have reason to be appealing to adults as well, adults are not it's target audience, but neither are young kids, I think it's target is more in the middle. I think that the lack of original films being produced has created an underserved market in teens and tweens to have something that is new and unique and targeted to them, and I think this is a small part of the success of KPop Demon Hunters.
