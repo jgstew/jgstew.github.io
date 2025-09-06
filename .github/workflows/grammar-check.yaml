@@ -47,4 +47,6 @@ jobs:
         run: harper-cli lint --help
 
       - name: run harper grammar checker
-        run: harper-cli lint "_posts/**.md"
+        shell: bash
+        run: |
+          find . -name "*.md" -print0 | xargs -0 harper-cli lint
