@@ -1,3 +1,6 @@
+---
+category: Recipes
+---
 
 # Lazy Meatball Lasagna
 
