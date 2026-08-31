@@ -51,6 +51,7 @@ repos:
     rev: v2.4.1
     hooks:
       - id: codespell
+        exclude: 'bigfix-relevance-analyzer-playground\.html$'
 
   - repo: https://github.com/crate-ci/typos
     rev: v1.30.0
