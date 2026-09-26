@@ -23,8 +23,8 @@ Once the data is in Home Assistant, it can be added to a dashboard or used to tr
 
 Copy `bigfix_plugin_mqtt_homeassistant.config.example.yaml` to `bigfix_plugin_mqtt_homeassistant.config.yaml` next to the script and fill in the MQTT broker and credentials.
 
-Then run it with [uv](https://docs.astral.sh/uv/), which handles the requirements automatically. The `--exclude-newer "7 days"` option only allows package versions released at least 7 days ago:
+Then run it with [uv](https://docs.astral.sh/uv/), which handles the requirements automatically, using the inline script metadata at the top of the script:
 
-    uv run --exclude-newer "7 days" --with "besapi[plugins]" --with paho-mqtt bigfix_plugin_mqtt_homeassistant.py -r https://localhost:52311/api -u API_USER -p API_PASSWORD
+    uv run bigfix_plugin_mqtt_homeassistant.py -r https://localhost:52311/api -u API_USER -p API_PASSWORD
 
 Or leave off the `-r`, `-u`, and `-p` arguments to use a besapi config file instead. It can also be run as a **BigFix Server Plugin Service** on the root server, in which case a plaintext MQTT password in the config file is replaced with an encrypted one after the first successful publish.
