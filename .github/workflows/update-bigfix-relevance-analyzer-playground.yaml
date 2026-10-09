@@ -1,0 +1,106 @@
+---
+name: Update bigfix-relevance-analyzer playground
+
+on:
+  schedule:
+    # Weekly, Sundays at 05:17 UTC
+    - cron: "17 5 * * 0"
+  # Dry run when this workflow file itself is changed: exercises the download
+  # and checksum steps but never commits or pushes.
+  pull_request:
+    paths:
+      - ".github/workflows/update-bigfix-relevance-analyzer-playground.yaml"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version, e.g. 1.24.0 (blank = latest release)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-playground # serialize pushes to master
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          # PRs test the proposed workflow against the PR merge ref
+          ref: ${{ github.event_name == 'pull_request' && github.ref || 'master' }}
+
+      # Fetch only the small checksum file first and compare the release's
+      # playground hash to the committed file, so an unchanged release skips
+      # the rest of the job.
+      - name: Check whether the release differs from the repo
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          tag=""
+          if [ -n "$VERSION" ]; then
+            printf '%s' "$VERSION" | grep -Eq '^v?[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.]+)?$' \
+              || { echo "::error::bad version: $VERSION"; exit 1; }
+            tag="v${VERSION#v}"
+          fi
+          # Resolve "latest" to a concrete tag once, so the checksum and the
+          # HTML below always come from the same release.
+          if [ -z "$tag" ]; then
+            tag="$(gh release view --repo jgstew/bigfix-relevance-analyzer --json tagName -q .tagName)"
+            [ -n "$tag" ] || { echo "::error::could not resolve latest release"; exit 1; }
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          mkdir -p "$RUNNER_TEMP/dl"
+          gh release download "$tag" \
+            --repo jgstew/bigfix-relevance-analyzer \
+            --dir "$RUNNER_TEMP/dl" --clobber \
+            --pattern SHA256SUMS.txt
+          remote="$(awk '$2 ~ /(^|\/)bigfix-relevance-analyzer-playground\.html$/ {print $1}' \
+            "$RUNNER_TEMP/dl/SHA256SUMS.txt")"
+          [ -n "$remote" ] || { echo "::error::playground not listed in SHA256SUMS.txt"; exit 1; }
+          local_hash="$(sha256sum files/bigfix-relevance-analyzer-playground.html 2>/dev/null | cut -d' ' -f1 || true)"
+          if [ "$remote" = "$local_hash" ]; then
+            echo "playground unchanged (${remote}); nothing to do"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # On PRs, always download so the download/verify path gets exercised.
+      - name: Download and verify the release asset
+        if: steps.check.outputs.changed == 'true' || github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.check.outputs.tag }}
+        run: |
+          gh release download "$TAG" \
+            --repo jgstew/bigfix-relevance-analyzer \
+            --dir "$RUNNER_TEMP/dl" --clobber \
+            --pattern bigfix-relevance-analyzer-playground.html \
+            --pattern SHA256SUMS.txt
+          (cd "$RUNNER_TEMP/dl" && sha256sum -c --ignore-missing SHA256SUMS.txt)
+
+      - name: Commit and push if changed
+        if: steps.check.outputs.changed == 'true' || github.event_name == 'pull_request'
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          f=files/bigfix-relevance-analyzer-playground.html
+          cp "$RUNNER_TEMP/dl/bigfix-relevance-analyzer-playground.html" "$f"
+          if [ -z "$(git status --porcelain -- "$f")" ]; then
+            echo "already up to date"; exit 0
+          fi
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            echo "dry run (pull_request): would commit this change, not pushing"
+            git status --short -- "$f"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$f"
+          git commit -m "Update bigfix-relevance-analyzer playground (${VERSION:-latest})"
+          git push
