@@ -53,6 +53,11 @@ jobs:
             tag="$(gh release view --repo jgstew/bigfix-relevance-analyzer --json tagName -q .tagName)"
             [ -n "$tag" ] || { echo "::error::could not resolve latest release"; exit 1; }
           fi
+          if [ -n "$VERSION" ]; then
+            echo "Release to apply: $tag (requested)"
+          else
+            echo "Release to apply: $tag (latest)"
+          fi
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           mkdir -p "$RUNNER_TEMP/dl"
           gh release download "$tag" \
@@ -64,7 +69,7 @@ jobs:
           [ -n "$remote" ] || { echo "::error::playground not listed in SHA256SUMS.txt"; exit 1; }
           local_hash="$(sha256sum files/bigfix-relevance-analyzer-playground.html 2>/dev/null | cut -d' ' -f1 || true)"
           if [ "$remote" = "$local_hash" ]; then
-            echo "playground unchanged (${remote}); nothing to do"
+            echo "playground unchanged at $tag (${remote}); nothing to do"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -87,8 +92,9 @@ jobs:
       - name: Commit and push if changed
         if: steps.check.outputs.changed == 'true' || github.event_name == 'pull_request'
         env:
-          VERSION: ${{ inputs.version }}
+          TAG: ${{ steps.check.outputs.tag }}
         run: |
+          echo "Applying release $TAG"
           f=files/bigfix-relevance-analyzer-playground.html
           cp "$RUNNER_TEMP/dl/bigfix-relevance-analyzer-playground.html" "$f"
           if [ -z "$(git status --porcelain -- "$f")" ]; then
@@ -102,5 +108,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$f"
-          git commit -m "Update bigfix-relevance-analyzer playground (${VERSION:-latest})"
+          git commit -m "Update bigfix-relevance-analyzer playground to $TAG"
           git push
