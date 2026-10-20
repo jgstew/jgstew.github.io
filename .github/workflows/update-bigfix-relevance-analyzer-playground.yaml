@@ -121,11 +121,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.check.outputs.tag }}
+          # The name `listed` found: bigfix-relevance-analyzer-web.zip, or
+          # bigfix-relevance-analyzer-analyzer.zip for releases up to 1.39.0.
+          ZIP: ${{ steps.check.outputs.zip }}
         run: |
           gh release download "$TAG" \
             --repo jgstew/bigfix-relevance-analyzer \
             --dir "$RUNNER_TEMP/dl" \
-            --pattern bigfix-relevance-analyzer-analyzer.zip
+            --pattern "$ZIP"
           (cd "$RUNNER_TEMP/dl" && sha256sum -c --ignore-missing SHA256SUMS.txt)
           # Verifies again, checks every entry and the manifest, and leaves
           # files/analyzer/ untouched on any error or if nothing changed.

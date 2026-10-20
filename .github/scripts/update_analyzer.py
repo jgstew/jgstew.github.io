@@ -6,11 +6,13 @@ Standard library only, so it runs on a bare runner and locally.
 
 The release contract is tools/playground-wasm/SPLIT_ANALYZER.md in
 jgstew/bigfix-relevance-analyzer: a release attaches
-bigfix-relevance-analyzer-analyzer.zip, a flat zip of manifest.json, editor.js,
-glue.mjs, analyzer.core*.wasm.gz and index.html, listed in SHA256SUMS.txt.
+bigfix-relevance-analyzer-web.zip (bigfix-relevance-analyzer-analyzer.zip up to
+1.39.0), a flat zip of manifest.json, editor.js, glue.mjs,
+analyzer.core*.wasm.gz and index.html, listed in SHA256SUMS.txt.
 
     update_analyzer.py listed RELEASE_DIR/SHA256SUMS.txt
-        Is the zip in this release? Sets the step output listed=true|false.
+        Is the zip in this release? Sets the step outputs listed=true|false
+        and, when it is, zip=<its file name>.
 
     update_analyzer.py apply --release-dir DIR --dest files/analyzer [--tag vX.Y.Z]
         Verify the zip and publish it into DEST. Sets the step output
@@ -31,7 +33,9 @@ import sys
 import tempfile
 import zipfile
 
-ZIP_NAME = "bigfix-relevance-analyzer-analyzer.zip"
+# The release asset, newest name first: releases up to 1.39.0 called it
+# bigfix-relevance-analyzer-analyzer.zip.
+ZIP_NAMES = ("bigfix-relevance-analyzer-web.zip", "bigfix-relevance-analyzer-analyzer.zip")
 SUMS_NAME = "SHA256SUMS.txt"
 MANIFEST = "manifest.json"
 PACKAGE = "bigfix-relevance-analyzer"
@@ -76,8 +80,16 @@ def read_sums(sums_path):
     return sums
 
 
+def listed_zip(sums):
+    """The split set zip's name in this release's sums, or None."""
+    for name in ZIP_NAMES:
+        if name in sums:
+            return name
+    return None
+
+
 def is_listed(sums_path):
-    return ZIP_NAME in read_sums(sums_path)
+    return listed_zip(read_sums(sums_path)) is not None
 
 
 def read_zip(zip_path):
@@ -213,14 +225,15 @@ def apply_release(release_dir, dest, tag=None, work_dir=None):
     release_dir = pathlib.Path(release_dir)
     dest = pathlib.Path(dest)
     sums = read_sums(release_dir / SUMS_NAME)
-    if ZIP_NAME not in sums:
+    zip_name = listed_zip(sums)
+    if zip_name is None:
         return "not-listed"
 
-    zip_path = release_dir / ZIP_NAME
+    zip_path = release_dir / zip_name
     if not zip_path.is_file():
-        raise ReleaseError("%s is listed in %s but missing" % (ZIP_NAME, SUMS_NAME))
-    if _sha256(zip_path.read_bytes()) != sums[ZIP_NAME]:
-        raise ReleaseError("%s checksum does not match %s" % (ZIP_NAME, SUMS_NAME))
+        raise ReleaseError("%s is listed in %s but missing" % (zip_name, SUMS_NAME))
+    if _sha256(zip_path.read_bytes()) != sums[zip_name]:
+        raise ReleaseError("%s checksum does not match %s" % (zip_name, SUMS_NAME))
 
     files = read_zip(zip_path)
     check_manifest(files, tag)
@@ -285,20 +298,21 @@ def main(argv=None):
 
     try:
         if args.command == "listed":
-            listed = is_listed(args.sums)
-            if listed:
-                print("%s is listed in %s" % (ZIP_NAME, args.sums.name))
+            zip_name = listed_zip(read_sums(args.sums))
+            if zip_name:
+                print("%s is listed in %s" % (zip_name, args.sums.name))
+                _set_output("zip", zip_name)
             else:
-                print("::notice::%s is not listed in %s: this release has no "
-                      "split analyzer set, nothing to publish"
-                      % (ZIP_NAME, args.sums.name))
-            _set_output("listed", "true" if listed else "false")
+                print("::notice::%s is not listed in %s: this release has "
+                      "no split analyzer set, nothing to publish"
+                      % ("%s (or %s)" % ZIP_NAMES, args.sums.name))
+            _set_output("listed", "true" if zip_name else "false")
         else:
             status = apply_release(args.release_dir, args.dest, args.tag,
                                    args.work_dir)
             messages = {
                 "not-listed": "::notice::%s is not in this release; nothing to do"
-                % ZIP_NAME,
+                % " / ".join(ZIP_NAMES),
                 "unchanged": "%s already matches this release; nothing to do"
                 % args.dest,
                 "updated": "published the split analyzer set into %s" % args.dest,
