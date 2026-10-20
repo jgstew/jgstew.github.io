@@ -5,9 +5,9 @@ Standard library only. Run from the repo root:
     python3 -m unittest discover -s .github/scripts -p "test_*.py" -v
 """
 
-import hashlib
 import json
 import os
+import re
 import pathlib
 import shutil
 import stat
@@ -20,65 +20,18 @@ import zipfile
 HERE = pathlib.Path(__file__).resolve().parent
 REPO = HERE.parents[1]
 SCRIPT = HERE / "update_analyzer.py"
+FAKE_RELEASE = HERE / "fake_release.py"
 FROZEN_PAGE = REPO / "files/bigfix-relevance-analyzer-playground.html"
 ZIP_NAME = "bigfix-relevance-analyzer-analyzer.zip"
 
 sys.path.insert(0, str(HERE))
 import update_analyzer  # noqa: E402
-
-
-def sha256(data):
-    return hashlib.sha256(data).hexdigest()
-
-
-def make_set(version="1.38.1", cores=3, salt=b""):
-    """Return {name: bytes} for a split analyzer set, manifest.json included."""
-    files = {
-        "editor.js": b"window.playgroundEditor = {};\n" + salt,
-        "glue.mjs": b"globalThis.__component = {};\n" + salt,
-        "index.html": b"<!doctype html><title>analyzer</title>\n" + salt,
-    }
-    core_entries = []
-    for i in range(1, cores + 1):
-        name = "analyzer.core.wasm" if i == 1 else "analyzer.core%d.wasm" % i
-        path = name + ".gz"
-        files[path] = b"\x1f\x8b fake core %d " % i + salt
-        core_entries.append(
-            {
-                "name": name,
-                "path": path,
-                "encoding": "gzip",
-                "size": len(files[path]),
-                "sha256": sha256(files[path]),
-            }
-        )
-    core_entries.sort(key=lambda e: e["name"])
-
-    def entry(path):
-        return {"path": path, "size": len(files[path]), "sha256": sha256(files[path])}
-
-    manifest = {
-        "format": 1,
-        "package": "bigfix-relevance-analyzer",
-        "version": version,
-        "editor": entry("editor.js"),
-        "glue": entry("glue.mjs"),
-        "cores": core_entries,
-    }
-    files["manifest.json"] = (json.dumps(manifest, indent=2) + "\n").encode()
-    return files
-
-
-def write_zip(path, files, extra=None):
-    """Write a flat zip like the producer's: fixed timestamps, manifest last."""
-    names = sorted(n for n in files if n != "manifest.json")
-    if "manifest.json" in files:
-        names.append("manifest.json")
-    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for name in names:
-            zf.writestr(zipfile.ZipInfo(name, (1980, 1, 1, 0, 0, 0)), files[name])
-        for info, data in extra or []:
-            zf.writestr(info, data)
+from fake_release import (  # noqa: E402
+    encode_manifest,
+    make_set,
+    sha256,
+    write_release,
+)
 
 
 class AnalyzerTestCase(unittest.TestCase):
@@ -109,15 +62,8 @@ class AnalyzerTestCase(unittest.TestCase):
         for name, data in files.items():
             (self.dest / name).write_bytes(data)
 
-    def release_with(self, files, listed=True, sums_hash=None, extra=None, sep="  "):
-        zip_path = self.release / ZIP_NAME
-        write_zip(zip_path, files, extra)
-        lines = ["%s  bigfix-relevance-analyzer-playground.html" % ("0" * 64)]
-        if listed:
-            digest = sums_hash or sha256(zip_path.read_bytes())
-            lines.append("%s%s%s" % (digest, sep, ZIP_NAME))
-        (self.release / "SHA256SUMS.txt").write_text("\n".join(lines) + "\n")
-        return zip_path
+    def release_with(self, files, **kwargs):
+        return write_release(self.release, files, **kwargs)
 
     def apply(self, tag=None):
         return update_analyzer.apply_release(
@@ -173,6 +119,17 @@ class NotListedTest(AnalyzerTestCase):
         self.release_with(make_set(), listed=True)
         self.assertTrue(update_analyzer.is_listed(self.release / "SHA256SUMS.txt"))
 
+    def test_real_release_sums_format(self):
+        # v1.38.1's SHA256SUMS.txt, verbatim apart from the hashes elided.
+        sums = self.release / "SHA256SUMS.txt"
+        sums.write_text(
+            "%s  ./bigfix-relevance-analyzer-playground.html\n"
+            "%s  ./bigfix-relevance-developer.vsix\n" % ("a" * 64, "b" * 64)
+        )
+        self.assertFalse(update_analyzer.is_listed(sums))
+        sums.write_text("%s  ./%s\n" % ("c" * 64, ZIP_NAME))
+        self.assertTrue(update_analyzer.is_listed(sums))
+
     def test_missing_sums_file_is_an_error(self):
         with self.assertRaises(update_analyzer.ReleaseError):
             self.apply()
@@ -188,6 +145,40 @@ class GoodZipTest(AnalyzerTestCase):
     def test_binary_mode_marker_in_sums(self):
         files = make_set()
         self.release_with(files, sep=" *")
+        self.assertEqual(self.apply(), "updated")
+        self.assert_published(files)
+
+    def test_bare_name_in_sums(self):
+        files = make_set()
+        self.release_with(files, prefix="")
+        self.assertEqual(self.apply(), "updated")
+        self.assert_published(files)
+
+    def test_dot_slash_name_in_sums(self):
+        files = make_set()
+        self.release_with(files, prefix="./")
+        self.assertEqual(self.apply(), "updated")
+        self.assert_published(files)
+
+    def test_optional_raw_core_fields_accepted(self):
+        files = make_set()
+        manifest = json.loads(files["manifest.json"])
+        for core in manifest["cores"]:
+            core["raw_size"] = 1234
+            core["raw_sha256"] = "d" * 64
+        files["manifest.json"] = encode_manifest(manifest)
+        self.release_with(files)
+        self.assertEqual(self.apply(), "updated")
+        self.assert_published(files)
+
+    def test_unknown_extra_keys_accepted(self):
+        files = make_set()
+        manifest = json.loads(files["manifest.json"])
+        manifest["built_by"] = "a future producer"
+        manifest["glue"]["note"] = "extra"
+        manifest["cores"][0]["note"] = "extra"
+        files["manifest.json"] = encode_manifest(manifest)
+        self.release_with(files)
         self.assertEqual(self.apply(), "updated")
         self.assert_published(files)
 
@@ -252,6 +243,23 @@ class GoodZipTest(AnalyzerTestCase):
         self.apply()
         self.assertEqual(order[-1], "manifest.json")
         self.assertEqual(sorted(order), sorted(files))
+
+    def test_write_failure_is_reported(self):
+        self.publish(make_set("1.38.0", salt=b"old"))
+        self.release_with(make_set("1.39.0"))
+        real = update_analyzer._install
+        calls = []
+
+        def failing(src, dst):
+            calls.append(dst)
+            if len(calls) == 2:
+                raise OSError(28, "No space left on device")
+            return real(src, dst)
+
+        update_analyzer._install = failing
+        self.addCleanup(setattr, update_analyzer, "_install", real)
+        with self.assertRaisesRegex(update_analyzer.ReleaseError, "partly written"):
+            self.apply()
 
 
 class RejectedZipTest(AnalyzerTestCase):
@@ -345,6 +353,54 @@ class RejectedZipTest(AnalyzerTestCase):
         self.release_with(files)
         self.assert_rejected("unsafe")
 
+    def edit_manifest(self, change):
+        files = make_set()
+        manifest = json.loads(files["manifest.json"])
+        change(manifest)
+        files["manifest.json"] = encode_manifest(manifest)
+        return files
+
+    def test_entry_not_in_manifest(self):
+        self.release_with(make_set(), extra=[(zipfile.ZipInfo("extra.js"), b"x")])
+        self.assert_rejected("not named in manifest.json")
+
+    def test_core_name_does_not_match_path(self):
+        def change(m):
+            m["cores"][1]["name"] = "analyzer.core9.wasm"
+        self.release_with(self.edit_manifest(change))
+        self.assert_rejected("core")
+
+    def test_core_name_is_not_a_core(self):
+        files = make_set()
+        manifest = json.loads(files["manifest.json"])
+        files["evil.wasm.gz"] = files["analyzer.core2.wasm.gz"]
+        manifest["cores"][1]["name"] = "evil.wasm"
+        manifest["cores"][1]["path"] = "evil.wasm.gz"
+        del files["analyzer.core2.wasm.gz"]
+        files["manifest.json"] = encode_manifest(manifest)
+        self.release_with(files)
+        self.assert_rejected("core name")
+
+    def test_core_encoding_not_gzip(self):
+        def change(m):
+            m["cores"][0]["encoding"] = "br"
+        self.release_with(self.edit_manifest(change))
+        self.assert_rejected("encoding")
+
+    def test_bad_raw_sha256(self):
+        def change(m):
+            m["cores"][0]["raw_sha256"] = "not hex"
+        self.release_with(self.edit_manifest(change))
+        self.assert_rejected("raw_sha256")
+
+    def test_bad_raw_size(self):
+        for bad in (-1, "12", 1.5, True):
+            with self.subTest(raw_size=bad):
+                def change(m):
+                    m["cores"][0]["raw_size"] = bad
+                self.release_with(self.edit_manifest(change))
+                self.assert_rejected("raw_size")
+
     def test_version_does_not_match_tag(self):
         self.release_with(make_set("1.39.0"))
         self.assert_rejected("version", tag="v1.40.0")
@@ -396,6 +452,22 @@ class CommandLineTest(AnalyzerTestCase):
         self.assertNotIn("status=", outputs)
 
 
+class FakeReleaseTest(AnalyzerTestCase):
+    """fake_release.py builds what the workflow's PR dry run unpacks."""
+
+    def test_fake_release_round_trip(self):
+        proc = subprocess.run(
+            [sys.executable, "-I", str(FAKE_RELEASE), str(self.release),
+             "--version", "0.0.0"],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        sums = (self.release / "SHA256SUMS.txt").read_text()
+        self.assertIn("  ./%s\n" % ZIP_NAME, sums)
+        self.assertEqual(self.apply(tag="v0.0.0"), "updated")
+        self.assertEqual(self.apply(tag="v0.0.0"), "unchanged")
+
+
 class WorkflowTest(unittest.TestCase):
     """The workflow publishes the split set and leaves the frozen page alone."""
 
@@ -409,7 +481,42 @@ class WorkflowTest(unittest.TestCase):
         self.assertIn("files/analyzer", self.text)
 
     def test_never_touches_the_frozen_page(self):
-        self.assertNotIn("bigfix-relevance-analyzer-playground.html", self.text)
+        # It is named only as a pull_request path, so PRs that change it run
+        # the pin test.
+        lines = [
+            line.strip()
+            for line in self.text.splitlines()
+            if "bigfix-relevance-analyzer-playground.html" in line
+        ]
+        self.assertEqual(lines, ['- "files/bigfix-relevance-analyzer-playground.html"'])
+
+    def test_pull_request_dry_run_exercises_unpack(self):
+        self.assertIn("python3 -I .github/scripts/fake_release.py", self.text)
+        dry_run = self.text[self.text.index("fake_release.py"):]
+        self.assertIn("sha256sum -c --ignore-missing", dry_run)
+        self.assertIn("update_analyzer.py apply", dry_run)
+        self.assertIn("status=unchanged", dry_run)
+
+    def test_pull_requests_do_not_share_the_publish_queue(self):
+        self.assertIn(
+            "group: update-playground-${{ github.event_name == 'pull_request'"
+            " && github.ref || 'publish' }}",
+            self.text,
+        )
+
+    def test_release_without_sums_is_a_no_op(self):
+        # v0.1.0 to v0.5.1 have no SHA256SUMS.txt.
+        self.assertIn("has no SHA256SUMS.txt", self.text)
+
+    def test_version_input_pattern(self):
+        m = re.search(r"grep -Eq '([^']+)'", self.text)
+        self.assertIsNotNone(m)
+        pattern = re.compile(m.group(1))
+        for good in ("1.38.1", "v1.38.1", "1.0.0b1", "1.0.0rc1", "1.0.0-rc.1",
+                     "2.0.0.post1"):
+            self.assertTrue(pattern.match(good), good)
+        for bad in ("1.0", "latest", "1.0.0;rm -rf /", "../1.0.0", "1.0.0 x", ""):
+            self.assertFalse(pattern.match(bad), bad)
 
     def test_runs_the_tests_on_pull_requests(self):
         self.assertIn("python3 -m unittest discover -s .github/scripts", self.text)
