@@ -18,7 +18,7 @@ jobs:
   grammar-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
 
       - uses: actions-rust-lang/setup-rust-toolchain@v2
         with:
