@@ -1,5 +1,5 @@
 
 ### Location for Binary Files
 
-- [https://www.jgstew.com/files/bigfix-relevance-analyzer-playground.html](https://www.jgstew.com/files/bigfix-relevance-analyzer-playground.html)
+- [bigfix-relevance-analyzer](https://www.jgstew.com/files/analyzer/)
 - http://jgstew.github.io/files/MakeDashboard_Files.zip
