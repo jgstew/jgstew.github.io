@@ -12,9 +12,10 @@ import unittest
 REPO = pathlib.Path(__file__).resolve().parents[2]
 WORKFLOW = REPO / ".github/workflows/update-bigfix-relevance-analyzer-playground.yaml"
 FROZEN_PAGE = REPO / "files/bigfix-relevance-analyzer-playground.html"
-# The single-file playground as of v1.38.1. It is frozen: the site no longer
+# The single-file playground as of v1.39.0, the last release the old workflow
+# published before this one replaced it. It is frozen: the site no longer
 # updates it, and it will become a redirect in a later, separate change.
-FROZEN_PAGE_SHA256 = "d52bfc94fe44611d26ca3ba6f2b89acb2f7ce41496c0d79fd5e1457218b466b4"
+FROZEN_PAGE_SHA256 = "7f9c0018cacd19d7db398d00f146925fb2671bdbc0684a51c84ea231f464bc1b"
 
 
 class FrozenPageTest(unittest.TestCase):
