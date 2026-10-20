@@ -1,15 +1,25 @@
 ---
 name: Update bigfix-relevance-analyzer playground
 
+# Publishes the analyzer's split set (manifest.json, editor.js, glue.mjs, the
+# analyzer.core*.wasm.gz modules and index.html) flat into files/analyzer/.
+# The contract is tools/playground-wasm/SPLIT_ANALYZER.md in
+# jgstew/bigfix-relevance-analyzer; the logic is in
+# .github/scripts/update_analyzer.py. The old single-file playground page in
+# files/ is frozen: this workflow no longer updates it.
+#
+# Keep this file name: the analyzer repo's release dispatches it by name.
+
 on:
   schedule:
     # Weekly, Sundays at 05:17 UTC
     - cron: "17 5 * * 0"
-  # Dry run when this workflow file itself is changed: exercises the download
-  # and checksum steps but never commits or pushes.
+  # Dry run when this workflow or its script changes: runs the tests and the
+  # download, verify and unpack steps but never commits or pushes.
   pull_request:
     paths:
       - ".github/workflows/update-bigfix-relevance-analyzer-playground.yaml"
+      - ".github/scripts/**"
   workflow_dispatch:
     inputs:
       version:
@@ -32,10 +42,13 @@ jobs:
           # PRs test the proposed workflow against the PR merge ref
           ref: ${{ github.event_name == 'pull_request' && github.ref || 'master' }}
 
-      # Fetch only the small checksum file first and compare the release's
-      # playground hash to the committed file, so an unchanged release skips
-      # the rest of the job.
-      - name: Check whether the release differs from the repo
+      # Offline tests of the publish script against fake releases.
+      - name: Test the publish script
+        run: python3 -m unittest discover -s .github/scripts -p "test_*.py" -v
+
+      # Fetch only the small checksum file first: a release without the split
+      # set zip (every release up to v1.38.1) ends the job here, successfully.
+      - name: Check whether the release has the split analyzer set
         id: check
         env:
           GH_TOKEN: ${{ github.token }}
@@ -48,7 +61,7 @@ jobs:
             tag="v${VERSION#v}"
           fi
           # Resolve "latest" to a concrete tag once, so the checksum and the
-          # HTML below always come from the same release.
+          # zip below always come from the same release.
           if [ -z "$tag" ]; then
             tag="$(gh release view --repo jgstew/bigfix-relevance-analyzer --json tagName -q .tagName)"
             [ -n "$tag" ] || { echo "::error::could not resolve latest release"; exit 1; }
@@ -59,54 +72,50 @@ jobs:
             echo "Release to apply: $tag (latest)"
           fi
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          rm -rf "$RUNNER_TEMP/dl"
           mkdir -p "$RUNNER_TEMP/dl"
           gh release download "$tag" \
             --repo jgstew/bigfix-relevance-analyzer \
-            --dir "$RUNNER_TEMP/dl" --clobber \
+            --dir "$RUNNER_TEMP/dl" \
             --pattern SHA256SUMS.txt
-          remote="$(awk '$2 ~ /(^|\/)bigfix-relevance-analyzer-playground\.html$/ {print $1}' \
-            "$RUNNER_TEMP/dl/SHA256SUMS.txt")"
-          [ -n "$remote" ] || { echo "::error::playground not listed in SHA256SUMS.txt"; exit 1; }
-          local_hash="$(sha256sum files/bigfix-relevance-analyzer-playground.html 2>/dev/null | cut -d' ' -f1 || true)"
-          if [ "$remote" = "$local_hash" ]; then
-            echo "playground unchanged at $tag (${remote}); nothing to do"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+          python3 -I .github/scripts/update_analyzer.py listed "$RUNNER_TEMP/dl/SHA256SUMS.txt"
 
-      # On PRs, always download so the download/verify path gets exercised.
-      - name: Download and verify the release asset
-        if: steps.check.outputs.changed == 'true' || github.event_name == 'pull_request'
+      - name: Download, verify and unpack the split analyzer set
+        id: apply
+        if: steps.check.outputs.listed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.check.outputs.tag }}
         run: |
           gh release download "$TAG" \
             --repo jgstew/bigfix-relevance-analyzer \
-            --dir "$RUNNER_TEMP/dl" --clobber \
-            --pattern bigfix-relevance-analyzer-playground.html \
-            --pattern SHA256SUMS.txt
+            --dir "$RUNNER_TEMP/dl" \
+            --pattern bigfix-relevance-analyzer-analyzer.zip
           (cd "$RUNNER_TEMP/dl" && sha256sum -c --ignore-missing SHA256SUMS.txt)
+          # Verifies again, checks every entry and the manifest, and leaves
+          # files/analyzer/ untouched on any error or if nothing changed.
+          python3 -I .github/scripts/update_analyzer.py apply \
+            --release-dir "$RUNNER_TEMP/dl" \
+            --dest files/analyzer \
+            --tag "$TAG" \
+            --work-dir "$RUNNER_TEMP/work"
 
       - name: Commit and push if changed
-        if: steps.check.outputs.changed == 'true' || github.event_name == 'pull_request'
+        if: steps.apply.outputs.status == 'updated'
         env:
           TAG: ${{ steps.check.outputs.tag }}
         run: |
-          echo "Applying release $TAG"
-          f=files/bigfix-relevance-analyzer-playground.html
-          cp "$RUNNER_TEMP/dl/bigfix-relevance-analyzer-playground.html" "$f"
-          if [ -z "$(git status --porcelain -- "$f")" ]; then
+          d=files/analyzer
+          if [ -z "$(git status --porcelain -- "$d")" ]; then
             echo "already up to date"; exit 0
           fi
           if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
             echo "dry run (pull_request): would commit this change, not pushing"
-            git status --short -- "$f"
+            git status --short -- "$d"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$f"
-          git commit -m "Update bigfix-relevance-analyzer playground to $TAG"
+          git add -A -- "$d"
+          git commit -m "Update bigfix-relevance-analyzer split analyzer set to $TAG"
           git push
