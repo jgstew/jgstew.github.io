@@ -22,11 +22,12 @@ REPO = HERE.parents[1]
 SCRIPT = HERE / "update_analyzer.py"
 FAKE_RELEASE = HERE / "fake_release.py"
 FROZEN_PAGE = REPO / "files/bigfix-relevance-analyzer-playground.html"
-ZIP_NAME = "bigfix-relevance-analyzer-analyzer.zip"
 
 sys.path.insert(0, str(HERE))
 import update_analyzer  # noqa: E402
 from fake_release import (  # noqa: E402
+    LEGACY_ZIP_NAME,
+    ZIP_NAME,
     encode_manifest,
     make_set,
     sha256,
@@ -452,6 +453,44 @@ class CommandLineTest(AnalyzerTestCase):
         self.assertNotIn("status=", outputs)
 
 
+class AssetNameTest(AnalyzerTestCase):
+    """The asset was renamed from bigfix-relevance-analyzer-analyzer.zip (up to
+    1.39.0) to bigfix-relevance-analyzer-web.zip; both must publish."""
+
+    def test_new_name_is_published(self):
+        self.release_with(make_set("1.40.0"), zip_name="bigfix-relevance-analyzer-web.zip")
+        self.assertEqual(self.apply(tag="v1.40.0"), "updated")
+        self.assert_published(make_set("1.40.0"))
+
+    def test_legacy_name_is_still_published(self):
+        self.release_with(make_set("1.39.0"), zip_name=LEGACY_ZIP_NAME)
+        self.assertEqual(self.apply(tag="v1.39.0"), "updated")
+        self.assert_published(make_set("1.39.0"))
+
+    def test_new_name_wins_when_both_are_listed(self):
+        # The legacy zip's checksum is wrong, so picking it would fail.
+        self.release_with(make_set("1.40.0"), zip_name=LEGACY_ZIP_NAME, sums_hash="f" * 64)
+        self.release_with(make_set("1.40.0"), zip_name="bigfix-relevance-analyzer-web.zip")
+        self.assertEqual(self.apply(tag="v1.40.0"), "updated")
+
+    def test_listed_names_the_zip_it_found(self):
+        out = self.tmp / "github_output"
+        env = dict(os.environ, GITHUB_OUTPUT=str(out))
+        for name in ("bigfix-relevance-analyzer-web.zip", LEGACY_ZIP_NAME):
+            shutil.rmtree(self.release)
+            self.release.mkdir()
+            out.unlink(missing_ok=True)
+            self.release_with(make_set(), zip_name=name)
+            proc = subprocess.run(
+                [sys.executable, "-I", str(SCRIPT), "listed", str(self.release / "SHA256SUMS.txt")],
+                env=env, capture_output=True, text=True,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertIn("listed=true", out.read_text())
+            self.assertIn("zip=%s" % name, out.read_text())
+            self.assertIn(name, proc.stdout)
+
+
 class FakeReleaseTest(AnalyzerTestCase):
     """fake_release.py builds what the workflow's PR dry run unpacks."""
 
@@ -521,6 +560,11 @@ class WorkflowTest(unittest.TestCase):
     def test_runs_the_tests_on_pull_requests(self):
         self.assertIn("python3 -m unittest discover -s .github/scripts", self.text)
         self.assertIn('".github/scripts/**"', self.text)
+
+    def test_downloads_the_zip_listed_found(self):
+        self.assertIn("--pattern \"$ZIP\"", self.text)
+        self.assertIn("ZIP: ${{ steps.check.outputs.zip }}", self.text)
+        self.assertNotIn("--pattern bigfix-relevance-analyzer-analyzer.zip", self.text)
 
     def test_verifies_with_sha256sum(self):
         self.assertIn("sha256sum -c --ignore-missing", self.text)

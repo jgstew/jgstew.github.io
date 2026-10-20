@@ -6,7 +6,7 @@ release with the split set zip to exercise download/verify/unpack. Standard
 library only. The file contents are placeholders, not a working analyzer.
 
     fake_release.py OUT_DIR [--version 0.0.0]
-        Writes OUT_DIR/bigfix-relevance-analyzer-analyzer.zip and an
+        Writes OUT_DIR/bigfix-relevance-analyzer-web.zip and an
         OUT_DIR/SHA256SUMS.txt in the real release format ("<hash>  ./<name>").
 """
 
@@ -17,7 +17,9 @@ import pathlib
 import sys
 import zipfile
 
-ZIP_NAME = "bigfix-relevance-analyzer-analyzer.zip"
+ZIP_NAME = "bigfix-relevance-analyzer-web.zip"
+# What releases up to 1.39.0 called it.
+LEGACY_ZIP_NAME = "bigfix-relevance-analyzer-analyzer.zip"
 
 
 def sha256(data):
@@ -79,7 +81,7 @@ def write_zip(path, files, extra=None):
 
 
 def write_release(out_dir, files, listed=True, sums_hash=None, extra=None,
-                  prefix="./", sep="  "):
+                  prefix="./", sep="  ", zip_name=ZIP_NAME):
     """Write the zip and SHA256SUMS.txt into out_dir; return the zip's path.
 
     The real release lists assets as "<hash>  ./<name>" (the producer runs
@@ -87,13 +89,17 @@ def write_release(out_dir, files, listed=True, sums_hash=None, extra=None,
     """
     out_dir = pathlib.Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    zip_path = out_dir / ZIP_NAME
+    zip_path = out_dir / zip_name
     write_zip(zip_path, files, extra)
-    lines = ["%s  %sbigfix-relevance-analyzer-playground.html" % ("0" * 64, prefix)]
+    sums = out_dir / "SHA256SUMS.txt"
+    # Another call for the same release adds its zip to the existing list.
+    lines = sums.read_text().splitlines() if sums.exists() else [
+        "%s  %sbigfix-relevance-analyzer-playground.html" % ("0" * 64, prefix)]
+    lines = [l for l in lines if not l.endswith("/" + zip_name) and not l.endswith(" " + zip_name)]
     if listed:
         digest = sums_hash or sha256(zip_path.read_bytes())
-        lines.append("%s%s%s%s" % (digest, sep, prefix, ZIP_NAME))
-    (out_dir / "SHA256SUMS.txt").write_text("\n".join(lines) + "\n")
+        lines.append("%s%s%s%s" % (digest, sep, prefix, zip_name))
+    sums.write_text("\n".join(lines) + "\n")
     return zip_path
 
 
