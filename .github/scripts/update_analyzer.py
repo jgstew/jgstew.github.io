@@ -14,8 +14,9 @@ glue.mjs, analyzer.core*.wasm.gz and index.html, listed in SHA256SUMS.txt.
 
     update_analyzer.py apply --release-dir DIR --dest files/analyzer [--tag vX.Y.Z]
         Verify the zip and publish it into DEST. Sets the step output
-        status=not-listed|unchanged|updated. Any problem is an error (exit 1)
-        and leaves DEST as it was.
+        status=not-listed|unchanged|updated. Any problem is an error (exit 1).
+        A problem with the release leaves DEST as it was; an I/O error while
+        writing (disk full, say) can leave DEST partly written.
 """
 
 import argparse
@@ -38,10 +39,14 @@ PACKAGE = "bigfix-relevance-analyzer"
 MAX_TOTAL_BYTES = 256 * 1024 * 1024
 # Bare file names only: no "/", "\", "..", leading dot, or other surprises.
 SAFE_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
+CORE_NAME = re.compile(r"^analyzer\.core[0-9]*\.wasm$")
+SHA256_HEX = re.compile(r"^[0-9a-f]{64}$")
+# The one file in the zip that the manifest does not name.
+UNLISTED_OK = {"index.html"}
 
 
 class ReleaseError(Exception):
-    """The release cannot be published; DEST is left untouched."""
+    """The release cannot be published (or writing it failed)."""
 
 
 def _sha256(data):
@@ -62,7 +67,12 @@ def read_sums(sums_path):
     for line in sums_path.read_text(encoding="utf-8").splitlines():
         m = re.match(r"^([0-9a-fA-F]{64}) [ *](.+)$", line.strip())
         if m:
-            sums[m.group(2)] = m.group(1).lower()
+            # Releases list assets as "./<name>" (the producer runs
+            # `sha256sum ./*`); accept the bare name too.
+            name = m.group(2)
+            if name.startswith("./"):
+                name = name[2:]
+            sums[name] = m.group(1).lower()
     return sums
 
 
@@ -122,7 +132,10 @@ def check_manifest(files, tag=None):
     cores = manifest.get("cores")
     if not isinstance(cores, list) or not cores:
         raise ReleaseError("%s has no cores" % MANIFEST)
+    for core in cores:
+        _check_core(core)
     entries.extend(cores)
+    named = set()
     for entry in entries:
         if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
             raise ReleaseError("malformed %s entry: %r" % (MANIFEST, entry))
@@ -135,7 +148,39 @@ def check_manifest(files, tag=None):
         if entry.get("size") != len(data) or entry.get("sha256") != _sha256(data):
             raise ReleaseError("%s does not match its size/sha256 in %s"
                                % (path, MANIFEST))
+        named.add(path)
+    unlisted = sorted(set(files) - named - UNLISTED_OK - {MANIFEST})
+    if unlisted:
+        raise ReleaseError("zip has files not named in %s: %s"
+                           % (MANIFEST, ", ".join(unlisted)))
     return version
+
+
+def _check_core(core):
+    """Check a core entry's fields beyond path/size/sha256.
+
+    Extra keys are allowed (additive within format 1). raw_size/raw_sha256
+    describe the inflated wasm; they are checked for form only when present.
+    """
+    if not isinstance(core, dict):
+        raise ReleaseError("malformed core entry: %r" % (core,))
+    name = core.get("name")
+    if not isinstance(name, str) or not CORE_NAME.match(name):
+        raise ReleaseError("bad core name %r" % (name,))
+    if core.get("path") != name + ".gz":
+        raise ReleaseError("core %s has path %r, expected %s.gz"
+                           % (name, core.get("path"), name))
+    if core.get("encoding") != "gzip":
+        raise ReleaseError("core %s has encoding %r, expected gzip"
+                           % (name, core.get("encoding")))
+    if "raw_size" in core:
+        raw_size = core["raw_size"]
+        if type(raw_size) is not int or raw_size < 0:
+            raise ReleaseError("core %s has bad raw_size %r" % (name, raw_size))
+    if "raw_sha256" in core:
+        raw_sha = core["raw_sha256"]
+        if not isinstance(raw_sha, str) or not SHA256_HEX.match(raw_sha):
+            raise ReleaseError("core %s has bad raw_sha256 %r" % (name, raw_sha))
 
 
 def _install(src, dst):
@@ -160,8 +205,10 @@ def _published_matches(dest, files):
 def apply_release(release_dir, dest, tag=None, work_dir=None):
     """Publish the release's split set into dest.
 
-    Returns "not-listed", "unchanged" or "updated". Raises ReleaseError, with
-    dest untouched, if anything about the release is wrong.
+    Returns "not-listed", "unchanged" or "updated". Raises ReleaseError if
+    anything about the release is wrong, before dest is touched. An OSError
+    while writing is also raised as ReleaseError, and dest may then be partly
+    written; rerun the workflow to repair it.
     """
     release_dir = pathlib.Path(release_dir)
     dest = pathlib.Path(dest)
@@ -188,25 +235,33 @@ def apply_release(release_dir, dest, tag=None, work_dir=None):
         pathlib.Path(work_dir).mkdir(parents=True, exist_ok=True)
     staging = pathlib.Path(tempfile.mkdtemp(prefix="analyzer-", dir=work_dir))
     try:
-        for name, data in files.items():
-            (staging / name).write_bytes(data)
-        dest.mkdir(parents=True, exist_ok=True)
-        if (dest / MANIFEST).exists():
-            (dest / MANIFEST).unlink()
-        for name in sorted(files):
-            if name != MANIFEST:
-                _install(staging / name, dest / name)
-        for path in sorted(dest.iterdir()):
-            if path.name in files:
-                continue
-            if path.is_dir() and not path.is_symlink():
-                print("::warning::leaving unexpected directory %s" % path)
-            else:
-                path.unlink()
-        _install(staging / MANIFEST, dest / MANIFEST)
+        _write_set(files, staging, dest)
+    except OSError as e:
+        raise ReleaseError("failed while writing %s, which may be partly written: %s"
+                           % (dest, e))
     finally:
         shutil.rmtree(staging, ignore_errors=True)
     return "updated"
+
+
+def _write_set(files, staging, dest):
+    """Stage, then write in the producer's order (see apply_release)."""
+    for name, data in files.items():
+        (staging / name).write_bytes(data)
+    dest.mkdir(parents=True, exist_ok=True)
+    if (dest / MANIFEST).exists():
+        (dest / MANIFEST).unlink()
+    for name in sorted(files):
+        if name != MANIFEST:
+            _install(staging / name, dest / name)
+    for path in sorted(dest.iterdir()):
+        if path.name in files:
+            continue
+        if path.is_dir() and not path.is_symlink():
+            print("::warning::leaving unexpected directory %s" % path)
+        else:
+            path.unlink()
+    _install(staging / MANIFEST, dest / MANIFEST)
 
 
 def _set_output(key, value):

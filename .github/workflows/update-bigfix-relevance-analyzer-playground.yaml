@@ -14,12 +14,14 @@ on:
   schedule:
     # Weekly, Sundays at 05:17 UTC
     - cron: "17 5 * * 0"
-  # Dry run when this workflow or its script changes: runs the tests and the
-  # download, verify and unpack steps but never commits or pushes.
+  # Dry run when this workflow, its scripts or the frozen page change: runs
+  # the tests (which pin the frozen page), unpacks a fake release into a temp
+  # folder, and checks the real release, but never commits or pushes.
   pull_request:
     paths:
       - ".github/workflows/update-bigfix-relevance-analyzer-playground.yaml"
       - ".github/scripts/**"
+      - "files/bigfix-relevance-analyzer-playground.html"
   workflow_dispatch:
     inputs:
       version:
@@ -31,7 +33,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-playground # serialize pushes to master
+  # Serialize pushes to master. PR dry runs get their own group so a queued
+  # one cannot replace a pending release dispatch.
+  group: update-playground-${{ github.event_name == 'pull_request' && github.ref || 'publish' }}
 
 jobs:
   update:
@@ -46,8 +50,32 @@ jobs:
       - name: Test the publish script
         run: python3 -m unittest discover -s .github/scripts -p "test_*.py" -v
 
+      # No release has the split set zip yet, so exercise the same verify and
+      # unpack commands on a fake release, into a temp folder (not the site).
+      - name: Dry run on a fake release
+        if: github.event_name == 'pull_request'
+        run: |
+          fake="$RUNNER_TEMP/fake"
+          rm -rf "$fake"
+          python3 -I .github/scripts/fake_release.py "$fake/dl" --version 0.0.0
+          (cd "$fake/dl" && sha256sum -c --ignore-missing SHA256SUMS.txt)
+          apply() {
+            : > "$fake/out"
+            GITHUB_OUTPUT="$fake/out" python3 -I .github/scripts/update_analyzer.py apply \
+              --release-dir "$fake/dl" \
+              --dest "$fake/site/analyzer" \
+              --tag v0.0.0 \
+              --work-dir "$fake/work"
+            cat "$fake/out"
+          }
+          # First run publishes; a second run on the same release is a no-op.
+          apply | grep -qx "status=updated" || { echo "::error::first run did not update"; exit 1; }
+          apply | grep -qx "status=unchanged" || { echo "::error::second run was not a no-op"; exit 1; }
+          ls -l "$fake/site/analyzer"
+
       # Fetch only the small checksum file first: a release without the split
-      # set zip (every release up to v1.38.1) ends the job here, successfully.
+      # set zip (every release up to v1.38.1), or without SHA256SUMS.txt at all
+      # (v0.1.0 to v0.5.1), ends the job here, successfully.
       - name: Check whether the release has the split analyzer set
         id: check
         env:
@@ -56,7 +84,7 @@ jobs:
         run: |
           tag=""
           if [ -n "$VERSION" ]; then
-            printf '%s' "$VERSION" | grep -Eq '^v?[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.]+)?$' \
+            printf '%s' "$VERSION" | grep -Eq '^v?[0-9]+\.[0-9]+\.[0-9]+([.-]?[0-9A-Za-z.]+)?$' \
               || { echo "::error::bad version: $VERSION"; exit 1; }
             tag="v${VERSION#v}"
           fi
@@ -72,6 +100,13 @@ jobs:
             echo "Release to apply: $tag (latest)"
           fi
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          assets="$(gh release view "$tag" --repo jgstew/bigfix-relevance-analyzer \
+            --json assets -q '.assets[].name')"
+          if ! printf '%s\n' "$assets" | grep -qx 'SHA256SUMS.txt'; then
+            echo "::notice::$tag has no SHA256SUMS.txt, so no split analyzer set; nothing to publish"
+            echo "listed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           rm -rf "$RUNNER_TEMP/dl"
           mkdir -p "$RUNNER_TEMP/dl"
           gh release download "$tag" \
