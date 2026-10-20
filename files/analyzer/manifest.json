@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "package": "bigfix-relevance-analyzer",
+  "version": "1.39.0",
+  "editor": {
+    "path": "editor.js",
+    "size": 430967,
+    "sha256": "97bdc92d55925dc09d7a04f2986057bb30c2ccdd4f2638492b7dea45552f4ef4"
+  },
+  "glue": {
+    "path": "glue.mjs",
+    "size": 785049,
+    "sha256": "863a2d2030180e985b209f95c6bb62fcc610e7c8de75219c2644c9791e5f0f13"
+  },
+  "cores": [
+    {
+      "name": "analyzer.core.wasm",
+      "path": "analyzer.core.wasm.gz",
+      "encoding": "gzip",
+      "size": 6250649,
+      "sha256": "fac8e5f267dede07477d7a69c35fc750c9031c8edd974068424740537ccddbcb",
+      "raw_size": 15854246,
+      "raw_sha256": "b96cf18d48f021853a34f0805ea49b01948af1b7cf4eaca969a2423e6d2623ad"
+    },
+    {
+      "name": "analyzer.core10.wasm",
+      "path": "analyzer.core10.wasm.gz",
+      "encoding": "gzip",
+      "size": 86126,
+      "sha256": "edc7f0499aedd4bbc09b897977904842ed5ec9641ae242498f0590bb89bbc7f0",
+      "raw_size": 336419,
+      "raw_sha256": "d6d1faffc282de30f35fc38cda9fd558f3a22a2df24f0868104847f22bddf4dd"
+    },
+    {
+      "name": "analyzer.core11.wasm",
+      "path": "analyzer.core11.wasm.gz",
+      "encoding": "gzip",
+      "size": 1261,
+      "sha256": "764585d17d3f0fc93555ad56d6f7903edee407bd4cc522b0f747f9bee72e84bc",
+      "raw_size": 4266,
+      "raw_sha256": "1e042aba475cffd46153f42a68f0e28928f9d386a87b08eda761ebf1fd23fadb"
+    },
+    {
+      "name": "analyzer.core12.wasm",
+      "path": "analyzer.core12.wasm.gz",
+      "encoding": "gzip",
+      "size": 10686,
+      "sha256": "0a8f237aeb3ab3e9f3046cc7864b10f97a3ace86b7132ba117cc2342f7d8ea3d",
+      "raw_size": 43292,
+      "raw_sha256": "ea2b17182deca42ed84b0621f77cff1fb2e5018529218c9731f9a6fec30ba375"
+    },
+    {
+      "name": "analyzer.core13.wasm",
+      "path": "analyzer.core13.wasm.gz",
+      "encoding": "gzip",
+      "size": 913,
+      "sha256": "92bf793c8f367fb4fd85f4b1ee25f5394c838cdedd552818b0c51cd287f64697",
+      "raw_size": 2071,
+      "raw_sha256": "7932075c1bcc1bd2b0bb2574ad571614db67e4c7b6c66515da400dfe9cc42956"
+    },
+    {
+      "name": "analyzer.core14.wasm",
+      "path": "analyzer.core14.wasm.gz",
+      "encoding": "gzip",
+      "size": 487,
+      "sha256": "46323327575e09ca939dedd89614e93f0929dabc59e13fbb183f0c5aa4986d03",
+      "raw_size": 843,
+      "raw_sha256": "69453a92b525d30d6785b220afa43416db6af9b6832a3aa6fdbad50e83fdbbae"
+    },
+    {
+      "name": "analyzer.core2.wasm",
+      "path": "analyzer.core2.wasm.gz",
+      "encoding": "gzip",
+      "size": 1971,
+      "sha256": "56c7923ee93003de484dd1bee1a198d98fd1335005b5d8e434321b9db4bafc2a",
+      "raw_size": 4892,
+      "raw_sha256": "bf4ad097b562dd49c292803168b0e4b4f9de714914ed0a3e509f54b3b71cdf59"
+    },
+    {
+      "name": "analyzer.core3.wasm",
+      "path": "analyzer.core3.wasm.gz",
+      "encoding": "gzip",
+      "size": 137,
+      "sha256": "2492406b3a9b46402111974bbf5d9e0b3ded9de3a924e65180304d915c183653",
+      "raw_size": 138,
+      "raw_sha256": "8950692cd28d11d495fea88d024f6b7a662d8e89cb44415ed424a4d4747e7f17"
+    },
+    {
+      "name": "analyzer.core4.wasm",
+      "path": "analyzer.core4.wasm.gz",
+      "encoding": "gzip",
+      "size": 161522,
+      "sha256": "dca4424840a4ea1492211fedeb55d986ca4d048a6247951023432655ee587293",
+      "raw_size": 434102,
+      "raw_sha256": "e82b4984c67822ae48cbe8969513932454622f31e91841cca0e80183de59f1ef"
+    },
+    {
+      "name": "analyzer.core5.wasm",
+      "path": "analyzer.core5.wasm.gz",
+      "encoding": "gzip",
+      "size": 1022,
+      "sha256": "06b203ba72131172bd48facee92451d81f082ebc084c7e125d59d657e3212fb9",
+      "raw_size": 2202,
+      "raw_sha256": "33fc5cc003ee068fe323aa7c73d226b6f7a927316458e1345ad6f25ad2de762d"
+    },
+    {
+      "name": "analyzer.core6.wasm",
+      "path": "analyzer.core6.wasm.gz",
+      "encoding": "gzip",
+      "size": 271,
+      "sha256": "17c8c80b74fe0c30177b843d692a05ea837146dd4fadcdad9ced86ed347fd2c3",
+      "raw_size": 395,
+      "raw_sha256": "83b0cc0fe9f93b568933bd6d19a3fd844d9e4a72d1555a6d22519afc0d06dd6b"
+    },
+    {
+      "name": "analyzer.core7.wasm",
+      "path": "analyzer.core7.wasm.gz",
+      "encoding": "gzip",
+      "size": 631,
+      "sha256": "b48208c4987025777a7d1e3d3fb45b721f90f88d2e3a7c15904fda532aa8114a",
+      "raw_size": 1040,
+      "raw_sha256": "695da2abd472e891eef7d6f548a1aadf9994a324eaed1a60b836e764bd4fd596"
+    },
+    {
+      "name": "analyzer.core8.wasm",
+      "path": "analyzer.core8.wasm.gz",
+      "encoding": "gzip",
+      "size": 760,
+      "sha256": "0d5966b51250e2557fc027a1c32f689bbabb4c8d3e480c489a07261cd75c4655",
+      "raw_size": 1319,
+      "raw_sha256": "7e2e2ad9cd5ba443c4de9ebb8e83c2377d28b3169c5655865159f9fed6ea5f64"
+    },
+    {
+      "name": "analyzer.core9.wasm",
+      "path": "analyzer.core9.wasm.gz",
+      "encoding": "gzip",
+      "size": 1749586,
+      "sha256": "a374560fac2d2029853b165ac7c812dc2bc6743140a63306366c921ba13e794b",
+      "raw_size": 6271406,
+      "raw_sha256": "4f8eadd579e63d99a0634c9326a1263460dbacf7f823d80bfb10369779ac7e4e"
+    }
+  ]
+}
