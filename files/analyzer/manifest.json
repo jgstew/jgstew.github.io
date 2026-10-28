@@ -1,7 +1,7 @@
 {
   "format": 1,
   "package": "bigfix-relevance-analyzer",
-  "version": "1.39.1",
+  "version": "1.39.2",
   "editor": {
     "path": "editor.js",
     "size": 430967,
@@ -17,10 +17,10 @@
       "name": "analyzer.core.wasm",
       "path": "analyzer.core.wasm.gz",
       "encoding": "gzip",
-      "size": 6233908,
-      "sha256": "bb71bd32e73c5d21837d3ca73a10601aa6c09fa6ee67dc57c30b71651ff804aa",
-      "raw_size": 15855253,
-      "raw_sha256": "215974c419ceecae9deda8ca5ecb95f7e52e67595b5c7cf069c18977ef8bdb75"
+      "size": 6256152,
+      "sha256": "81a77a64f512223ddce7b2fea876e57c860a8ffd7cd390e9cb938d36bcf39bcc",
+      "raw_size": 15850532,
+      "raw_sha256": "36853ff45e463e1dc950b3299c1facfe3f485f9b6bc38c4ae533e004ca054687"
     },
     {
       "name": "analyzer.core10.wasm",
@@ -72,9 +72,9 @@
       "path": "analyzer.core2.wasm.gz",
       "encoding": "gzip",
       "size": 1971,
-      "sha256": "66b6b4d74872d33612603a3284471540f49aa443bfc5aa92aa123ea653152953",
+      "sha256": "73c646b7d12e186ba0c6e9a265811c06b4a54853775e8045ae291c0f8c7fdd74",
       "raw_size": 4892,
-      "raw_sha256": "1ea6aefdd1889d83ca89bd0307a1ffde440389ed55416270a406cab4a4c2091c"
+      "raw_sha256": "c9dd64cbe9829c8191cbf139887ff1aafbfb99c1df484927f52a5e3f19481864"
     },
     {
       "name": "analyzer.core3.wasm",
